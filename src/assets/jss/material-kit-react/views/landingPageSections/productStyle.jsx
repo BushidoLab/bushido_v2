@@ -16,5 +16,4 @@ const productStyle = {
 		color: "#999"
 	}
 };
-
 export default productStyle;
