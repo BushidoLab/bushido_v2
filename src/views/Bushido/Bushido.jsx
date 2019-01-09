@@ -21,6 +21,9 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 import ProductSection from "./Sections/ProductSection.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
+import PortfolioSection from "./Sections/PortfolioSection.jsx";
+import ProcessesAndToolsSection from "./Sections/ProcessesAndToolsSection.jsx";
+import PricingSection from "./Sections/PricingSection.jsx";
 
 const dashboardRoutes = [];
 
@@ -41,11 +44,11 @@ class Bushido extends React.Component {
 					}}
 					{...rest}
 				/>
-				<Parallax filter image={require("assets/img/landing-bg.jpg")}>
+				<Parallax filter image={require("assets/img/bg7.png")}>
 					<div className={classes.container}>
 						<GridContainer>
 							<GridItem xs={12} sm={12} md={6}>
-								<h1 className={classes.title}>Your Story Starts With Us.</h1>
+								<h1 className={classes.title}>Blockchain Simplifed</h1>
 								<h4>
 									Every landing page needs a small description after the big
 									bold title, that's why we added this text here. Add here all
@@ -60,8 +63,8 @@ class Bushido extends React.Component {
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									<i className="fas fa-play" />
-									Watch video
+									{/* <i className="fas fa-play" /> */}
+									Get a Quote
 								</Button>
 							</GridItem>
 						</GridContainer>
@@ -70,6 +73,9 @@ class Bushido extends React.Component {
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div className={classes.container}>
 						<ProductSection />
+						<PortfolioSection />
+						<ProcessesAndToolsSection />
+						<PricingSection />
 						<TeamSection />
 						<WorkSection />
 					</div>

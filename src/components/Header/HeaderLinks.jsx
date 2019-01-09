@@ -22,55 +22,56 @@ function HeaderLinks({ ...props }) {
 	const { classes } = props;
 	return (
 		<List className={classes.list}>
-			<ListItem className={classes.listItem}>
+		<ListItem className={classes.listItem}>
 				<CustomDropdown
 					noLiPadding
-					buttonText="Components"
+					buttonText="Navigation"
 					buttonProps={{
 						className: classes.navLink,
 						color: "transparent"
 					}}
-					buttonIcon={Apps}
+					// buttonIcon={Apps}
 					dropdownList={[
-						<Link to="/" className={classes.dropdownLink}>
-							All components
+						<Link to="https://www.google.com" className={classes.dropdownLink}>
+							Home
 						</Link>,
 						<a
-							href="https://creativetimofficial.github.io/material-kit-react/#/documentation"
+							href="https://www.google.com"
 							target="_blank"
 							className={classes.dropdownLink}
 						>
-							Documentation
+							What we offer
+						</a>,
+						<a
+							href="https://www.google.com"
+							target="_blank"
+							className={classes.dropdownLink}
+						>
+							Portfolio
+						</a>,
+						<a
+							href="https://www.google.com"
+							target="_blank"
+							className={classes.dropdownLink}
+						>
+							Processes and Tools
+						</a>,
+						<a
+							href="https://www.google.com"
+							target="_blank"
+							className={classes.dropdownLink}
+						>
+							Pricing
+						</a>,
+						<a
+							href="https://www.google.com"
+							target="_blank"
+							className={classes.dropdownLink}
+						>
+							Clients Testemonials
 						</a>
 					]}
 				/>
-			</ListItem>
-			<ListItem className={classes.listItem}>
-				<Button
-					href="https://www.creative-tim.com/product/material-kit-react"
-					color="transparent"
-					target="_blank"
-					className={classes.navLink}
-				>
-					Contact Us
-				</Button>
-			</ListItem>
-			<ListItem className={classes.listItem}>
-				<Tooltip
-					id="instagram-twitter"
-					title="Follow us on twitter"
-					placement={window.innerWidth > 959 ? "top" : "left"}
-					classes={{ tooltip: classes.tooltip }}
-				>
-					<Button
-						href="https://twitter.com/CreativeTim"
-						target="_blank"
-						color="transparent"
-						className={classes.navLink}
-					>
-						<i className={classes.socialIcons + " fab fa-twitter"} />
-					</Button>
-				</Tooltip>
 			</ListItem>
 			{/* <ListItem className={classes.listItem}>
         <Tooltip
@@ -91,21 +92,67 @@ function HeaderLinks({ ...props }) {
       </ListItem> */}
 			<ListItem className={classes.listItem}>
 				<Tooltip
-					id="instagram-tooltip"
-					title="Follow us on instagram"
+					id="twitter-tooltip"
+					title="Follow us on Twitter"
 					placement={window.innerWidth > 959 ? "top" : "left"}
 					classes={{ tooltip: classes.tooltip }}
 				>
 					<Button
 						color="transparent"
-						href="https://www.instagram.com"
+						href="https://www.google.com"
 						target="_blank"
 						className={classes.navLink}
 					>
-						<i className={classes.socialIcons + " fab fa-instagram"} />
+						<i className={classes.socialIcons + " fab fa-twitter"} />
 					</Button>
 				</Tooltip>
 			</ListItem>
+			<ListItem className={classes.listItem}>
+				<Tooltip
+					id="github-tooltip"
+					title="Follow us on GitHub"
+					placement={window.innerWidth > 959 ? "top" : "left"}
+					classes={{ tooltip: classes.tooltip }}
+				>
+					<Button
+						href="https://www.github.com/bushidolab"
+						target="_blank"
+						color="transparent"
+						className={classes.navLink}
+					>
+						<i className={classes.socialIcons + " fab fa-github"} />
+					</Button>
+				</Tooltip>
+			</ListItem>
+			<ListItem className={classes.listItem}>
+				<Tooltip
+					id="blog-tooltip"
+					title="Read our Medium Articles"
+					placement={window.innerWidth > 959 ? "top" : "left"}
+					classes={{ tooltip: classes.tooltip }}
+				>
+					<Button
+						color="transparent"
+						href="https://www.google.com"
+						target="_blank"
+						className={classes.navLink}
+					>
+						<i className={classes.socialIcons + " fab fa-medium"} />
+					</Button>
+				</Tooltip>
+			</ListItem>
+
+			<ListItem className={classes.listItem}>
+				<Button
+					href="https://www.google.com"
+					color="transparent"
+					target="_blank"
+					className={classes.navLink}
+				>
+					Contact Us
+				</Button>
+			</ListItem>
+			
 		</List>
 	);
 }
