@@ -30,7 +30,7 @@ function HeaderLinks({ ...props }) {
 						className: classes.navLink,
 						color: "transparent"
 					}}
-					// buttonIcon={Apps}
+					buttonIcon={Apps}
 					dropdownList={[
 						<Link to="https://www.google.com" className={classes.dropdownLink}>
 							Home

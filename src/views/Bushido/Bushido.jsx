@@ -24,8 +24,9 @@ import WorkSection from "./Sections/WorkSection.jsx";
 import PortfolioSection from "./Sections/PortfolioSection.jsx";
 import ProcessesAndToolsSection from "./Sections/ProcessesAndToolsSection.jsx";
 import PricingSection from "./Sections/PricingSection.jsx";
+import ClientSection from "./Sections/ClientSection.jsx";
 
-const dashboardRoutes = [];
+const dashboardRoutes = ["/bushido"];
 
 class Bushido extends React.Component {
 	render() {
@@ -76,6 +77,7 @@ class Bushido extends React.Component {
 						<PortfolioSection />
 						<ProcessesAndToolsSection />
 						<PricingSection />
+						<ClientSection />
 						<TeamSection />
 						<WorkSection />
 					</div>
