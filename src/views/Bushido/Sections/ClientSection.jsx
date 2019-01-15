@@ -25,7 +25,6 @@ import client_oracle from "assets/img/clients/oracle_logo.png";
 import client_um from "assets/img/clients/um_logo.png";
 import client_vera from "assets/img/clients/vera_logo.png";
 
-
 class ClientSection extends React.Component {
 	render() {
 		const { classes } = this.props;
@@ -40,7 +39,7 @@ class ClientSection extends React.Component {
 					<GridContainer>
 						<GridItem xs={12} sm={12} md={4}>
 							<Card plain>
-								<GridItem xs={12} sm={12} md={6} className={classes.itemGrid} >
+								<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 									<img src={client_anon} alt="..." className={imageClasses} />
 								</GridItem>
 								<h4 className={classes.cardTitle}>
@@ -129,96 +128,6 @@ class ClientSection extends React.Component {
 									<br />
 									<small className={classes.smallTitle}>
 										Hardware Chipsets
-									</small>
-								</h4>
-								<CardBody>
-									<p className={classes.description}>
-										You can write here details about one of your team members.
-										You can give more details about what they do. Feel free to
-										add some <a href="#pablo">links</a> for people to be able to
-										follow them outside the site.
-									</p>
-								</CardBody>
-								<CardFooter className={classes.justifyCenter}>
-									<Button
-										justIcon
-										color="transparent"
-										className={classes.margin5}
-									>
-										<i className={classes.socials + " fab fa-twitter"} />
-									</Button>
-									<Button
-										justIcon
-										color="transparent"
-										className={classes.margin5}
-									>
-										<i className={classes.socials + " fab fa-instagram"} />
-									</Button>
-									<Button
-										justIcon
-										color="transparent"
-										className={classes.margin5}
-									>
-										<i className={classes.socials + " fab fa-facebook"} />
-									</Button>
-								</CardFooter>
-							</Card>
-						</GridItem>
-						<GridItem xs={12} sm={12} md={4}>
-							<Card plain>
-								<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-									<img src={client_um} alt="..." className={imageClasses} />
-								</GridItem>
-								<h4 className={classes.cardTitle}>
-									University of Miami
-									<br />
-									<small className={classes.smallTitle}>
-										Educational Curriculium
-									</small>
-								</h4>
-								<CardBody>
-									<p className={classes.description}>
-										You can write here details about one of your team members.
-										You can give more details about what they do. Feel free to
-										add some <a href="#pablo">links</a> for people to be able to
-										follow them outside the site.
-									</p>
-								</CardBody>
-								<CardFooter className={classes.justifyCenter}>
-									<Button
-										justIcon
-										color="transparent"
-										className={classes.margin5}
-									>
-										<i className={classes.socials + " fab fa-twitter"} />
-									</Button>
-									<Button
-										justIcon
-										color="transparent"
-										className={classes.margin5}
-									>
-										<i className={classes.socials + " fab fa-instagram"} />
-									</Button>
-									<Button
-										justIcon
-										color="transparent"
-										className={classes.margin5}
-									>
-										<i className={classes.socials + " fab fa-facebook"} />
-									</Button>
-								</CardFooter>
-							</Card>
-						</GridItem>
-						<GridItem xs={12} sm={12} md={4}>
-							<Card plain>
-								<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-									<img src={client_vera} alt="..." className={imageClasses} />
-								</GridItem>
-								<h4 className={classes.cardTitle}>
-									Vera Trust
-									<br />
-									<small className={classes.smallTitle}>
-										Exchange or some shit
 									</small>
 								</h4>
 								<CardBody>

@@ -20,7 +20,6 @@ class PricingSection extends React.Component {
 			<div className={classes.section}>
 				<div className={classes.container}>
 					<div id="nav-tabs">
-						{/* <h2 className={classes.title}>Development Pricing Plans</h2> */}
 						<GridContainer justify="center">
 							<GridItem xs={12} sm={12} md={8}>
 								<h2 className={classes.title}>Development Pricing Plans</h2>
@@ -70,22 +69,22 @@ class PricingSection extends React.Component {
 												</p>
 											)
 										},
-										{
-											tabName: "Settings",
-											tabIcon: Build,
-											tabContent: (
-												<p className={classes.textCenter}>
-													think that’s a responsibility that I have, to push
-													possibilities, to show people, this is the level that
-													things could be at. So when you get something that has
-													the name Kanye West on it, it’s supposed to be pushing
-													the furthest possibilities. I will be the leader of a
-													company that ends up being worth billions of dollars,
-													because I got the answers. I understand culture. I am
-													the nucleus.
-												</p>
-											)
-										}
+										// {
+										// 	tabName: "Settings",
+										// 	tabIcon: Build,
+										// 	tabContent: (
+										// 		<p className={classes.textCenter}>
+										// 			think that’s a responsibility that I have, to push
+										// 			possibilities, to show people, this is the level that
+										// 			things could be at. So when you get something that has
+										// 			the name Kanye West on it, it’s supposed to be pushing
+										// 			the furthest possibilities. I will be the leader of a
+										// 			company that ends up being worth billions of dollars,
+										// 			because I got the answers. I understand culture. I am
+										// 			the nucleus.
+										// 		</p>
+										// 	)
+										// }
 									]}
 								/>
 							</GridItem>
