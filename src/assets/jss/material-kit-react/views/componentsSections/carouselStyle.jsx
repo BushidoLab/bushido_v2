@@ -31,9 +31,13 @@ const carouselStyle = {
 		// textAlign: "right",
 		// alignSelf: "stretch"
 	},
-	store_button: {
+	store_button_google: {
 		// width: "100px",
 		height: "40px"
+	},
+	store_button_apple: {
+		// width: "100px",
+		height: "28px"
 	},
 };
 

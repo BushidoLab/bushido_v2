@@ -1,0 +1,33 @@
+import React from "react";
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
+// nodejs library that concatenates classes
+import classNames from "classnames";
+// @material-ui/core components
+import withStyles from "@material-ui/core/styles/withStyles";
+
+import infoStyle from "assets/jss/material-kit-react/components/infoStyle.jsx";
+
+function InfoAreaImage({ ...props }) {
+	const { classes, title, description, iconColor, vertical } = props;
+	// const iconWrapper = classNames({
+	//   [classes.iconWrapper]: true,
+	//   [classes[iconColor]]: true,
+	//   [classes.iconWrapperVertical]: vertical
+	// });
+	// const iconClasses = classNames({
+	//   [classes.icon]: true,
+	//   [classes.iconVertical]: vertical
+	// });
+	return (
+		<div className={classes.infoArea}>
+			<img src={props.imgSrc} height={props.imgHeight}/>
+			<div className={classes.descriptionWrapper}>
+				<h5 className={classes.title}>{title}</h5>
+				<p className={classes.description}>{description}</p>
+			</div>
+		</div>
+	);
+}
+
+export default withStyles(infoStyle)(InfoAreaImage);

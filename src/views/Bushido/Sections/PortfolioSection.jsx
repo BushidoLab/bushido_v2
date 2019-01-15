@@ -17,20 +17,24 @@ import image3 from "assets/img/bg3.jpg";
 
 import apple_store from "assets/img/app_store.png";
 import google_play from "assets/img/google_play.png";
-import InfoArea from "components/InfoArea/InfoArea.jsx";
-import Fingerprint from "@material-ui/icons/Fingerprint";
+import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
+import tech_0x from "assets/img/tech/0x.png";
+import tech_graphql from "assets/img/tech/graphql.png"
+import tech_html5 from "assets/img/tech/html5.png"
+import tech_js from "assets/img/tech/js.png"
+import tech_lightning from "assets/img/tech/lightning.png"
+import tech_react from "assets/img/tech/react.png"
 
 class PortfolioSection extends React.Component {
 	render() {
 		const { classes } = this.props;
-		const imageClasses = classNames(classes.store_button);
 		const settings = {
 			dots: true,
 			infinite: true,
 			speed: 500,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			autoplay: false,
+			autoplay: false
 		};
 		return (
 			<div className={classes.section}>
@@ -82,16 +86,21 @@ class PortfolioSection extends React.Component {
 								</Carousel>
 							</Card>
 						</GridItem>
-						<GridItem xs={12} sm={12} md={6}>
+						<GridItem xs={12} sm={12} md={6} className={classes.marginAuto}>
 							<h2 className={classes.title}>SmartR</h2>
 							<h5 className={classes.description}>
 								A smart graph drawing app.
 							</h5>
-							<img className={imageClasses} src={google_play} alt="google" />
 							<img
-								className={imageClasses}
+								className={classes.store_button_google}
+								src={google_play}
+								alt="google"
+							/>
+							<img
+								className={classes.store_button_apple}
 								src={apple_store}
 								alt="apple store"
+								// TODO fix height scaling
 							/>
 							<h5 className={classes.description}>
 								SmartR was a great success for us, we were able to create a
@@ -100,22 +109,46 @@ class PortfolioSection extends React.Component {
 							</h5>
 							<GridContainer>
 								<GridItem xs={6} sm={6} md={2}>
-									<InfoArea icon={Fingerprint} iconColor="danger" />
+									<InfoAreaImage
+										// title="0x Protocol"
+										imgSrc={tech_0x}
+										imgHeight="50px"
+									/>
 								</GridItem>
 								<GridItem xs={6} sm={6} md={2}>
-									<InfoArea icon={Fingerprint} iconColor="danger" />
+									<InfoAreaImage
+										// title="AWS"
+										imgSrc={tech_react}
+										imgHeight="50px"
+									/>
 								</GridItem>
 								<GridItem xs={6} sm={6} md={2}>
-									<InfoArea icon={Fingerprint} iconColor="danger" />
+									<InfoAreaImage
+										// title="GraphQL"
+										imgSrc={tech_graphql}
+										imgHeight="50px"
+									/>
 								</GridItem>
 								<GridItem xs={6} sm={6} md={2}>
-									<InfoArea icon={Fingerprint} iconColor="danger" />
+									<InfoAreaImage
+										// title="HTML5"
+										imgSrc={tech_html5}
+										imgHeight="50px"
+									/>
 								</GridItem>
 								<GridItem xs={6} sm={6} md={2}>
-									<InfoArea icon={Fingerprint} iconColor="danger" />
+									<InfoAreaImage
+										// title="Javascript"
+										imgSrc={tech_js}
+										imgHeight="50px"
+									/>
 								</GridItem>
 								<GridItem xs={6} sm={6} md={2}>
-									<InfoArea icon={Fingerprint} iconColor="danger" />
+									<InfoAreaImage
+										// title="Lightning"
+										imgSrc={tech_lightning}
+										imgHeight="50px"
+									/>
 								</GridItem>
 							</GridContainer>
 						</GridItem>
