@@ -42,8 +42,8 @@ const infoStyle = {
     color: grayColor
   },
   icon: {
-    width: "36px",
-    height: "36px"
+    width: "40px",
+    height: "40px"
   },
   descriptionWrapper: {
     color: grayColor,
@@ -62,7 +62,8 @@ const infoStyle = {
   iconVertical: {
     width: "61px",
     height: "61px"
-  }
+	},
+	
 };
 
 export default infoStyle;

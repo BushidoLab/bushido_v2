@@ -1,6 +1,6 @@
 import React from "react";
 // react component for creating beautiful carousel
-import classNames from "classnames";
+// import classNames from "classnames";
 import Carousel from "react-slick";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -108,46 +108,46 @@ class PortfolioSection extends React.Component {
 								doctor would love to look at for days.
 							</h5>
 							<GridContainer>
-								<GridItem xs={6} sm={6} md={2}>
+								<GridItem xs={4} sm={4} md={2}>
 									<InfoAreaImage
 										// title="0x Protocol"
 										imgSrc={tech_0x}
-										imgHeight="50px"
+										// imgHeight="50px"
 									/>
 								</GridItem>
-								<GridItem xs={6} sm={6} md={2}>
+								<GridItem xs={4} sm={4} md={2}>
 									<InfoAreaImage
 										// title="AWS"
 										imgSrc={tech_react}
-										imgHeight="50px"
+										// imgHeight="50px"
 									/>
 								</GridItem>
-								<GridItem xs={6} sm={6} md={2}>
+								<GridItem xs={4} sm={4} md={2}>
 									<InfoAreaImage
 										// title="GraphQL"
 										imgSrc={tech_graphql}
-										imgHeight="50px"
+										// imgHeight="50px"
 									/>
 								</GridItem>
-								<GridItem xs={6} sm={6} md={2}>
+								<GridItem xs={4} sm={4} md={2}>
 									<InfoAreaImage
 										// title="HTML5"
 										imgSrc={tech_html5}
-										imgHeight="50px"
+										// imgHeight="50px"
 									/>
 								</GridItem>
-								<GridItem xs={6} sm={6} md={2}>
+								<GridItem xs={4} sm={4} md={2}>
 									<InfoAreaImage
 										// title="Javascript"
 										imgSrc={tech_js}
-										imgHeight="50px"
+										// imgHeight="50px"
 									/>
 								</GridItem>
-								<GridItem xs={6} sm={6} md={2}>
+								<GridItem xs={4} sm={4} md={2}>
 									<InfoAreaImage
 										// title="Lightning"
 										imgSrc={tech_lightning}
-										imgHeight="50px"
+										// imgHeight="50px"
 									/>
 								</GridItem>
 							</GridContainer>

@@ -22,8 +22,8 @@ import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/t
 import client_anon from "assets/img/clients/anon_logo.png";
 import client_ibm from "assets/img/clients/ibm_logo.png";
 import client_oracle from "assets/img/clients/oracle_logo.png";
-import client_um from "assets/img/clients/um_logo.png";
-import client_vera from "assets/img/clients/vera_logo.png";
+// import client_um from "assets/img/clients/um_logo.png";
+// import client_vera from "assets/img/clients/vera_logo.png";
 
 class ClientSection extends React.Component {
 	render() {

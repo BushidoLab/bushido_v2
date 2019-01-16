@@ -40,8 +40,8 @@ const imagesStyles = {
 		padding: "1.25rem"
 	},
 	imgCardCentered: {
-		align: 'center',
-		height: "150px"
+		align: "center",
+		height: "100px"
 	}
 };
 

@@ -13,7 +13,8 @@ const productStyle = {
 		textDecoration: "none"
 	},
 	description: {
-		color: "#999"
+		color: "#999",
+		marginBottom: "30px"
 	}
 };
 export default productStyle;

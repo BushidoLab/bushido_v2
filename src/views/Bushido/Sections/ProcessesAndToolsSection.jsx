@@ -3,15 +3,21 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
+// import Chat from "@material-ui/icons/Chat";
+// import VerifiedUser from "@material-ui/icons/VerifiedUser";
+// import Fingerprint from "@material-ui/icons/Fingerprint";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import InfoArea from "components/InfoArea/InfoArea.jsx";
+// import InfoArea from "components/InfoArea/InfoArea.jsx";
 import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
-
+import tech_0x from "assets/img/tech/0x.png";
+import tech_graphql from "assets/img/tech/graphql.png"
+import tech_html5 from "assets/img/tech/html5.png"
+import tech_js from "assets/img/tech/js.png"
+import tech_lightning from "assets/img/tech/lightning.png"
+import tech_react from "assets/img/tech/react.png"
+import tech_amazon from "assets/img/tech/amazon.png"
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 
 class ProcessesAndToolsSection extends React.Component {
@@ -30,164 +36,114 @@ class ProcessesAndToolsSection extends React.Component {
 				<div>
 					<GridContainer>
 						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="Custom coins, tokens and contracts are our thing. We can tailor one to meet any requrements and have it out faster than you can say “HODL”"
-								icon={Fingerprint}
-								iconColor="info"
+							<InfoAreaImage
+								title="0x Protocol"
+								imgSrc={tech_0x}
+								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="We clearly explain the definition and difference between the two. We can help you decide which technology is best suited to your use case."
-								icon={Fingerprint}
-								iconColor="success"
+							<InfoAreaImage
+								title="GraphQL"
+								imgSrc={tech_graphql}
+								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="We deploy fast. We want to get your vision out there as soon as possible."
-								icon={Fingerprint}
-								iconColor="danger"
+							<InfoAreaImage
+								title="HTML5"
+								imgSrc={tech_html5}
+								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="Custom coins, tokens and contracts are our thing. We can tailor one to meet any requrements and have it out faster than you can say “HODL”"
-								icon={Fingerprint}
-								iconColor="info"
+							<InfoAreaImage
+								title="Javascript"
+								imgSrc={tech_js}
+								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="We clearly explain the definition and difference between the two. We can help you decide which technology is best suited to your use case."
-								icon={Fingerprint}
-								iconColor="success"
+							<InfoAreaImage
+								title="Bitcoin Lightning"
+								imgSrc={tech_lightning}
+								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="We deploy fast. We want to get your vision out there as soon as possible."
-								icon={Fingerprint}
-								iconColor="danger"
+							<InfoAreaImage
+								title="React"
+								imgSrc={tech_react}
+								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="Custom coins, tokens and contracts are our thing. We can tailor one to meet any requrements and have it out faster than you can say “HODL”"
-								icon={Fingerprint}
-								iconColor="info"
+							<InfoAreaImage
+								title="AWS"
+								imgSrc={tech_amazon}
+								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="We clearly explain the definition and difference between the two. We can help you decide which technology is best suited to your use case."
-								icon={Fingerprint}
-								iconColor="success"
+							<InfoAreaImage
+								title="0x Protocol"
+								imgSrc={tech_0x}
+								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="We deploy fast. We want to get your vision out there as soon as possible."
-								icon={Fingerprint}
-								iconColor="danger"
+							<InfoAreaImage
+								title="GraphQL"
+								imgSrc={tech_graphql}
+								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="Custom coins, tokens and contracts are our thing. We can tailor one to meet any requrements and have it out faster than you can say “HODL”"
-								icon={Fingerprint}
-								iconColor="info"
+							<InfoAreaImage
+								title="HTML5"
+								imgSrc={tech_html5}
+								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="We clearly explain the definition and difference between the two. We can help you decide which technology is best suited to your use case."
-								icon={Fingerprint}
-								iconColor="success"
+							<InfoAreaImage
+								title="Javascript"
+								imgSrc={tech_js}
+								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="We deploy fast. We want to get your vision out there as soon as possible."
-								icon={Fingerprint}
-								iconColor="danger"
+							<InfoAreaImage
+								title="Bitcoin Lightning"
+								imgSrc={tech_lightning}
+								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="Custom coins, tokens and contracts are our thing. We can tailor one to meet any requrements and have it out faster than you can say “HODL”"
-								icon={Fingerprint}
-								iconColor="info"
+							<InfoAreaImage
+								title="React"
+								imgSrc={tech_react}
+								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="We clearly explain the definition and difference between the two. We can help you decide which technology is best suited to your use case."
-								icon={Fingerprint}
-								iconColor="success"
-								vertical
-							/>
-						</GridItem>
-						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="We deploy fast. We want to get your vision out there as soon as possible."
-								icon={Fingerprint}
-								iconColor="danger"
-								vertical
-							/>
-						</GridItem>
-						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="Custom coins, tokens and contracts are our thing. We can tailor one to meet any requrements and have it out faster than you can say “HODL”"
-								icon={Fingerprint}
-								iconColor="info"
-								vertical
-							/>
-						</GridItem>
-						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="We clearly explain the definition and difference between the two. We can help you decide which technology is best suited to your use case."
-								icon={Fingerprint}
-								iconColor="success"
-								vertical
-							/>
-						</GridItem>
-						<GridItem xs={4} sm={3} md={2}>
-							<InfoArea
-								title="Title"
-								// description="We deploy fast. We want to get your vision out there as soon as possible."
-								icon={Fingerprint}
-								iconColor="danger"
+							<InfoAreaImage
+								title="AWS"
+								imgSrc={tech_amazon}
+								// height="100px !important"
 								vertical
 							/>
 						</GridItem>

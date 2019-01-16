@@ -9,7 +9,7 @@ import {
   roseColor,
   transition,
   boxShadow,
-  drawerWidth
+  // drawerWidth
 } from "assets/jss/material-kit-react.jsx";
 
 const headerStyle = {
