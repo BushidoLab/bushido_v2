@@ -112,6 +112,7 @@ class PortfolioSection extends React.Component {
 									<InfoAreaImage
 										// title="0x Protocol"
 										imgSrc={tech_0x}
+										portfolio
 										// imgHeight="50px"
 									/>
 								</GridItem>
@@ -119,6 +120,7 @@ class PortfolioSection extends React.Component {
 									<InfoAreaImage
 										// title="AWS"
 										imgSrc={tech_react}
+										portfolio
 										// imgHeight="50px"
 									/>
 								</GridItem>
@@ -126,6 +128,7 @@ class PortfolioSection extends React.Component {
 									<InfoAreaImage
 										// title="GraphQL"
 										imgSrc={tech_graphql}
+										portfolio
 										// imgHeight="50px"
 									/>
 								</GridItem>
@@ -133,6 +136,7 @@ class PortfolioSection extends React.Component {
 									<InfoAreaImage
 										// title="HTML5"
 										imgSrc={tech_html5}
+										portfolio
 										// imgHeight="50px"
 									/>
 								</GridItem>
@@ -140,6 +144,7 @@ class PortfolioSection extends React.Component {
 									<InfoAreaImage
 										// title="Javascript"
 										imgSrc={tech_js}
+										portfolio
 										// imgHeight="50px"
 									/>
 								</GridItem>
@@ -147,6 +152,7 @@ class PortfolioSection extends React.Component {
 									<InfoAreaImage
 										// title="Lightning"
 										imgSrc={tech_lightning}
+										portfolio
 										// imgHeight="50px"
 									/>
 								</GridItem>
