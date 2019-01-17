@@ -25,6 +25,7 @@ import PortfolioSection from "./Sections/PortfolioSection.jsx";
 import ProcessesAndToolsSection from "./Sections/ProcessesAndToolsSection.jsx";
 import PricingSection from "./Sections/PricingSection.jsx";
 import ClientSection from "./Sections/ClientSection.jsx";
+import SectionTabs from "./Sections/SectionTabs.jsx";
 
 const dashboardRoutes = ["/bushido"];
 
@@ -75,6 +76,7 @@ class Bushido extends React.Component {
 					<div className={classes.container}>
 						<ProductSection />
 						<PortfolioSection />
+						<SectionTabs />
 						<ProcessesAndToolsSection />
 						<PricingSection />
 						<ClientSection />
@@ -87,6 +89,5 @@ class Bushido extends React.Component {
 		);
 	}
 }
-
 
 export default withStyles(landingPageStyle)(Bushido);
