@@ -19,7 +19,7 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.jsx";
-import TeamSection from "./Sections/TeamSection.jsx";
+// import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 import PortfolioSection from "./Sections/PortfolioSection.jsx";
 import ProcessesAndToolsSection from "./Sections/ProcessesAndToolsSection.jsx";
@@ -34,16 +34,16 @@ class Bushido extends React.Component {
 		return (
 			<div>
 				<Header
-					color="transparent"
-					routes={dashboardRoutes}
-					brand="The Bushido Lab"
-					rightLinks={<HeaderLinks />}
-					fixed
-					changeColorOnScroll={{
-						height: 400,
-						color: "white"
-					}}
-					{...rest}
+					// color="transparent"
+					// routes={dashboardRoutes}
+					// brand="The Bushido Lab"
+					// rightLinks={<HeaderLinks />}
+					// fixed
+					// changeColorOnScroll={{
+					// 	height: 400,
+					// 	color: "white"
+					// }}
+					// {...rest}
 				/>
 				<Parallax filter image={require("assets/img/bg7.png")}>
 					<div className={classes.container}>
@@ -78,7 +78,7 @@ class Bushido extends React.Component {
 						<ProcessesAndToolsSection />
 						<PricingSection />
 						<ClientSection />
-						<TeamSection />
+						{/* <TeamSection /> */}
 						<WorkSection />
 					</div>
 				</div>

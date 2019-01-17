@@ -39,7 +39,6 @@ class ProcessesAndToolsSection extends React.Component {
 							<InfoAreaImage
 								title="0x Protocol"
 								imgSrc={tech_0x}
-								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
@@ -47,7 +46,6 @@ class ProcessesAndToolsSection extends React.Component {
 							<InfoAreaImage
 								title="GraphQL"
 								imgSrc={tech_graphql}
-								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
@@ -55,7 +53,6 @@ class ProcessesAndToolsSection extends React.Component {
 							<InfoAreaImage
 								title="HTML5"
 								imgSrc={tech_html5}
-								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
@@ -63,7 +60,6 @@ class ProcessesAndToolsSection extends React.Component {
 							<InfoAreaImage
 								title="Javascript"
 								imgSrc={tech_js}
-								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
@@ -71,7 +67,6 @@ class ProcessesAndToolsSection extends React.Component {
 							<InfoAreaImage
 								title="Bitcoin Lightning"
 								imgSrc={tech_lightning}
-								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
@@ -79,7 +74,6 @@ class ProcessesAndToolsSection extends React.Component {
 							<InfoAreaImage
 								title="React"
 								imgSrc={tech_react}
-								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
@@ -87,7 +81,6 @@ class ProcessesAndToolsSection extends React.Component {
 							<InfoAreaImage
 								title="AWS"
 								imgSrc={tech_amazon}
-								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
@@ -95,7 +88,6 @@ class ProcessesAndToolsSection extends React.Component {
 							<InfoAreaImage
 								title="0x Protocol"
 								imgSrc={tech_0x}
-								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
@@ -103,7 +95,6 @@ class ProcessesAndToolsSection extends React.Component {
 							<InfoAreaImage
 								title="GraphQL"
 								imgSrc={tech_graphql}
-								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
@@ -111,7 +102,6 @@ class ProcessesAndToolsSection extends React.Component {
 							<InfoAreaImage
 								title="HTML5"
 								imgSrc={tech_html5}
-								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
@@ -119,7 +109,6 @@ class ProcessesAndToolsSection extends React.Component {
 							<InfoAreaImage
 								title="Javascript"
 								imgSrc={tech_js}
-								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
@@ -127,7 +116,6 @@ class ProcessesAndToolsSection extends React.Component {
 							<InfoAreaImage
 								title="Bitcoin Lightning"
 								imgSrc={tech_lightning}
-								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
@@ -135,7 +123,6 @@ class ProcessesAndToolsSection extends React.Component {
 							<InfoAreaImage
 								title="React"
 								imgSrc={tech_react}
-								// height="100px !important"
 								vertical
 							/>
 						</GridItem>
@@ -143,7 +130,6 @@ class ProcessesAndToolsSection extends React.Component {
 							<InfoAreaImage
 								title="AWS"
 								imgSrc={tech_amazon}
-								// height="100px !important"
 								vertical
 							/>
 						</GridItem>

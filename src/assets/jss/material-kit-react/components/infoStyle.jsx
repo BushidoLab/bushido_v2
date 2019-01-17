@@ -61,8 +61,12 @@ const infoStyle = {
   },
   iconVertical: {
     width: "61px",
-    height: "61px"
+		height: "61px",
 	},
+	iconProduct: {
+		width: "100px",
+		height: "100px",
+	}
 	
 };
 

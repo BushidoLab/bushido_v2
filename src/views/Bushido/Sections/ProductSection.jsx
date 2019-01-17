@@ -1,16 +1,21 @@
 import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-
-// @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import InfoArea from "components/InfoArea/InfoArea.jsx";
+import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
 
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+
+import blocks from "assets/img/bushido/blocks.png";
+import custom_crypto from "assets/img/bushido/custom_crypto.png";
+import dapps from "assets/img/bushido/dapps.png";
+import tokens from "assets/img/bushido/tokens.png";
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 
 class ProductSection extends React.Component {
@@ -18,7 +23,7 @@ class ProductSection extends React.Component {
 		const { classes } = this.props;
 		return (
 			<div className={classes.section}>
-				<GridContainer justify="center">
+				{/* <GridContainer justify="center">
 					<GridItem xs={12} sm={12} md={8}>
 						<h2 className={classes.title}>
 							We craft top quality solutions for you.
@@ -26,40 +31,61 @@ class ProductSection extends React.Component {
 						<h5 className={classes.description}>
 							This is the paragraph where you can write more details about your
 							product. Keep you user engaged by providing meaningful
-							information. Remember that by this time, the user is curious,
+							information. Remember that by this tie, the user is curious,
 							otherwise he wouldn't scroll to get here. Add a button if you want
 							the user to see more.
 						</h5>
 					</GridItem>
-				</GridContainer>
+				</GridContainer> */}
 				<div>
 					<GridContainer>
-						<GridItem xs={12} sm={12} md={4}>
-							<InfoArea
-								title="Custom Cryptocurrencies"
-								description="Custom coins, tokens and contracts are our thing. We can tailor one to meet any requrements and have it out faster than you can say “HODL”"
-								icon={Chat}
-								iconColor="info"
-								vertical
-							/>
+						<GridItem xs={12} sm={12} md={6} className={classes.cardPadding}>
+							<Card className={classes.cardDimensions}>
+								<CardContent>
+									<InfoAreaImage
+										title="Custom Cryptocurrencies"
+										description="Core Protocol & Systems Level Code Development for fully featured Cryptocurrency Blockchains such as: Bitcoin, Ethereum, Zcash and Monero. Our Cryptocurrency services include: coin forks, merge forks, privacy coins, masternode implementation, wallets & block explorers."
+										imgSrc={custom_crypto}
+										product
+									/>
+								</CardContent>
+							</Card>
 						</GridItem>
-						<GridItem xs={12} sm={12} md={4}>
-							<InfoArea
-								title="Utility and Security Tokens"
-								description="We clearly explain the definition and difference between the two. We can help you decide which technology is best suited to your use case."
-								icon={VerifiedUser}
-								iconColor="success"
-								vertical
-							/>
+						<GridItem xs={12} sm={12} md={6} className={classes.cardPadding}>
+							<Card className={classes.cardDimensions}>
+								<CardContent>
+									<InfoAreaImage
+										title="Enterprise Grade Blockchain"
+										description="Development of permissioned & Private Blockchains for consortium or enterprise needs. Common implementations include: Hyperledger(Fabric, Composer, Burrow), Stellar & Strasis.Innovative use-cases include: rights management, supply-chain, auditing-specific blockchains"
+										imgSrc={blocks}
+										product
+									/>
+								</CardContent>
+							</Card>
 						</GridItem>
-						<GridItem xs={12} sm={12} md={4}>
-							<InfoArea
-								title="Smart Contracts and dApps"
-								description="We deploy fast. We want to get your vision out there as soon as possible."
-								icon={Fingerprint}
-								iconColor="danger"
-								vertical
-							/>
+						<GridItem xs={12} sm={12} md={6} className={classes.cardPadding}>
+							<Card className={classes.cardDimensions}>
+								<CardContent>
+									<InfoAreaImage
+										title="Decentralized Applications"
+										description="Custom decentralized applications that communicate directly with Blockchains. Common use cases for dApps include: gamification platforms, asset ownership and trading, decentralized market makers"
+										imgSrc={dapps}
+										product
+									/>
+								</CardContent>
+							</Card>
+						</GridItem>
+						<GridItem xs={12} sm={12} md={6} className={classes.cardPadding}>
+							<Card className={classes.cardDimensions}>
+								<CardContent>
+									<InfoAreaImage
+										title="Utility and Security Tokens"
+										description="Token development and issuance. Token vesting & life cycle, Token custody techniques, Utility Tokens (gamification). Most token implementations require wallet and distribution platforms (custom builds available)."
+										imgSrc={tokens}
+										product
+									/>
+								</CardContent>
+							</Card>
 						</GridItem>
 					</GridContainer>
 				</div>

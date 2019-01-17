@@ -1,168 +1,354 @@
 import React from "react";
-// nodejs library that concatenates classes
-import classNames from "classnames";
-// nodejs library to set properties for components
 import PropTypes from "prop-types";
-// @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import classNames from "classnames";
+import { withStyles } from "@material-ui/core/styles";
+import Drawer from "@material-ui/core/Drawer";
+import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
+import List from "@material-ui/core/List";
+import Typography from "@material-ui/core/Typography";
+import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
-import Button from "@material-ui/core/Button";
-import Hidden from "@material-ui/core/Hidden";
-import Drawer from "@material-ui/core/Drawer";
-// @material-ui/icons
-import Menu from "@material-ui/icons/Menu";
-// core components
-import headerStyle from "assets/jss/material-kit-react/components/headerStyle.jsx";
+import MenuIcon from "@material-ui/icons/Menu";
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import InboxIcon from "@material-ui/icons/MoveToInbox";
+import MailIcon from "@material-ui/icons/Mail";
+import bushido from "assets/img/bushido/bushido2.png";
+
+const drawerWidth = 240;
+
+const styles = theme => ({
+	root: {
+		display: "flex"
+	},
+	appBar: {
+		transition: theme.transitions.create(["margin", "width"], {
+			easing: theme.transitions.easing.sharp,
+			duration: theme.transitions.duration.leavingScreen
+		}),
+		background: "black",
+		color: 'red'
+	},
+	appBarShift: {
+		width: `calc(100% - ${drawerWidth}px)`,
+		marginLeft: drawerWidth,
+		transition: theme.transitions.create(["margin", "width"], {
+			easing: theme.transitions.easing.easeOut,
+			duration: theme.transitions.duration.enteringScreen
+		})
+	},
+	menuButton: {
+		marginLeft: 12,
+		marginRight: 20
+	},
+	hide: {
+		display: "none"
+	},
+	drawer: {
+		width: drawerWidth,
+		flexShrink: 0
+	},
+	drawerPaper: {
+		width: drawerWidth
+	},
+	drawerHeader: {
+		display: "flex",
+		alignItems: "center",
+		padding: "0 8px",
+		...theme.mixins.toolbar,
+		justifyContent: "flex-end"
+	},
+	content: {
+		flexGrow: 1,
+		padding: theme.spacing.unit * 3,
+		transition: theme.transitions.create("margin", {
+			easing: theme.transitions.easing.sharp,
+			duration: theme.transitions.duration.leavingScreen
+		}),
+		marginLeft: -drawerWidth
+	},
+	contentShift: {
+		transition: theme.transitions.create("margin", {
+			easing: theme.transitions.easing.easeOut,
+			duration: theme.transitions.duration.enteringScreen
+		}),
+		marginLeft: 0
+	}
+});
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      mobileOpen: false
-    };
-    this.handleDrawerToggle = this.handleDrawerToggle.bind(this);
-    this.headerColorChange = this.headerColorChange.bind(this);
-  }
-  handleDrawerToggle() {
-    this.setState({ mobileOpen: !this.state.mobileOpen });
-  }
-  componentDidMount() {
-    if (this.props.changeColorOnScroll) {
-      window.addEventListener("scroll", this.headerColorChange);
-    }
-  }
-  headerColorChange() {
-    const { classes, color, changeColorOnScroll } = this.props;
-    const windowsScrollTop = window.pageYOffset;
-    if (windowsScrollTop > changeColorOnScroll.height) {
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.remove(classes[color]);
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.add(classes[changeColorOnScroll.color]);
-    } else {
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.add(classes[color]);
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.remove(classes[changeColorOnScroll.color]);
-    }
-  }
-  componentWillUnmount() {
-    if (this.props.changeColorOnScroll) {
-      window.removeEventListener("scroll", this.headerColorChange);
-    }
-  }
-  render() {
-    const {
-      classes,
-      color,
-      rightLinks,
-      leftLinks,
-      brand,
-      fixed,
-      absolute
-    } = this.props;
-    const appBarClasses = classNames({
-      [classes.appBar]: true,
-      [classes[color]]: color,
-      [classes.absolute]: absolute,
-      [classes.fixed]: fixed
-    });
-    const brandComponent = <Button className={classes.title}>{brand}</Button>;
-    return (
-      <AppBar className={appBarClasses}>
-        <Toolbar className={classes.container}>
-          {leftLinks !== undefined ? brandComponent : null}
-          <div className={classes.flex}>
-            {leftLinks !== undefined ? (
-              <Hidden smDown implementation="css">
-                {leftLinks}
-              </Hidden>
-            ) : (
-              brandComponent
-            )}
-          </div>
-          <Hidden smDown implementation="css">
-            {rightLinks}
-          </Hidden>
-          <Hidden mdUp>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              onClick={this.handleDrawerToggle}
-            >
-              <Menu />
-            </IconButton>
-          </Hidden>
-        </Toolbar>
-        <Hidden mdUp implementation="css">
-          <Drawer
-            variant="temporary"
-            anchor={"right"}
-            open={this.state.mobileOpen}
-            classes={{
-              paper: classes.drawerPaper
-            }}
-            onClose={this.handleDrawerToggle}
-          >
-            <div className={classes.appResponsive}>
-              {leftLinks}
-              {rightLinks}
-            </div>
-          </Drawer>
-        </Hidden>
-      </AppBar>
-    );
-  }
+	state = {
+		open: false
+	};
+
+	handleDrawerOpen = () => {
+		this.setState({ open: true });
+	};
+
+	handleDrawerClose = () => {
+		this.setState({ open: false });
+	};
+
+	render() {
+		const { classes, theme } = this.props;
+		const { open } = this.state;
+
+		return (
+			<div className={classes.root}>
+				<CssBaseline />
+				<AppBar
+					position="fixed"
+					title={<img src="https://unsplash.it/40/40"/>}
+					className={classNames(classes.appBar, {
+						[classes.appBarShift]: open
+					})}
+				>
+					<Toolbar disableGutters={!open}>
+						<IconButton
+							color="inherit"
+							aria-label="Open drawer"
+							onClick={this.handleDrawerOpen}
+							className={classNames(classes.menuButton, open && classes.hide)}
+						>
+							<MenuIcon />
+						</IconButton>
+						{/* <img src="" alt=""/> */}
+						<img src={bushido}/>
+						{/* <Typography color="inherit" noWrap>
+							Bushido Lab
+						</Typography> */}
+					</Toolbar>
+				</AppBar>
+				<Drawer
+					className={classes.drawer}
+					variant="persistent"
+					anchor="left"
+					open={open}
+					classes={{
+						paper: classes.drawerPaper
+					}}
+				>
+					<div className={classes.drawerHeader}>
+						<IconButton onClick={this.handleDrawerClose}>
+							{theme.direction === "ltr" ? (
+								<ChevronLeftIcon />
+							) : (
+								<ChevronRightIcon />
+							)}
+						</IconButton>
+					</div>
+					<Divider />
+					<List>
+						{["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+							<ListItem button key={text}>
+								<ListItemIcon>
+									{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+								</ListItemIcon>
+								<ListItemText primary={text} />
+							</ListItem>
+						))}
+					</List>
+					<Divider />
+					<List>
+						{["All mail", "Trash", "Spam"].map((text, index) => (
+							<ListItem button key={text}>
+								<ListItemIcon>
+									{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+								</ListItemIcon>
+								<ListItemText primary={text} />
+							</ListItem>
+						))}
+					</List>
+				</Drawer>
+			</div>
+		);
+	}
 }
 
-Header.defaultProp = {
-  color: "white"
-};
-
 Header.propTypes = {
-  classes: PropTypes.object.isRequired,
-  color: PropTypes.oneOf([
-    "primary",
-    "info",
-    "success",
-    "warning",
-    "danger",
-    "transparent",
-    "white",
-    "rose",
-    "dark"
-  ]),
-  rightLinks: PropTypes.node,
-  leftLinks: PropTypes.node,
-  brand: PropTypes.string,
-  fixed: PropTypes.bool,
-  absolute: PropTypes.bool,
-  // this will cause the sidebar to change the color from
-  // this.props.color (see above) to changeColorOnScroll.color
-  // when the window.pageYOffset is heigher or equal to
-  // changeColorOnScroll.height and then when it is smaller than
-  // changeColorOnScroll.height change it back to
-  // this.props.color (see above)
-  changeColorOnScroll: PropTypes.shape({
-    height: PropTypes.number.isRequired,
-    color: PropTypes.oneOf([
-      "primary",
-      "info",
-      "success",
-      "warning",
-      "danger",
-      "transparent",
-      "white",
-      "rose",
-      "dark"
-    ]).isRequired
-  })
+	classes: PropTypes.object.isRequired,
+	theme: PropTypes.object.isRequired
 };
 
-export default withStyles(headerStyle)(Header);
+export default withStyles(styles, { withTheme: true })(Header);
+
+// import React from 'react';
+// import PropTypes from 'prop-types';
+// import classNames from 'classnames';
+// import { withStyles } from '@material-ui/core/styles';
+// import Drawer from '@material-ui/core/Drawer';
+// import AppBar from '@material-ui/core/AppBar';
+// import Toolbar from '@material-ui/core/Toolbar';
+// import List from '@material-ui/core/List';
+// import CssBaseline from '@material-ui/core/CssBaseline';
+// import Typography from '@material-ui/core/Typography';
+// import Divider from '@material-ui/core/Divider';
+// import IconButton from '@material-ui/core/IconButton';
+// import MenuIcon from '@material-ui/icons/Menu';
+// import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+// import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+// import ListItem from '@material-ui/core/ListItem';
+// import ListItemIcon from '@material-ui/core/ListItemIcon';
+// import ListItemText from '@material-ui/core/ListItemText';
+// import InboxIcon from '@material-ui/icons/MoveToInbox';
+// import MailIcon from '@material-ui/icons/Mail';
+
+// const drawerWidth = 240;
+
+// const styles = theme => ({
+//   root: {
+//     display: 'flex',
+//   },
+//   appBar: {
+//     zIndex: theme.zIndex.drawer + 1,
+//     transition: theme.transitions.create(['width', 'margin'], {
+//       easing: theme.transitions.easing.sharp,
+//       duration: theme.transitions.duration.leavingScreen,
+//     }),
+//   },
+//   appBarShift: {
+//     marginLeft: drawerWidth,
+//     width: `calc(100% - ${drawerWidth}px)`,
+//     transition: theme.transitions.create(['width', 'margin'], {
+//       easing: theme.transitions.easing.sharp,
+//       duration: theme.transitions.duration.enteringScreen,
+//     }),
+//   },
+//   menuButton: {
+//     marginLeft: 12,
+//     marginRight: 36,
+//   },
+//   hide: {
+//     display: 'none',
+//   },
+//   drawer: {
+//     width: drawerWidth,
+//     flexShrink: 0,
+//     whiteSpace: 'nowrap',
+//   },
+//   drawerOpen: {
+//     width: drawerWidth,
+//     transition: theme.transitions.create('width', {
+//       easing: theme.transitions.easing.sharp,
+//       duration: theme.transitions.duration.enteringScreen,
+//     }),
+//   },
+//   drawerClose: {
+//     transition: theme.transitions.create('width', {
+//       easing: theme.transitions.easing.sharp,
+//       duration: theme.transitions.duration.leavingScreen,
+//     }),
+//     overflowX: 'hidden',
+//     width: theme.spacing.unit * 7 + 1,
+//     [theme.breakpoints.up('sm')]: {
+//       width: theme.spacing.unit * 9 + 1,
+//     },
+//   },
+//   toolbar: {
+//     display: 'flex',
+//     alignItems: 'center',
+//     justifyContent: 'flex-end',
+//     padding: '0 8px',
+//     ...theme.mixins.toolbar,
+//   },
+//   content: {
+//     flexGrow: 1,
+//     padding: theme.spacing.unit * 3,
+//   },
+// });
+
+// class Header extends React.Component {
+//   state = {
+//     open: false,
+//   };
+
+//   handleDrawerOpen = () => {
+//     this.setState({ open: true });
+//   };
+
+//   handleDrawerClose = () => {
+//     this.setState({ open: false });
+//   };
+
+//   render() {
+//     const { classes, theme } = this.props;
+
+//     return (
+//       <div className={classes.root}>
+//         <CssBaseline />
+//         <AppBar
+//           position="fixed"
+//           className={classNames(classes.appBar, {
+//             [classes.appBarShift]: this.state.open,
+//           })}
+//         >
+//           <Toolbar disableGutters={!this.state.open}>
+//             <IconButton
+//               color="inherit"
+//               aria-label="Open drawer"
+//               onClick={this.handleDrawerOpen}
+//               className={classNames(classes.menuButton, {
+//                 [classes.hide]: this.state.open,
+//               })}
+//             >
+//               <MenuIcon />
+//             </IconButton>
+//             <Typography variant="h6" color="inherit" noWrap>
+//               BUSH1D0 LAB
+//             </Typography>
+//           </Toolbar>
+//         </AppBar>
+//         <Drawer
+//           variant="permanent"
+//           className={classNames(classes.drawer, {
+//             [classes.drawerOpen]: this.state.open,
+//             [classes.drawerClose]: !this.state.open,
+//           })}
+//           classes={{
+//             paper: classNames({
+//               [classes.drawerOpen]: this.state.open,
+//               [classes.drawerClose]: !this.state.open,
+//             }),
+//           }}
+//           open={this.state.open}
+//         >
+//           <div className={classes.toolbar}>
+//             <IconButton onClick={this.handleDrawerClose}>
+//               {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+//             </IconButton>
+//           </div>
+//           <Divider />
+//           <List>
+//             {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+//               <ListItem button key={text}>
+//                 <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+//                 <ListItemText primary={text} />
+//               </ListItem>
+//             ))}
+//           </List>
+//           <Divider />
+//           <List>
+//             {['All mail', 'Trash', 'Spam'].map((text, index) => (
+//               <ListItem button key={text}>
+//                 <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+//                 <ListItemText primary={text} />
+//               </ListItem>
+//             ))}
+//           </List>
+//         </Drawer>
+//       </div>
+//     );
+//   }
+// }
+
+// Header.propTypes = {
+//   classes: PropTypes.object.isRequired,
+//   theme: PropTypes.object.isRequired,
+// };
+
+// export default withStyles(styles, { withTheme: true })(Header);

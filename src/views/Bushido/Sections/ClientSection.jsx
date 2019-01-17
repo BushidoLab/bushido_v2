@@ -11,8 +11,8 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
+// import CardBody from "components/Card/CardBody.jsx";
+// import CardFooter from "components/Card/CardFooter.jsx";
 
 import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx";
 
@@ -47,37 +47,6 @@ class ClientSection extends React.Component {
 									<br />
 									<small className={classes.smallTitle}>Crypto Currency</small>
 								</h4>
-								<CardBody>
-									<p className={classes.description}>
-										You can write here details about one of your team members.
-										You can give more details about what they do. Feel free to
-										add some <a href="#pablo">links</a> for people to be able to
-										follow them outside the site.
-									</p>
-								</CardBody>
-								<CardFooter className={classes.justifyCenter}>
-									<Button
-										justIcon
-										color="transparent"
-										className={classes.margin5}
-									>
-										<i className={classes.socials + " fab fa-twitter"} />
-									</Button>
-									<Button
-										justIcon
-										color="transparent"
-										className={classes.margin5}
-									>
-										<i className={classes.socials + " fab fa-instagram"} />
-									</Button>
-									<Button
-										justIcon
-										color="transparent"
-										className={classes.margin5}
-									>
-										<i className={classes.socials + " fab fa-facebook"} />
-									</Button>
-								</CardFooter>
 							</Card>
 						</GridItem>
 						<GridItem xs={12} sm={12} md={4}>
@@ -92,30 +61,6 @@ class ClientSection extends React.Component {
 										Product Licencing
 									</small>
 								</h4>
-								<CardBody>
-									<p className={classes.description}>
-										You can write here details about one of your team members.
-										You can give more details about what they do. Feel free to
-										add some <a href="#pablo">links</a> for people to be able to
-										follow them outside the site.
-									</p>
-								</CardBody>
-								<CardFooter className={classes.justifyCenter}>
-									<Button
-										justIcon
-										color="transparent"
-										className={classes.margin5}
-									>
-										<i className={classes.socials + " fab fa-twitter"} />
-									</Button>
-									<Button
-										justIcon
-										color="transparent"
-										className={classes.margin5}
-									>
-										<i className={classes.socials + " fab fa-linkedin"} />
-									</Button>
-								</CardFooter>
 							</Card>
 						</GridItem>
 						<GridItem xs={12} sm={12} md={4}>
@@ -130,37 +75,6 @@ class ClientSection extends React.Component {
 										Hardware Chipsets
 									</small>
 								</h4>
-								<CardBody>
-									<p className={classes.description}>
-										You can write here details about one of your team members.
-										You can give more details about what they do. Feel free to
-										add some <a href="#pablo">links</a> for people to be able to
-										follow them outside the site.
-									</p>
-								</CardBody>
-								<CardFooter className={classes.justifyCenter}>
-									<Button
-										justIcon
-										color="transparent"
-										className={classes.margin5}
-									>
-										<i className={classes.socials + " fab fa-twitter"} />
-									</Button>
-									<Button
-										justIcon
-										color="transparent"
-										className={classes.margin5}
-									>
-										<i className={classes.socials + " fab fa-instagram"} />
-									</Button>
-									<Button
-										justIcon
-										color="transparent"
-										className={classes.margin5}
-									>
-										<i className={classes.socials + " fab fa-facebook"} />
-									</Button>
-								</CardFooter>
 							</Card>
 						</GridItem>
 					</GridContainer>

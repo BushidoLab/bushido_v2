@@ -15,6 +15,14 @@ const productStyle = {
 	description: {
 		color: "#999",
 		marginBottom: "30px"
+	},
+	cardPadding: {
+		paddingBottom: '35px',
+	},
+	cardDimensions: {
+		// maxWidth: '345px',
+		width: '100%',
+		minHeight: '390px'
 	}
 };
 export default productStyle;
