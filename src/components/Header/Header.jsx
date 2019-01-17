@@ -146,7 +146,7 @@ class Header extends React.Component {
 					</div>
 					<Divider />
 					<List>
-						{["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+						{["Services", "Cases", "Processes & Tools", "Pricing", "Clients", "Contact"].map((text, index) => (
 							<ListItem button key={text}>
 								<ListItemIcon>
 									{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -157,7 +157,7 @@ class Header extends React.Component {
 					</List>
 					<Divider />
 					<List>
-						{["All mail", "Trash", "Spam"].map((text, index) => (
+						{["Blog", "Github", "Twitter", "Instagram", "Medium", "LinkedIn"].map((text, index) => (
 							<ListItem button key={text}>
 								<ListItemIcon>
 									{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}

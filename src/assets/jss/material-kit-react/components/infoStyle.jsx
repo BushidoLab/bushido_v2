@@ -58,6 +58,12 @@ const infoStyle = {
   },
   iconWrapperVertical: {
     float: "none"
+	},
+	iconWrapperVerticalProduct: {
+    float: "none"
+	},
+	iconWrapperVerticalProcess: {
+    float: "none"
   },
   iconVertical: {
     width: "61px",
@@ -66,8 +72,12 @@ const infoStyle = {
 	iconProduct: {
 		width: "100px",
 		height: "100px",
-	}
-	
+	},
+	iconProcess: {
+		color:'red',
+		width: "80px",
+		height: "80px",
+	},
 };
 
 export default infoStyle;

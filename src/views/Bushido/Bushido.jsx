@@ -34,16 +34,16 @@ class Bushido extends React.Component {
 		return (
 			<div>
 				<Header
-					// color="transparent"
-					// routes={dashboardRoutes}
-					// brand="The Bushido Lab"
-					// rightLinks={<HeaderLinks />}
-					// fixed
-					// changeColorOnScroll={{
-					// 	height: 400,
-					// 	color: "white"
-					// }}
-					// {...rest}
+					color="transparent"
+					routes={dashboardRoutes}
+					brand="The Bushido Lab"
+					rightLinks={<HeaderLinks />}
+					fixed
+					changeColorOnScroll={{
+						height: 400,
+						color: "white"
+					}}
+					{...rest}
 				/>
 				<Parallax filter image={require("assets/img/bg7.png")}>
 					<div className={classes.container}>

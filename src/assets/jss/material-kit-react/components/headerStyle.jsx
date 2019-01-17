@@ -146,7 +146,13 @@ const headerStyle = {
     paddingRight: "0px",
     paddingLeft: "0",
     ...transition
-  }
+	},
+	list: {
+    width: 250,
+  },
+  fullList: {
+    width: 'auto',
+  },
 };
 
 export default headerStyle;

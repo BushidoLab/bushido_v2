@@ -14,12 +14,14 @@ function InfoAreaImage({ ...props }) {
 		[classes.iconWrapper]: true,
 		// [classes[iconColor]]: true,
 		[classes.iconWrapperVertical]: vertical,
-		[classes.iconWrapperVertical]: product
+		[classes.iconWrapperVerticalProduct]: product,
+		[classes.iconWrapperVerticalProcess]: process
 	});
 	const iconClasses = classNames({
 		[classes.icon]: true,
 		[classes.iconVertical]: vertical,
-		[classes.iconProduct]: product
+		[classes.iconProduct]: product,
+		[classes.iconProcess]: process
 	});
 	return (
 		<div className={classes.infoArea}>
@@ -27,7 +29,7 @@ function InfoAreaImage({ ...props }) {
 				<img
 					src={props.imgSrc}
 					alt="img"
-					// height={props.imgHeight}
+					height={props.imgHeight}
 					className={iconClasses}
 				/>
 			</div>
