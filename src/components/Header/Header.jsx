@@ -18,7 +18,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
-import bushido from "assets/img/bushido/bushido2.png";
+import bushido from "assets/img/bushido/bushidolab.svg";
 
 const drawerWidth = 240;
 
@@ -32,7 +32,7 @@ const styles = theme => ({
 			duration: theme.transitions.duration.leavingScreen
 		}),
 		background: "black",
-		color: 'red'
+		color: "red"
 	},
 	appBarShift: {
 		width: `calc(100% - ${drawerWidth}px)`,
@@ -78,6 +78,9 @@ const styles = theme => ({
 			duration: theme.transitions.duration.enteringScreen
 		}),
 		marginLeft: 0
+	},
+	bushidoSVG: {
+		height: theme.typography.pxToRem(20)
 	}
 });
 
@@ -103,7 +106,7 @@ class Header extends React.Component {
 				<CssBaseline />
 				<AppBar
 					position="fixed"
-					title={<img src="https://unsplash.it/40/40"/>}
+					title={<img src="https://unsplash.it/40/40" />}
 					className={classNames(classes.appBar, {
 						[classes.appBarShift]: open
 					})}
@@ -118,10 +121,9 @@ class Header extends React.Component {
 							<MenuIcon />
 						</IconButton>
 						{/* <img src="" alt=""/> */}
-						<img src={bushido}/>
-						{/* <Typography color="inherit" noWrap>
-							Bushido Lab
-						</Typography> */}
+						<Typography color="inherit" noWrap>
+							<img src={bushido} className={classes.bushidoSVG} />
+						</Typography>
 					</Toolbar>
 				</AppBar>
 				<Drawer
