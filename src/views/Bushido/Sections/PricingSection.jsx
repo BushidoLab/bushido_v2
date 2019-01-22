@@ -38,9 +38,9 @@ class PricingSection extends React.Component {
 							</GridItem>
 						</GridContainer>
 						<GridContainer>
-							<GridItem xs={12} sm={12} md={6}>
+							<GridItem xs={12} sm={12} md={6} className={classes.cardPadding}>
 								<Card>
-									<CardContent>
+									<CardContent className={classes.contentHeight}>
 										<InfoAreaPricing
 											title="Start Up"
 											price="20,000"
@@ -63,9 +63,9 @@ class PricingSection extends React.Component {
 									</CardFooter>
 								</Card>
 							</GridItem>
-							<GridItem xs={12} sm={12} md={6}>
+							<GridItem xs={12} sm={12} md={6} className={classes.cardPadding}>
 								<Card>
-									<CardContent>
+									<CardContent className={classes.contentHeight}>
 										<InfoAreaPricing
 											title="Enterprise"
 											price="100,000"

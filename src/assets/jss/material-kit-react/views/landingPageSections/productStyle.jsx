@@ -29,6 +29,20 @@ const productStyle = {
 		height: '30%',
 		justifyContent: 'center',
 		alignItems: 'center'
+	},
+	contentHeight: {
+		"@media (min-width: 576px)": {
+		},
+		"@media (min-width: 768px)": {
+		},
+		"@media (min-width: 992px)": {
+			// height: '32vw'
+		},
+		"@media (min-width: 1200px)": {
+			// height: '28vw'
+		}
 	}
+
 };
+
 export default productStyle;
