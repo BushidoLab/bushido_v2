@@ -19,13 +19,14 @@ import apple_store from "assets/img/app_store.png";
 import google_play from "assets/img/google_play.png";
 import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
 import tech_0x from "assets/img/tech/0x.png";
-import tech_graphql from "assets/img/tech/graphql.png"
-import tech_html5 from "assets/img/tech/html5.png"
-import tech_js from "assets/img/tech/js.png"
-import tech_lightning from "assets/img/tech/lightning.png"
-import tech_react from "assets/img/tech/react.png"
+import tech_graphql from "assets/img/tech/graphql.png";
+import tech_html5 from "assets/img/tech/html5.png";
+import tech_js from "assets/img/tech/js.png";
+import tech_lightning from "assets/img/tech/lightning.png";
+import tech_react from "assets/img/tech/react.png";
+import { Button } from "@material-ui/core";
 
-class PortfolioSection extends React.Component {
+class PortfolioSectionANON extends React.Component {
 	render() {
 		const { classes } = this.props;
 		const settings = {
@@ -39,7 +40,7 @@ class PortfolioSection extends React.Component {
 		return (
 			<div className={classes.section}>
 				<div className={classes.container}>
-					<h2 className={classes.titleMain}>Some of our works</h2>
+					{/* <h2 className={classes.titleMain}>Some of our works</h2> */}
 					<GridContainer>
 						<GridItem xs={12} sm={12} md={6} className={classes.marginAuto}>
 							<Card carousel>
@@ -87,15 +88,20 @@ class PortfolioSection extends React.Component {
 							</Card>
 						</GridItem>
 						<GridItem xs={12} sm={12} md={6} className={classes.marginAuto}>
-							<h2 className={classes.title}>SmartR</h2>
+							<h2
+								className={classes.title}
+								style={{
+									fontFamily: '"Roboto", "Times New Roman", serif',
+									fontStyle: "italic"
+								}}
+							>
+								ANON
+							</h2>
 							<h5 className={classes.description}>
-								A smart graph drawing app.
+								Fork of Bitcoin with implementations of ZK-Snarks and Masternode
+								Staking.
 							</h5>
-							<img
-								className={classes.store_button_google}
-								src={google_play}
-								alt="google"
-							/>
+							<i className={classes.socialIcons + " fab fa-github"} />
 							<img
 								className={classes.store_button_apple}
 								src={apple_store}
@@ -165,4 +171,4 @@ class PortfolioSection extends React.Component {
 	}
 }
 
-export default withStyles(carouselStyle)(PortfolioSection);
+export default withStyles(carouselStyle)(PortfolioSectionANON);

@@ -12,7 +12,7 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import CustomTabs from "components/CustomTabs/CustomTabs.jsx";
 import tabsStyle from "assets/jss/material-kit-react/views/componentsSections/tabsStyle.jsx";
-import PortfolioSection from "./PortfolioSection.jsx";
+import PortfolioSection from "./PortfolioSectionANON.jsx";
 class SectionTabs extends React.Component {
 	render() {
 		const { classes } = this.props;

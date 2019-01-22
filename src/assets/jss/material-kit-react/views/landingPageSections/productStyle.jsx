@@ -23,6 +23,12 @@ const productStyle = {
 		// maxWidth: '345px',
 		width: '100%',
 		minHeight: '390px'
+	},
+	cardFooter: {
+		width: '100%',
+		height: '30%',
+		justifyContent: 'center',
+		alignItems: 'center'
 	}
 };
 export default productStyle;

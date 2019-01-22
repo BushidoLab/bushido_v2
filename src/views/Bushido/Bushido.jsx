@@ -21,11 +21,12 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 import ProductSection from "./Sections/ProductSection.jsx";
 // import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
-import PortfolioSection from "./Sections/PortfolioSection.jsx";
+import PortfolioSection from "./Sections/PortfolioSectionANON.jsx";
 import ProcessesAndToolsSection from "./Sections/ProcessesAndToolsSection.jsx";
 import PricingSection from "./Sections/PricingSection.jsx";
 import ClientSection from "./Sections/ClientSection.jsx";
 import SectionTabs from "./Sections/SectionTabs.jsx";
+
 
 const dashboardRoutes = ["/bushido"];
 
@@ -72,10 +73,18 @@ class Bushido extends React.Component {
 						</GridContainer>
 					</div>
 				</Parallax>
+				{/* <div className={classNames(classes.main, classes.mainRaised)}>
+					<div className={classes.container}>
+						<ProductSection />
+					</div>
+				</div>
+				<div>
+					<SectionTabs />
+				</div> */}
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div className={classes.container}>
 						<ProductSection />
-						<PortfolioSection />
+						{/* <PortfolioSection /> */}
 						<SectionTabs />
 						<ProcessesAndToolsSection />
 						<PricingSection />

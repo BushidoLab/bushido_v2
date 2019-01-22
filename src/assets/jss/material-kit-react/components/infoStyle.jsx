@@ -8,6 +8,7 @@ import {
 	grayColor,
 	title
 } from "assets/jss/material-kit-react.jsx";
+import { red } from "@material-ui/core/colors";
 
 const infoStyle = {
 	infoArea: {
@@ -84,6 +85,19 @@ const infoStyle = {
 	iconProduct: {
 		width: "100px",
 		height: "100px"
+	},
+	descriptionP: {
+		color: grayColor,
+		overflow: "hidden",
+		marginTop: "0px",
+		fontSize: "14px",
+		textAlign: 'left'
+	},
+	price: {
+		color: grayColor,
+		overflow: "hidden",
+		marginTop: "0px",
+		fontSize: "20px"
 	},
 
 };

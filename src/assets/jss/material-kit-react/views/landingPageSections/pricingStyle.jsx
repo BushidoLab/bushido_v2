@@ -1,26 +1,20 @@
-import { container } from "assets/jss/material-kit-react.jsx";
 import { title } from "assets/jss/material-kit-react.jsx";
 
-const tabsStyle = {
-  section: {
-    // background: "#EEEEEE",
-    padding: "70px 0"
+const productStyle = {
+	section: {
+		padding: "70px 0",
+		textAlign: "center"
 	},
 	title: {
 		...title,
 		marginBottom: "1rem",
 		marginTop: "30px",
 		minHeight: "32px",
-		textDecoration: "none",
-		textAlign: "center"
-	},
-  container,
-  textCenter: {
-    textAlign: "center"
+		textDecoration: "none"
 	},
 	description: {
 		color: "#999",
-		textAlign: "center"
+		marginBottom: "30px"
 	},
 	cardPadding: {
 		paddingBottom: '35px',
@@ -31,5 +25,4 @@ const tabsStyle = {
 		minHeight: '390px'
 	}
 };
-
-export default tabsStyle;
+export default productStyle;
