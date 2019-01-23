@@ -4,6 +4,8 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 
+import Typing from "react-typing-animation";
+
 // @material-ui/icons
 
 // core components
@@ -21,12 +23,10 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 import ProductSection from "./Sections/ProductSection.jsx";
 // import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
-import PortfolioSection from "./Sections/PortfolioSectionANON.jsx";
 import ProcessesAndToolsSection from "./Sections/ProcessesAndToolsSection.jsx";
 import PricingSection from "./Sections/PricingSection.jsx";
 import ClientSection from "./Sections/ClientSection.jsx";
 import SectionTabs from "./Sections/SectionTabs.jsx";
-
 
 const dashboardRoutes = ["/bushido"];
 
@@ -51,13 +51,17 @@ class Bushido extends React.Component {
 					<div className={classes.container}>
 						<GridContainer>
 							<GridItem xs={12} sm={12} md={6}>
+								{/* <Typing>
+									<h1 className={classes.title}>Blockchain Simplifed</h1>
+									<Typing.Reset count={1} delay={500} />
+									<h1 className={classes.title}>Blockchain Complicated again LOL</h1>
+								</Typing> */}
 								<h1 className={classes.title}>Blockchain Simplifed</h1>
-								<h4>
-									Every landing page needs a small description after the big
-									bold title, that's why we added this text here. Add here all
-									the information that can make you or your product create the
-									first impression.
-								</h4>
+								<Typing>
+									<h4>
+										Bushido Lab. The Code Dojo. Where sick devving happens.
+									</h4>
+								</Typing>
 								<br />
 								<Button
 									color="danger"

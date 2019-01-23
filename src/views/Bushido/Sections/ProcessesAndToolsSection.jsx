@@ -9,9 +9,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-// import InfoArea from "components/InfoArea/InfoArea.jsx";
 import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
-import icon_travis from "assets/img/SVG/travis-plain.svg";
 import aws from "assets/img/SVG/aws.svg";
 import cplus from "assets/img/SVG/cplus.svg";
 import csharp from "assets/img/SVG/csharp.svg";
@@ -20,22 +18,16 @@ import docker from "assets/img/SVG/docker.svg";
 import express from "assets/img/SVG/express-original.svg";
 import github from "assets/img/SVG/github-original.svg";
 import go from "assets/img/SVG/go-plain.svg";
-import illustrator from "assets/img/SVG/illustrator-plain.svg";
-import jasmine from "assets/img/SVG/jasmine-plain.svg";
+import burrow from "assets/img/SVG/hyperledger_burrow.svg";
+import bitcoin from "assets/img/SVG/bitcoin.svg";
 import javascript from "assets/img/SVG/javascript-plain.svg";
-import linux from "assets/img/SVG/linux-plain.svg";
+import python from "assets/img/SVG/python-original.svg";
 import nginx from "assets/img/SVG/nginx-original.svg";
 import nodejs from "assets/img/SVG/nodejs-plain.svg";
-import npm from "assets/img/SVG/npm-original-wordmark.svg";
-import oracle from "assets/img/SVG/oracle-original.svg";
-import postgresssql from "assets/img/SVG/postgresql-plain.svg";
+import ethereum from "assets/img/SVG/ethereum.svg";
 import react from "assets/img/SVG/react-original.svg";
-import sass from "assets/img/SVG/sass-original.svg";
-import sketch from "assets/img/SVG/sketch-original.svg";
-import slack from "assets/img/SVG/slack-plain.svg";
-import travis from "assets/img/SVG/travis-plain.svg";
-import typescript from "assets/img/SVG/typescript-plain.svg";
-import vim from "assets/img/SVG/vim-plain.svg";
+import solidity from "assets/img/SVG/Solidity_logo.svg";
+import fabric from "assets/img/SVG/hyperledger_fabric.svg";
 
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 
@@ -56,7 +48,7 @@ class ProcessesAndToolsSection extends React.Component {
 					<GridContainer>
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage
-								title="aws"
+								title="Amazon Web Services"
 								imgSrc={aws}
 								process
 							/>
@@ -112,15 +104,15 @@ class ProcessesAndToolsSection extends React.Component {
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage
-								title="Illustrator"
-								imgSrc={illustrator}
+								title="Hyperledger Burrow"
+								imgSrc={burrow}
 								process
 							/>
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage
-								title="Jasmine"
-								imgSrc={jasmine}
+								title="Bitcoin"
+								imgSrc={bitcoin}
 								process
 							/>
 						</GridItem>
@@ -133,8 +125,8 @@ class ProcessesAndToolsSection extends React.Component {
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage
-								title="Linux"
-								imgSrc={linux}
+								title="Python"
+								imgSrc={python}
 								process
 							/>
 						</GridItem>
@@ -154,8 +146,8 @@ class ProcessesAndToolsSection extends React.Component {
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage
-								title="npm"
-								imgSrc={npm}
+								title="Ethereum"
+								imgSrc={ethereum}
 								process
 							/>
 						</GridItem>
@@ -168,15 +160,15 @@ class ProcessesAndToolsSection extends React.Component {
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage
-								title="Travis"
-								imgSrc={travis}
+								title="Hyperledger Fabric"
+								imgSrc={fabric}
 								process
 							/>
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage
-								title="Sketch"
-								imgSrc={sketch}
+								title="Solidity"
+								imgSrc={solidity}
 								process
 							/>
 						</GridItem>

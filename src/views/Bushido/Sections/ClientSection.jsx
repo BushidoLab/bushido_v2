@@ -9,7 +9,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+// import Button from "components/CustomButtons/Button.jsx";
 import Card from "components/Card/Card.jsx";
 
 import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx";
@@ -268,7 +268,7 @@ class ClientSection extends React.Component {
 											/>
 										</GridItem>
 										<h4 className={classes.cardTitle}>
-											CNBC Africa
+											CNBC
 											<br />
 											<small className={classes.smallTitle}>News Media</small>
 										</h4>

@@ -1,11 +1,11 @@
 import React from "react";
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-import Divider from "@material-ui/core/Divider";
+// import Divider from "@material-ui/core/Divider";
 import infoStyle from "assets/jss/material-kit-react/components/infoStyle.jsx";
 
 function InfoAreaPricing({ ...props }) {
