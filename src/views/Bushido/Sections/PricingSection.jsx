@@ -9,9 +9,9 @@ import Enterprise from "@material-ui/icons/LocationCity";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import CustomTabs from "components/CustomTabs/CustomTabs.jsx";
+// import CustomTabs from "components/CustomTabs/CustomTabs.jsx";
 // import tabsStyle from "assets/jss/material-kit-react/views/componentsSections/tabsStyle.jsx";
-import custom_crypto from "assets/img/bushido/custom_crypto.png";
+// import custom_crypto from "assets/img/bushido/custom_crypto.png";
 
 import Card from "@material-ui/core/Card";
 // import CardActionArea from "@material-ui/core/CardActionArea";

@@ -106,7 +106,7 @@ class Header extends React.Component {
 				<CssBaseline />
 				<AppBar
 					position="fixed"
-					title={<img src="https://unsplash.it/40/40" />}
+					title={<img src="https://unsplash.it/40/40" alt="necessary" />}
 					className={classNames(classes.appBar, {
 						[classes.appBarShift]: open
 					})}
@@ -122,7 +122,7 @@ class Header extends React.Component {
 						</IconButton>
 						{/* <img src="" alt=""/> */}
 						<Typography color="inherit" noWrap>
-							<img src={bushido} className={classes.bushidoSVG} />
+							<img src={bushido} className={classes.bushidoSVG} alt="bushido_logo"/>
 						</Typography>
 					</Toolbar>
 				</AppBar>

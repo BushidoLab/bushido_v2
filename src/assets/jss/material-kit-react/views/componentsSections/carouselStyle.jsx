@@ -39,6 +39,12 @@ const carouselStyle = {
 		// width: "100px",
 		height: "28px"
 	},
+	socialIcons:{
+		color: 'black', 
+		fontSize: "1.5rem",
+		paddingRight: "1em"
+
+	}
 };
 
 export default carouselStyle;

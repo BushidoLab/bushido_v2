@@ -5,26 +5,25 @@ import Carousel from "react-slick";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
-import LocationOn from "@material-ui/icons/LocationOn";
+// import LocationOn from "@material-ui/icons/LocationOn";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
 import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
+import image1 from "assets/img/portfolio/vera_deploy.png";
+import image2 from "assets/img/portfolio/vera_reconcile.png";
+import image3 from "assets/img/portfolio/vera_entitlement.png";
 
-import apple_store from "assets/img/app_store.png";
-import google_play from "assets/img/google_play.png";
 import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
-import tech_0x from "assets/img/tech/0x.png";
-import tech_graphql from "assets/img/tech/graphql.png";
-import tech_html5 from "assets/img/tech/html5.png";
-import tech_js from "assets/img/tech/js.png";
-import tech_lightning from "assets/img/tech/lightning.png";
-import tech_react from "assets/img/tech/react.png";
-import { Button } from "@material-ui/core";
+import golang from "assets/img/SVG/go-plain.svg";
+import appolo from "assets/img/SVG/appolo.svg";
+import graphql from "assets/img/SVG/GraphQL.svg";
+
+import github from "assets/img/SVG/github-original.svg";
+import fabric from "assets/img/SVG/hyperledger_fabric.svg";
+import java from "assets/img/SVG/java-plain-wordmark.svg";
+// import { Button } from "@material-ui/core";
 
 class PortfolioSectionLVLBLOX extends React.Component {
 	render() {
@@ -51,12 +50,9 @@ class PortfolioSectionLVLBLOX extends React.Component {
 											alt="First slide"
 											className="slick-image"
 										/>
-										<div className="slick-caption">
-											<h4>
-												<LocationOn className="slick-icons" />
-												Yellowstone National Park, United States
-											</h4>
-										</div>
+										{/* <div className="slick-caption">
+											<h4>Home Page anonfork.io</h4>
+										</div> */}
 									</div>
 									<div>
 										<img
@@ -64,12 +60,9 @@ class PortfolioSectionLVLBLOX extends React.Component {
 											alt="Second slide"
 											className="slick-image"
 										/>
-										<div className="slick-caption">
-											<h4>
-												<LocationOn className="slick-icons" />
-												Somewhere Beyond, United States
-											</h4>
-										</div>
+										{/* <div className="slick-caption">
+											<h4>ANON Block Explorer</h4>
+										</div> */}
 									</div>
 									<div>
 										<img
@@ -77,85 +70,75 @@ class PortfolioSectionLVLBLOX extends React.Component {
 											alt="Third slide"
 											className="slick-image"
 										/>
-										<div className="slick-caption">
-											<h4>
-												<LocationOn className="slick-icons" />
-												Yellowstone National Park, United States
-											</h4>
-										</div>
+										{/* <div className="slick-caption">
+											<h4>ANON Block Explorer</h4>
+										</div> */}
 									</div>
 								</Carousel>
 							</Card>
 						</GridItem>
 						<GridItem xs={12} sm={12} md={6} className={classes.marginAuto}>
-							<h2
-								className={classes.title}
-							>
-								LVL BLOX
-							</h2>
+							<h2 className={classes.title}>Java Useage Tracker</h2>
 							<h5 className={classes.description}>
-								Fork of Bitcoin with implementations of ZK-Snarks and Masternode
-								Staking.
+							Smart asset management.
 							</h5>
 							<i className={classes.socialIcons + " fab fa-github"} />
-							<img
-								className={classes.store_button_apple}
-								src={apple_store}
-								alt="apple store"
-								// TODO fix height scaling
-							/>
+							<i className={classes.socialIcons + " fab fa-twitter"} />
+							<i className={classes.socialIcons + " fab fa-telegram"} />
+							<i className={classes.socialIcons + " fab fa-discord"} />
+							<i className={classes.socialIcons + " fab fa-reddit"} />
+							<i className={classes.socialIcons + " fab fa-youtube"} />
 							<h5 className={classes.description}>
-								SmartR was a great success for us, we were able to create a
-								boostrap website that had loads of charts and sections that any
-								doctor would love to look at for days.
+							A blockchain solution that offers better tracking and audit
+								services for companies utilizing software licensing. In our
+								proof of concept development, we built out a Hyperledger Fabric
+								implementation of the Oracle Java license usage tracker complete
+								with MSP(member service provider) for abstraction of membership
+								operation architecture for certificate issuance and
+								authentication.
 							</h5>
+							<h3 className={classes.title}>Tech Utilized: </h3>
 							<GridContainer>
 								<GridItem xs={4} sm={4} md={2}>
 									<InfoAreaImage
 										// title="0x Protocol"
-										imgSrc={tech_0x}
+										imgSrc={appolo}
 										portfolio
-										// imgHeight="50px"
 									/>
 								</GridItem>
 								<GridItem xs={4} sm={4} md={2}>
 									<InfoAreaImage
 										// title="AWS"
-										imgSrc={tech_react}
+										imgSrc={java}
 										portfolio
-										// imgHeight="50px"
 									/>
 								</GridItem>
 								<GridItem xs={4} sm={4} md={2}>
 									<InfoAreaImage
 										// title="GraphQL"
-										imgSrc={tech_graphql}
+										imgSrc={golang}
 										portfolio
-										// imgHeight="50px"
 									/>
 								</GridItem>
 								<GridItem xs={4} sm={4} md={2}>
 									<InfoAreaImage
 										// title="HTML5"
-										imgSrc={tech_html5}
+										imgSrc={graphql}
 										portfolio
-										// imgHeight="50px"
 									/>
 								</GridItem>
 								<GridItem xs={4} sm={4} md={2}>
 									<InfoAreaImage
 										// title="Javascript"
-										imgSrc={tech_js}
+										imgSrc={github}
 										portfolio
-										// imgHeight="50px"
 									/>
 								</GridItem>
 								<GridItem xs={4} sm={4} md={2}>
 									<InfoAreaImage
 										// title="Lightning"
-										imgSrc={tech_lightning}
+										imgSrc={fabric}
 										portfolio
-										// imgHeight="50px"
 									/>
 								</GridItem>
 							</GridContainer>

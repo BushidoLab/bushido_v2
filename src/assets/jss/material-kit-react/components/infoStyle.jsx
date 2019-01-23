@@ -8,7 +8,7 @@ import {
 	grayColor,
 	title
 } from "assets/jss/material-kit-react.jsx";
-import { red } from "@material-ui/core/colors";
+// import { red } from "@material-ui/core/colors";
 
 const infoStyle = {
 	infoArea: {

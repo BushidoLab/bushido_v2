@@ -1,60 +1,85 @@
 import React from "react";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
+import SwipeableViews from "react-swipeable-views";
+import AppBar from "@material-ui/core/AppBar";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import Typography from "@material-ui/core/Typography";
 
-// @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
-
-// @material-ui/icons
-import Face from "@material-ui/icons/Face";
-import Chat from "@material-ui/icons/Chat";
-import Build from "@material-ui/icons/Build";
-// core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import CustomTabs from "components/CustomTabs/CustomTabs.jsx";
-import tabsStyle from "assets/jss/material-kit-react/views/componentsSections/tabsStyle.jsx";
 import PortfolioSectionANON from "./PortfolioSectionANON.jsx";
 import PortfolioSectionTUNE from "./PortfolioSectionTUNE.jsx";
 import PortfolioSectionLVLBLOX from "./PortfolioSectionLVLBLOX.jsx";
+
+function TabContainer({ children, dir }) {
+	return (
+		<Typography component="div" dir={dir} style={{ padding: 8 * 3 }}>
+			{children}
+		</Typography>
+	);
+}
+
+TabContainer.propTypes = {
+	children: PropTypes.node.isRequired,
+	dir: PropTypes.string.isRequired
+};
+
+const styles = theme => ({
+	root: {
+		backgroundColor: theme.palette.background.paper,
+		// width: 500
+	}
+});
+
 class SectionTabs extends React.Component {
+	state = {
+		value: 0
+	};
+
+	handleChange = (event, value) => {
+		this.setState({ value });
+	};
+
+	handleChangeIndex = index => {
+		this.setState({ value: index });
+	};
+
 	render() {
-		const { classes } = this.props;
+		const { classes, theme } = this.props;
+
 		return (
-			<div className={classes.section}>
-				<div className={classes.container}>
-					<div id="nav-tabs">
-						<h3>Navigation Tabs</h3>
-						<GridContainer>
-							<GridItem xs={12} sm={12} md={12}>
-								<h3>
-									<small>Tabs with Icons on Card</small>
-								</h3>
-								<CustomTabs
-									headerColor="danger"
-									tabs={[
-										{
-											tabName: "ANON",
-											tabIcon: Face,
-											tabContent: <PortfolioSectionANON />
-										},
-										{
-											tabName: "TUNE",
-											tabIcon: Chat,
-											tabContent: <PortfolioSectionTUNE />
-										},
-										{
-											tabName: "LVL BLOX",
-											tabIcon: Build,
-											tabContent: <PortfolioSectionLVLBLOX />
-										}
-									]}
-								/>
-							</GridItem>
-						</GridContainer>
-					</div>
-				</div>
+			<div className={classes.root}>
+				<AppBar position="center" style={{ background: 'transparent', boxShadow: 'none'}}>
+					<Tabs
+						value={this.state.value}
+						onChange={this.handleChange}
+						indicatorColor="primary"
+						textColor="primary"
+						variant="standard"
+						centered="true"
+					>
+						<Tab label="ANON" />
+						<Tab label="Tune" />
+						<Tab label="LEVEL BLOX" />
+					</Tabs>
+				</AppBar>
+				<SwipeableViews
+					axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+					index={this.state.value}
+					onChangeIndex={this.handleChangeIndex}
+				>
+					<PortfolioSectionANON />
+					<PortfolioSectionTUNE />
+					<PortfolioSectionLVLBLOX />
+				</SwipeableViews>
 			</div>
 		);
 	}
 }
 
-export default withStyles(tabsStyle)(SectionTabs);
+SectionTabs.propTypes = {
+	classes: PropTypes.object.isRequired,
+	theme: PropTypes.object.isRequired
+};
+
+export default withStyles(styles, { withTheme: true })(SectionTabs);
