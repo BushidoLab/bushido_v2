@@ -31,7 +31,7 @@ const styles = theme => ({
 	}
 });
 
-class SectionTabs extends React.Component {
+class PortfolioSectionTabs extends React.Component {
 	state = {
 		value: 0
 	};
@@ -77,9 +77,9 @@ class SectionTabs extends React.Component {
 	}
 }
 
-SectionTabs.propTypes = {
+PortfolioSectionTabs.propTypes = {
 	classes: PropTypes.object.isRequired,
 	theme: PropTypes.object.isRequired
 };
 
-export default withStyles(styles, { withTheme: true })(SectionTabs);
+export default withStyles(styles, { withTheme: true })(PortfolioSectionTabs);
