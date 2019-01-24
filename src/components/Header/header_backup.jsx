@@ -16,6 +16,7 @@ import Menu from "@material-ui/icons/Menu";
 // core components
 import headerStyle from "assets/jss/material-kit-react/components/headerStyle.jsx";
 
+
 class Header extends React.Component {
 	constructor(props) {
 		super(props);

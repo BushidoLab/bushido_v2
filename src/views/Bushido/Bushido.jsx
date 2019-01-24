@@ -27,6 +27,7 @@ import ProcessesAndToolsSection from "./Sections/ProcessesAndToolsSection.jsx";
 import PricingSection from "./Sections/PricingSection.jsx";
 import ClientSection from "./Sections/ClientSection.jsx";
 import SectionTabs from "./Sections/SectionTabs.jsx";
+import bushido from "assets/img/bushido/bushidolab.svg";
 
 const dashboardRoutes = ["/bushido"];
 
@@ -37,14 +38,14 @@ class Bushido extends React.Component {
 			<div>
 				<Header
 					color="transparent"
-					routes={dashboardRoutes}
-					brand="The Bushido Lab"
-					rightLinks={<HeaderLinks />}
+					// routes={dashboardRoutes}
+					// brand={	<img src={bushido} className={classes.bushidoSVG} alt="bushido_logo"/>}
+					// rightLinks={<HeaderLinks />}
 					fixed
-					changeColorOnScroll={{
-						height: 400,
-						color: "white"
-					}}
+					// changeColorOnScroll={{
+					// 	height: 400,
+					// 	color: "black"
+					// }}
 					{...rest}
 				/>
 				<Parallax filter image={require("assets/img/bg7.png")}>
@@ -56,7 +57,8 @@ class Bushido extends React.Component {
 									<Typing.Reset count={1} delay={500} />
 									<h1 className={classes.title}>Blockchain Complicated again LOL</h1>
 								</Typing> */}
-								<h1 className={classes.title}>Blockchain Simplifed</h1>
+								<h1 className={classes.title}>Blockchain Development.</h1>
+								<h1 className={classes.title}>Simplified.</h1>
 								<Typing>
 									<h4>
 										Bushido Lab. The Code Dojo. Where sick devving happens.

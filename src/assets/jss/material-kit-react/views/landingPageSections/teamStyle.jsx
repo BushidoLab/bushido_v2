@@ -42,7 +42,23 @@ const teamStyle = {
   },
   margin5: {
     margin: "5px"
-  }
+	},
+	imgCardCentered: {
+		align: "center",
+		height: "50px",
+		"@media (min-width: 576px)": {
+			height: "50px"
+		},
+		"@media (min-width: 768px)": {
+			height: "50px"
+		},
+		"@media (min-width: 992px)": {
+			height: "100px"
+		},
+		"@media (min-width: 1200px)": {
+			height: "100px"
+		}
+	}
 };
 
 export default teamStyle;

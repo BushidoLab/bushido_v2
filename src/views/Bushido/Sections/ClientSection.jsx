@@ -45,7 +45,7 @@ class ClientSection extends React.Component {
 					<h2 className={classes.title}>Organizations we've worked with</h2>
 					<div>
 						<GridContainer>
-							<GridItem xs={12} sm={12} md={4}>
+							<GridItem xs={6} sm={4} md={4}>
 								<Card plain>
 									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 										<img src={client_anon} alt="..." className={imageClasses} />
@@ -59,7 +59,7 @@ class ClientSection extends React.Component {
 									</h4>
 								</Card>
 							</GridItem>
-							<GridItem xs={12} sm={12} md={4}>
+							<GridItem xs={6} sm={4} md={4}>
 								<Card plain>
 									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 										<img
@@ -77,7 +77,7 @@ class ClientSection extends React.Component {
 									</h4>
 								</Card>
 							</GridItem>
-							<GridItem xs={12} sm={12} md={4}>
+							<GridItem xs={6} sm={4} md={4}>
 								<Card plain>
 									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 										<img src={client_ibm} alt="..." className={imageClasses} />
@@ -91,7 +91,7 @@ class ClientSection extends React.Component {
 									</h4>
 								</Card>
 							</GridItem>
-							<GridItem xs={12} sm={12} md={4}>
+							<GridItem xs={6} sm={4} md={4}>
 								<Card plain>
 									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 										<img
@@ -109,7 +109,7 @@ class ClientSection extends React.Component {
 									</h4>
 								</Card>
 							</GridItem>
-							<GridItem xs={12} sm={12} md={4}>
+							<GridItem xs={6} sm={4} md={4}>
 								<Card plain>
 									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 										<img src={client_mdc} alt="..." className={imageClasses} />
@@ -123,7 +123,7 @@ class ClientSection extends React.Component {
 									</h4>
 								</Card>
 							</GridItem>
-							<GridItem xs={12} sm={12} md={4}>
+							<GridItem xs={6} sm={4} md={4}>
 								<Card plain>
 									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 										<img src={client_ic} alt="..." className={imageClasses} />
@@ -135,7 +135,7 @@ class ClientSection extends React.Component {
 									</h4>
 								</Card>
 							</GridItem>
-							<GridItem xs={12} sm={12} md={4}>
+							<GridItem xs={6} sm={4} md={4}>
 								<Card plain>
 									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 										<img
@@ -151,7 +151,7 @@ class ClientSection extends React.Component {
 									</h4>
 								</Card>
 							</GridItem>
-							<GridItem xs={12} sm={12} md={4}>
+							<GridItem xs={6} sm={4} md={4}>
 								<Card plain>
 									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 										<img
@@ -167,7 +167,7 @@ class ClientSection extends React.Component {
 									</h4>
 								</Card>
 							</GridItem>
-							<GridItem xs={12} sm={12} md={4}>
+							<GridItem xs={6} sm={4} md={4}>
 								<Card plain>
 									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 										<img src={client_tune} alt="..." className={imageClasses} />
@@ -181,7 +181,7 @@ class ClientSection extends React.Component {
 									</h4>
 								</Card>
 							</GridItem>
-							<GridItem xs={12} sm={12} md={4}>
+							<GridItem xs={6} sm={4} md={4}>
 								<Card plain>
 									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 										<img
@@ -207,7 +207,7 @@ class ClientSection extends React.Component {
 						</h2>
 						<div>
 							<GridContainer>
-								<GridItem xs={12} sm={12} md={4}>
+								<GridItem xs={6} sm={4} md={4}>
 									<Card plain>
 										<GridItem
 											xs={12}
@@ -230,7 +230,7 @@ class ClientSection extends React.Component {
 										</h4>
 									</Card>
 								</GridItem>
-								<GridItem xs={12} sm={12} md={4}>
+								<GridItem xs={6} sm={4} md={4}>
 									<Card plain>
 										<GridItem
 											xs={12}
@@ -253,7 +253,7 @@ class ClientSection extends React.Component {
 										</h4>
 									</Card>
 								</GridItem>
-								<GridItem xs={12} sm={12} md={4}>
+								<GridItem xs={6} sm={4} md={4}>
 									<Card plain>
 										<GridItem
 											xs={12}
@@ -274,7 +274,7 @@ class ClientSection extends React.Component {
 										</h4>
 									</Card>
 								</GridItem>
-								<GridItem xs={12} sm={12} md={4}>
+								<GridItem xs={6} sm={4} md={4}>
 									<Card plain>
 										<GridItem
 											xs={12}
@@ -295,7 +295,7 @@ class ClientSection extends React.Component {
 										</h4>
 									</Card>
 								</GridItem>
-								<GridItem xs={12} sm={12} md={4}>
+								<GridItem xs={6} sm={4} md={4}>
 									<Card plain>
 										<GridItem
 											xs={12}
@@ -316,7 +316,7 @@ class ClientSection extends React.Component {
 										</h4>
 									</Card>
 								</GridItem>
-								<GridItem xs={12} sm={12} md={4}>
+								<GridItem xs={6} sm={4} md={4}>
 									<Card plain>
 										<GridItem
 											xs={12}
@@ -337,7 +337,7 @@ class ClientSection extends React.Component {
 										</h4>
 									</Card>
 								</GridItem>
-								<GridItem xs={12} sm={12} md={4}>
+								<GridItem xs={6} sm={4} md={4}>
 									<Card plain>
 										<GridItem
 											xs={12}
