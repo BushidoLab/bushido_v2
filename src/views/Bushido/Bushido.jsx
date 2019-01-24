@@ -24,9 +24,10 @@ import ProductSection from "./Sections/ProductSection.jsx";
 // import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 import ProcessesAndToolsSection from "./Sections/ProcessesAndToolsSection.jsx";
-import PricingSection from "./Sections/PricingSection.jsx";
+import PricingSection from "./Sections/PricingSectionProduct.jsx";
 import ClientSection from "./Sections/ClientSection.jsx";
-import SectionTabs from "./Sections/SectionTabs.jsx";
+import PortfolioSectionTabs from "./Sections/PortfolioSectionTabs.jsx";
+import PricingSectionTabs from "./Sections/PricingSectionTabs.jsx";
 import bushido from "assets/img/bushido/bushidolab.svg";
 
 const dashboardRoutes = ["/bushido"];
@@ -57,11 +58,10 @@ class Bushido extends React.Component {
 									<Typing.Reset count={1} delay={500} />
 									<h1 className={classes.title}>Blockchain Complicated again LOL</h1>
 								</Typing> */}
-								<h1 className={classes.title}>Blockchain Development.</h1>
-								<h1 className={classes.title}>Simplified.</h1>
+								<h1 className={classes.title}>Blockchain Development. Simplified</h1>
 								<Typing>
 									<h4>
-										Bushido Lab. The Code Dojo. Where sick devving happens.
+										Bushido Lab. The Code Dojo.
 									</h4>
 								</Typing>
 								<br />
@@ -85,15 +85,15 @@ class Bushido extends React.Component {
 					</div>
 				</div>
 				<div>
-					<SectionTabs />
+					<PortfolioSectionTabs />
 				</div> */}
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div className={classes.container}>
 						<ProductSection />
 						{/* <PortfolioSection /> */}
-						<SectionTabs />
+						<PortfolioSectionTabs />
 						<ProcessesAndToolsSection />
-						<PricingSection />
+						<PricingSectionTabs />
 						<ClientSection />
 						{/* <TeamSection /> */}
 						<WorkSection />

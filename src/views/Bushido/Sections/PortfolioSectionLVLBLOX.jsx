@@ -78,7 +78,7 @@ class PortfolioSectionLVLBLOX extends React.Component {
 							</Card>
 						</GridItem>
 						<GridItem xs={12} sm={12} md={6} className={classes.marginAuto}>
-							<h2 className={classes.title}>Java Useage Tracker</h2>
+							<h2 className={classes.title}>Software Asset Management Blockchain</h2>
 							<h5 className={classes.description}>
 							Smart asset management.
 							</h5>

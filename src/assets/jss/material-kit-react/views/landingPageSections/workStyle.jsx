@@ -17,7 +17,10 @@ const workStyle = {
     textAlign: "center"
   },
   textCenter: {
-    textAlign: "center"
+		width: "100%",
+		textAlign: "center",
+		justifyContent: 'center',
+		alignItems: 'center',
   },
   textArea: {
     marginRight: "15px",
