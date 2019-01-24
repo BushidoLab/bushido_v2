@@ -58,11 +58,10 @@ class Bushido extends React.Component {
 									<Typing.Reset count={1} delay={500} />
 									<h1 className={classes.title}>Blockchain Complicated again LOL</h1>
 								</Typing> */}
-								<h1 className={classes.title}>Blockchain Development.</h1>
-								<h1 className={classes.title}>Simplified.</h1>
+								<h1 className={classes.title}>Blockchain Development. Simplified</h1>
 								<Typing>
 									<h4>
-										Bushido Lab. The Code Dojo. Where sick devving happens.
+										Bushido Lab. The Code Dojo.
 									</h4>
 								</Typing>
 								<br />

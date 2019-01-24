@@ -6,7 +6,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
-
+import { title } from "assets/jss/material-kit-react.jsx";
 import PortfolioSectionANON from "./PortfolioSectionANON.jsx";
 import PortfolioSectionTUNE from "./PortfolioSectionTUNE.jsx";
 import PortfolioSectionLVLBLOX from "./PortfolioSectionLVLBLOX.jsx";
@@ -26,8 +26,21 @@ TabContainer.propTypes = {
 
 const styles = theme => ({
 	root: {
-		backgroundColor: theme.palette.background.paper,
+		backgroundColor: theme.palette.background.paper
 		// width: 500
+	},
+	title: {
+		...title,
+		textAlign: "center",
+		marginBottom: "1rem",
+		marginTop: "30px",
+		minHeight: "32px",
+		textDecoration: "none"
+	},
+	description: {
+		textAlign: "center",
+		color: "#999",
+		marginBottom: "30px"
 	}
 });
 
@@ -49,7 +62,12 @@ class PortfolioSectionTabs extends React.Component {
 
 		return (
 			<div className={classes.root}>
-				<AppBar position="center" style={{ background: 'transparent', boxShadow: 'none'}}>
+				<h2 className={classes.title}>Portfolio</h2>
+				<h5 className={classes.description}>Just a few of our projects</h5>
+				<AppBar
+					position="center"
+					style={{ background: "transparent", boxShadow: "none" }}
+				>
 					<Tabs
 						value={this.state.value}
 						onChange={this.handleChange}
