@@ -24,19 +24,13 @@ import Divider from "@material-ui/core/Divider";
 import InfoAreaPricing from "components/InfoAreaPricing/InfoAreaPricing.jsx";
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 
-class PricingSection extends React.Component {
+class PricingSectionProduct extends React.Component {
 	render() {
 		const { classes } = this.props;
 		return (
 			<div className={classes.section}>
 				<div className={classes.container}>
 					<div id="nav-tabs">
-						<GridContainer justify="center">
-							<GridItem xs={12} sm={12} md={8}>
-								<h2 className={classes.title}>Development Pricing Plans</h2>
-								<h5 className={classes.description}>Pricing is as follows:</h5>
-							</GridItem>
-						</GridContainer>
 						<GridContainer>
 							<GridItem xs={12} sm={12} md={6} className={classes.cardPadding}>
 								<Card>
@@ -49,7 +43,7 @@ class PricingSection extends React.Component {
 											descriptionP3="Priority maintenance. We provide the same engineers who worked on your product in the firstplace"
 											descriptionP4="Length: 2 - 4 months"
 											descriptionP5="Minimum Viable Product"
-											descriptionP6="Landing Page. SEO ready (on-site optimisation)"
+											descriptionP6="Landing Page. SEO ready (on-site optimisation). Deployed on our personal servers."
 											icon={Startup}
 											iconColor="danger"
 											vertical
@@ -96,4 +90,4 @@ class PricingSection extends React.Component {
 	}
 }
 
-export default withStyles(productStyle)(PricingSection);
+export default withStyles(productStyle)(PricingSectionProduct);

@@ -24,9 +24,10 @@ import ProductSection from "./Sections/ProductSection.jsx";
 // import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 import ProcessesAndToolsSection from "./Sections/ProcessesAndToolsSection.jsx";
-import PricingSection from "./Sections/PricingSection.jsx";
+import PricingSection from "./Sections/PricingSectionProduct.jsx";
 import ClientSection from "./Sections/ClientSection.jsx";
 import PortfolioSectionTabs from "./Sections/PortfolioSectionTabs.jsx";
+import PricingSectionTabs from "./Sections/PricingSectionTabs.jsx";
 import bushido from "assets/img/bushido/bushidolab.svg";
 
 const dashboardRoutes = ["/bushido"];
@@ -93,7 +94,7 @@ class Bushido extends React.Component {
 						{/* <PortfolioSection /> */}
 						<PortfolioSectionTabs />
 						<ProcessesAndToolsSection />
-						<PricingSection />
+						<PricingSectionTabs />
 						<ClientSection />
 						{/* <TeamSection /> */}
 						<WorkSection />
