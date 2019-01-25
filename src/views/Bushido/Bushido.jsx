@@ -4,7 +4,7 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 
-import Typing from "react-typing-animation";
+import Typing, { Backspace, Delay, Reset, Speed } from "react-typing-animation";
 
 // @material-ui/icons
 
@@ -53,17 +53,20 @@ class Bushido extends React.Component {
 					<div className={classes.container}>
 						<GridContainer>
 							<GridItem xs={12} sm={12} md={6}>
+								<Typing speed={10} startDelay={2000}>
+									<h1 className={classes.title}>
+										Blockchain <br />
+										Development. <Delay ms={1000} />
+										<br />
+										Simplifed.
+									</h1>
+								</Typing>
+								{/* <h1 className={classes.title}>Blockchain Development. Simplified</h1> */}
 								{/* <Typing>
-									<h1 className={classes.title}>Blockchain Simplifed</h1>
-									<Typing.Reset count={1} delay={500} />
-									<h1 className={classes.title}>Blockchain Complicated again LOL</h1>
-								</Typing> */}
-								<h1 className={classes.title}>Blockchain Development. Simplified</h1>
-								<Typing>
 									<h4>
 										Bushido Lab. The Code Dojo.
 									</h4>
-								</Typing>
+								</Typing> */}
 								<br />
 								<Button
 									color="danger"
