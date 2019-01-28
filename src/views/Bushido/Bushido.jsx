@@ -49,24 +49,11 @@ class Bushido extends React.Component {
 					// }}
 					{...rest}
 				/>
-				<Parallax filter image={require("assets/img/bg7.png")}>
+				<Parallax filter image={require("assets/img/land.jpg")}>
 					<div className={classes.container}>
 						<GridContainer>
-							<GridItem xs={12} sm={12} md={6}>
-								<Typing speed={10} startDelay={2000}>
-									<h1 className={classes.title}>
-										Blockchain <br />
-										Development. <Delay ms={1000} />
-										<br />
-										Simplifed.
-									</h1>
-								</Typing>
-								{/* <h1 className={classes.title}>Blockchain Development. Simplified</h1> */}
-								{/* <Typing>
-									<h4>
-										Bushido Lab. The Code Dojo.
-									</h4>
-								</Typing> */}
+							<GridItem xs={12} sm={12} md={8}>
+								<h1 className={classes.title}>Blockchain <br/>Development. Simplified.</h1>
 								<br />
 								<Button
 									color="danger"
@@ -99,7 +86,7 @@ class Bushido extends React.Component {
 						<PricingSectionTabs />
 						<ClientSection />
 						{/* <TeamSection /> */}
-						<WorkSection />
+						{/* <WorkSection /> */}
 					</div>
 				</div>
 				<Footer />

@@ -71,9 +71,13 @@ class PortfolioSectionTabs extends React.Component {
 					<Tabs
 						value={this.state.value}
 						onChange={this.handleChange}
-						indicatorColor="primary"
-						textColor="primary"
-						variant="standard"
+						textColor="#000"
+						TabIndicatorProps={{
+							style: {
+								backgroundColor: "#EE272B"
+							}
+						}}
+						variant="fullWidth"
 						centered="true"
 					>
 						<Tab label="ANON" />

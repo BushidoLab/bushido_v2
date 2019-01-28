@@ -38,12 +38,10 @@ class PricingSectionProduct extends React.Component {
 										<InfoAreaPricing
 											title="Executive Training"
 											price="4,000"
-											descriptionP1="Full support over phone and email."
-											descriptionP2="Access to shared recources."
-											descriptionP3="In office training for small teams."
-											descriptionP4="Length: 2 - 4 months."
-											descriptionP5="Certification from Bushido."
-											descriptionP6="Avaliable 2019."
+											descriptionP1="Includes in-person or virtual training on Blockchain Basics."
+											descriptionP2="Includes workbook and powerpoint presentation."
+											descriptionP3="2-10 hours of training (depending on business needs)."
+											descriptionP4="Training is custom tailored to each executive/team needs and business."
 											icon={Startup}
 											iconColor="danger"
 											vertical
@@ -63,12 +61,10 @@ class PricingSectionProduct extends React.Component {
 										<InfoAreaPricing
 											title="Technical Planning"
 											price="10,000"
-											descriptionP1="Full support over phone and email."
-											descriptionP2="Detailed use cases and producty lifecycles."
-											descriptionP3="On site development."
-											descriptionP4="Team members can relocate temporarily on-demand."
-											descriptionP5="Length: 2 months+"
-											descriptionP6="White papers, Token Design, Concensus."
+											descriptionP1="Includes full technical roadmap."
+											descriptionP2="Includes technical stack specifics"
+											descriptionP3="Includes application and platform architecture."
+											descriptionP4="Full Agile / Sprint schedule for every product delivery"
 											icon={Enterprise}
 											iconColor="danger"
 											vertical

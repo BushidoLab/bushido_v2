@@ -27,7 +27,8 @@ function Footer({ ...props }) {
               <a
                 href="/"
                 className={classes.block}
-                target="_blank"
+								target="_blank"
+								color="danger"
               >
                 Bushido Lab
               </a>

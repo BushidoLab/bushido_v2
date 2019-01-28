@@ -38,11 +38,11 @@ class PricingSectionProduct extends React.Component {
 										<InfoAreaPricing
 											title="Start Up"
 											price="20,000"
-											descriptionP1="Includes full stack implementation with deployment to a hosting platform"
-											descriptionP2="Use of our internal libraries and components"
-											descriptionP3="Priority maintenance. We provide the same engineers who worked on your product in the firstplace"
-											descriptionP4="Length: 2 - 4 months"
-											descriptionP5="Minimum Viable Product"
+											descriptionP1="Includes full stack implementation with deployment to a hosting platform."
+											descriptionP2="Maintenance for upto 1-year included."
+											descriptionP3="Length: 2 - 6 months."
+											descriptionP4="Minimum Viable Product."
+											descriptionP5="Collaboration and communication with in-house tech (if any)."
 											descriptionP6="Landing Page. SEO ready (on-site optimisation). Deployed on our personal servers."
 											icon={Startup}
 											iconColor="danger"
@@ -62,13 +62,12 @@ class PricingSectionProduct extends React.Component {
 									<CardContent className={classes.contentHeight}>
 										<InfoAreaPricing
 											title="Enterprise"
-											price="100,000"
-											descriptionP1="Includes full stack enterprise infrastructure targeting high-load case."
-											descriptionP2="Use of our internal libraries for every enterprise business product."
-											descriptionP3="Full-stack devoted team that works exclusively on your project."
-											descriptionP4="Team members can relocate temporarily on-demand."
+											price="80,000"
+											descriptionP1="Includes full stack enterprise infrastructure architecture."
+											descriptionP2="Developers and project management that work on your project exclusively."
+											descriptionP3="Collaboration and communication with in-house tech."
+											descriptionP4="Full agile sprint schedule"
 											descriptionP5="Length: 6 months+"
-											descriptionP6="Fully tested, bug free and functionality rich product"
 											icon={Enterprise}
 											iconColor="danger"
 											vertical

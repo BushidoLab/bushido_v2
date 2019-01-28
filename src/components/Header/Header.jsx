@@ -19,12 +19,12 @@ import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
 import bushido from "assets/img/bushido/bushidolab.svg";
-
+import Button from "@material-ui/core/Button";
 const drawerWidth = 240;
 
 const styles = theme => ({
 	root: {
-		display: "flex"
+		display: "flex",
 	},
 	appBar: {
 		transition: theme.transitions.create(["margin", "width"], {
@@ -32,7 +32,7 @@ const styles = theme => ({
 			duration: theme.transitions.duration.leavingScreen
 		}),
 		background: "black",
-		color: "red"
+		color: "#EE272B"
 	},
 	appBarShift: {
 		width: `calc(100% - ${drawerWidth}px)`,
@@ -80,7 +80,7 @@ const styles = theme => ({
 		marginLeft: 0
 	},
 	bushidoSVG: {
-		height: theme.typography.pxToRem(20)
+		height: theme.typography.pxToRem(22)
 	}
 });
 
@@ -120,10 +120,26 @@ class Header extends React.Component {
 						>
 							<MenuIcon />
 						</IconButton>
-						{/* <img src="" alt=""/> */}
 						<Typography color="inherit" noWrap>
-							<img src={bushido} className={classes.bushidoSVG} alt="bushido_logo"/>
+							<a>
+								<img
+									src={bushido}
+									className={classes.bushidoSVG}
+									alt="bushido_logo"
+									href="/"
+								/>
+							</a>
 						</Typography>
+						{/* <Typography classes='alignRight'>
+							<Button
+								color="primary"
+								size="lg"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Get a Quote
+							</Button>
+						</Typography> */}
 					</Toolbar>
 				</AppBar>
 				<Drawer
@@ -146,7 +162,14 @@ class Header extends React.Component {
 					</div>
 					<Divider />
 					<List>
-						{["Services", "Cases", "Processes & Tools", "Pricing", "Clients", "Contact"].map((text, index) => (
+						{[
+							"Services",
+							"Cases",
+							"Processes & Tools",
+							"Pricing",
+							"Clients",
+							"Contact"
+						].map((text, index) => (
 							<ListItem button key={text}>
 								<ListItemIcon>
 									{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -157,7 +180,14 @@ class Header extends React.Component {
 					</List>
 					<Divider />
 					<List>
-						{["Blog", "Github", "Twitter", "Instagram", "Medium", "LinkedIn"].map((text, index) => (
+						{[
+							"Blog",
+							"Github",
+							"Twitter",
+							"Instagram",
+							"Medium",
+							"LinkedIn"
+						].map((text, index) => (
 							<ListItem button key={text}>
 								<ListItemIcon>
 									{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}

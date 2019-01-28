@@ -83,12 +83,11 @@ class PortfolioSectionTUNE extends React.Component {
 							<h5 className={classes.description}>
 								Music Collaboration Democratized and Incentivized
 							</h5>
-							<i className={classes.socialIcons + " fab fa-github"} />
-							<i className={classes.socialIcons + " fab fa-twitter"} />
-							<i className={classes.socialIcons + " fab fa-telegram"} />
-							<i className={classes.socialIcons + " fab fa-discord"} />
-							<i className={classes.socialIcons + " fab fa-reddit"} />
-							<i className={classes.socialIcons + " fab fa-youtube"} />
+							<a href="https://www.tunetoken.io/"><i className={classes.socialIcons + " fas fa-home"} /></a>
+							<a href="https://twitter.com/TuneBlockchain" ><i className={classes.socialIcons + " fab fa-twitter"} /></a>
+							<a href="https://t.me/RecordgramICO"><i className={classes.socialIcons + " fab fa-telegram"} /></a>
+							<a href="https://medium.com/tunetoken"><i className={classes.socialIcons + " fab fa-medium"} /></a>
+							<a href="https://www.reddit.com/r/TuneToken/"><i className={classes.socialIcons + " fab fa-reddit"} /></a>
 							<h5 className={classes.description}>
 								Tune Company is a software development and management company
 								primarily focused on creating blockchain based technology, smart

@@ -41,24 +41,36 @@ function InfoAreaPricing({ ...props }) {
 				<h4 className={classes.price}>Starting from ${price}</h4>
 			</div>
 			<div className={classes.descriptionWrapper}>
-				<p className={classes.descriptionP}>
-					<li>{descriptionP1}</li>
-				</p>
-				<p className={classes.descriptionP}>
-					<li>{descriptionP2}</li>
-				</p>
-				<p className={classes.descriptionP}>
-					<li>{descriptionP3}</li>
-				</p>
-				<p className={classes.descriptionP}>
-					<li>{descriptionP4}</li>
-				</p>
-				<p className={classes.descriptionP}>
-					<li>{descriptionP5}</li>
-				</p>
-				<p className={classes.descriptionP}>
-					<li>{descriptionP6}</li>
-				</p>
+				{descriptionP1 != null ? (
+					<p className={classes.descriptionP}>
+						<li>{descriptionP1}</li>
+					</p>
+				) : null}
+				{descriptionP2 != null ? (
+					<p className={classes.descriptionP}>
+						<li>{descriptionP2}</li>
+					</p>
+				) : null}
+				{descriptionP3 != null ? (
+					<p className={classes.descriptionP}>
+						<li>{descriptionP3}</li>
+					</p>
+				) : null}
+				{descriptionP4 != null ? (
+					<p className={classes.descriptionP}>
+						<li>{descriptionP4}</li>
+					</p>
+				) : null}
+				{descriptionP5 != null ? (
+					<p className={classes.descriptionP}>
+						<li>{descriptionP5}</li>
+					</p>
+				) : null}
+				{descriptionP6 != null ? (
+					<p className={classes.descriptionP}>
+						<li>{descriptionP6}</li>
+					</p>
+				) : null}
 			</div>
 		</div>
 	);

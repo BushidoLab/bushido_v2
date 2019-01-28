@@ -40,6 +40,9 @@ const styles = theme => ({
 		textAlign: "center",
 		color: "#999",
 		marginBottom: "30px"
+	},
+	indicator: {
+		textColor: "#000"
 	}
 });
 
@@ -61,7 +64,7 @@ class PricingSectionTabs extends React.Component {
 
 		return (
 			<div className={classes.root}>
-				<h2 className={classes.title}>Development Pricing Plans</h2>
+				<h2 className={classes.title}>Pricing Plans</h2>
 				<h5 className={classes.description}>Pricing is as follows:</h5>
 				<AppBar
 					position="center"
@@ -70,12 +73,16 @@ class PricingSectionTabs extends React.Component {
 					<Tabs
 						value={this.state.value}
 						onChange={this.handleChange}
-						indicatorColor="primary"
-						textColor="primary"
-						variant="standard"
+						textColor="#000"
+						TabIndicatorProps={{
+							style: {
+								backgroundColor: "#EE272B",
+							}
+						}}
+						variant="fullWidth"
 						centered="true"
 					>
-						<Tab label="Product" />
+						<Tab label="Development" />
 						<Tab label="Consultation" />
 					</Tabs>
 				</AppBar>

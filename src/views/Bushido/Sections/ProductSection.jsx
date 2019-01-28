@@ -24,25 +24,14 @@ class ProductSection extends React.Component {
 		return (
 			<div className={classes.section}>
 				<div>
+				<h2 className={classes.title}>Product Offerings</h2>
 					<GridContainer>
 						<GridItem xs={12} sm={12} md={6} className={classes.cardPadding}>
 							<Card className={classes.cardDimensions}>
 								<CardContent>
 									<InfoAreaImage
-										title="Custom Cryptocurrencies"
-										description="Core Protocol & Systems Level Code Development for fully featured Cryptocurrency Blockchains such as: Bitcoin, Ethereum, Zcash and Monero. Our Cryptocurrency services include: coin forks, merge forks, privacy coins, masternode implementation, wallets & block explorers."
-										imgSrc={custom_crypto}
-										product
-									/>
-								</CardContent>
-							</Card>
-						</GridItem>
-						<GridItem xs={12} sm={12} md={6} className={classes.cardPadding}>
-							<Card className={classes.cardDimensions}>
-								<CardContent>
-									<InfoAreaImage
 										title="Enterprise Grade Blockchain"
-										description="Development of permissioned & Private Blockchains for consortium or enterprise needs. Common implementations include: Hyperledger(Fabric, Composer, Burrow), Stellar & Strasis.Innovative use-cases include: rights management, supply-chain, auditing-specific blockchains"
+										description="Development of private blockchains for business and consortiums. Service areas include but are not limited to: value-chain, right management and auditing."
 										imgSrc={blocks}
 										product
 									/>
@@ -53,8 +42,8 @@ class ProductSection extends React.Component {
 							<Card className={classes.cardDimensions}>
 								<CardContent>
 									<InfoAreaImage
-										title="Decentralized Applications"
-										description="Custom decentralized applications that communicate directly with Blockchains. Common use cases for dApps include: gamification platforms, asset ownership and trading, decentralized market makers"
+										title="Blockchain Apps / Smart Contracts"
+										description="Decentralized applications and blockchain application development. Services include: smart contracts, wallets, block explorers, token distribution platforms and industry dApps like gamification platforms, asset ownership and trading, decentralized market makers."
 										imgSrc={dapps}
 										product
 									/>
@@ -68,6 +57,18 @@ class ProductSection extends React.Component {
 										title="Utility and Security Tokens"
 										description="Token development and issuance. Token vesting & life cycle, Token custody techniques, Utility Tokens (gamification). Most token implementations require wallet and distribution platforms (custom builds available)."
 										imgSrc={tokens}
+										product
+									/>
+								</CardContent>
+							</Card>
+						</GridItem>
+						<GridItem xs={12} sm={12} md={6} className={classes.cardPadding}>
+							<Card className={classes.cardDimensions}>
+								<CardContent>
+									<InfoAreaImage
+										title="Custom Cryptocurrencies"
+										description="Public cryptocurrency blockchain development. Technologies include Bitcoin, Ethereum, Dash, Zcash and Monero. Services include: forks, merge forks, privacy coins, masternodes and second layer concensus."
+										imgSrc={custom_crypto}
 										product
 									/>
 								</CardContent>

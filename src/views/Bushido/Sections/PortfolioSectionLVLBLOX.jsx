@@ -82,12 +82,12 @@ class PortfolioSectionLVLBLOX extends React.Component {
 							<h5 className={classes.description}>
 							Smart asset management.
 							</h5>
-							<i className={classes.socialIcons + " fab fa-github"} />
-							<i className={classes.socialIcons + " fab fa-twitter"} />
-							<i className={classes.socialIcons + " fab fa-telegram"} />
-							<i className={classes.socialIcons + " fab fa-discord"} />
-							<i className={classes.socialIcons + " fab fa-reddit"} />
-							<i className={classes.socialIcons + " fab fa-youtube"} />
+							<a href=""><i className={classes.socialIcons + " fab fa-github"} /></a>
+							{/* <i className={classes.socialIcons + " fab fa-twitter"} /> */}
+							{/* <i className={classes.socialIcons + " fab fa-telegram"} /> */}
+							{/* <i className={classes.socialIcons + " fab fa-discord"} /> */}
+							{/* <i className={classes.socialIcons + " fab fa-reddit"} /> */}
+							{/* <i className={classes.socialIcons + " fab fa-youtube"} /> */}
 							<h5 className={classes.description}>
 							A blockchain solution that offers better tracking and audit
 								services for companies utilizing software licensing. In our

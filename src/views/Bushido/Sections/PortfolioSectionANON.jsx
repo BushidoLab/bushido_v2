@@ -93,18 +93,43 @@ class PortfolioSectionANON extends React.Component {
 							>
 								ANON
 							</h2>
-							<h5 className={classes.description}>Co-fork between Bitcoin and Z-Classic with masternode implementations.</h5>
-							<i className={classes.socialIcons + " fab fa-github"} />
-							<i className={classes.socialIcons + " fab fa-twitter"} />
-							<i className={classes.socialIcons + " fab fa-telegram"} />
-							<i className={classes.socialIcons + " fab fa-discord"} />
-							<i className={classes.socialIcons + " fab fa-reddit"} />
-							<i className={classes.socialIcons + " fab fa-youtube"} />
 							<h5 className={classes.description}>
-								ANON is a public decentralized blockchain that is a forked repository of Bitcoin(BTC) and Zclassic(ZCL). This has been Bushido’s largest undertaking to date. This project involved blockchain infrastructure, consensus design and development (layered), economic design, inflation schedule design, miner and masternode payment design and execution, wallet development, block explorers, merchant payment integration and exchange liquidity consultation.
-
+								Co-fork between Bitcoin and Z-Classic with masternode
+								implementations.
 							</h5>
-
+							<a href="https://www.anonfork.io/"><i className={classes.socialIcons + " fas fa-home"} /></a>
+							<a href="https://github.com/anonymousbitcoin/anon">
+								<i className={classes.socialIcons + " fab fa-github"} />
+							</a>
+							
+							<a href="https://twitter.com/ANON_WeAreANON">
+								<i className={classes.socialIcons + " fab fa-twitter"} />
+							</a>
+							
+							<a href="https://t.me/ANONFork">
+								<i className={classes.socialIcons + " fab fa-telegram"} />
+							</a>
+							
+							<a href="https://discord.gg/9XQMspU">
+								<i className={classes.socialIcons + " fab fa-discord"} />
+							</a>
+							
+							<a href="https://github.com/anonymousbitcoin">
+								<i className={classes.socialIcons + " fab fa-reddit"} />
+							</a>
+							
+							<a href="https://www.youtube.com/channel/UCU-BMMTH8z0ow0xHjWZHRUg">
+								<i className={classes.socialIcons + " fab fa-youtube"} />
+							</a>
+							<h5 className={classes.description}>
+								ANON is a public decentralized blockchain that is a forked
+								repository of Bitcoin(BTC) and Zclassic(ZCL). This project
+								involved blockchain infrastructure, consensus design and
+								development (layered), economic design, inflation schedule
+								design, miner and masternode payment design and execution,
+								wallet development, block explorers, merchant payment
+								integration and exchange liquidity consultation.
+							</h5>
 							<h3 className={classes.title}>Tech Utilized: </h3>
 							<GridContainer>
 								<GridItem xs={4} sm={4} md={2}>
