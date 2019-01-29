@@ -15,7 +15,7 @@ import Button from "components/CustomButtons/Button.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
-
+import WorkSection from "./Sections/WorkSection.jsx";	
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.jsx";
 // import TeamSection from "./Sections/TeamSection.jsx";
@@ -73,12 +73,12 @@ class Bushido extends React.Component {
 					<div className={classes.container}>
 						<div id="Services"><ProductSection /></div>
 						{/* <PortfolioSection /> */}
-						<PortfolioSectionTabs />
 						<ProcessesAndToolsSection />
-						<PricingSectionTabs />
+						<PortfolioSectionTabs />
 						<ClientSection />
+						<PricingSectionTabs />
 						{/* <TeamSection /> */}
-						{/* <WorkSection /> */}
+						<WorkSection />
 					</div>
 				</div>
 				<Footer />
