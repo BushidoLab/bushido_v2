@@ -21,10 +21,10 @@ const teamStyle = {
   },
   cardTitle,
   smallTitle: {
-    color: "#6c757d"
+    color: "#545454"
   },
   description: {
-    color: "#999"
+    color: "#545454"
   },
   justifyCenter: {
     justifyContent: "center !important"
@@ -38,7 +38,7 @@ const teamStyle = {
     height: "100%",
     lineHeight: "41px",
     fontSize: "20px",
-    color: "#999"
+    color: "#545454"
   },
   margin5: {
     margin: "5px"

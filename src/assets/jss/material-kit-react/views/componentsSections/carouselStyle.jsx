@@ -27,7 +27,7 @@ const carouselStyle = {
 		// alignSelf: "stretch"
 	},
 	description: {
-		color: "#999",
+		color: "#545454",
 		// textAlign: "right",
 		// alignSelf: "stretch"
 	},

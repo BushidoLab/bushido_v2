@@ -19,7 +19,7 @@ const tabsStyle = {
     textAlign: "center"
 	},
 	description: {
-		color: "#999",
+		color: "#545454",
 		textAlign: "center"
 	},
 	cardPadding: {

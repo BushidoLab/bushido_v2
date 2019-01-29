@@ -75,7 +75,7 @@ const dangerColor = "#EE272B";
 const successColor = "#4caf50";
 const infoColor = "#00acc1";
 const roseColor = "#e91e63";
-const grayColor = "#999999";
+const grayColor = "#545454";
 
 const primaryBoxShadow = {
 	boxShadow:
@@ -156,7 +156,7 @@ const defaultBoxShadow = {
 };
 
 const title = {
-	color: "#3C4858",
+	color: "#3A414B",
 	margin: "1.75rem 0 0.875rem",
 	textDecoration: "none",
 	fontWeight: "700",

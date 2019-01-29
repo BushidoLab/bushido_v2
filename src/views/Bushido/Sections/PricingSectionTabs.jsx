@@ -39,7 +39,7 @@ const styles = theme => ({
 	},
 	description: {
 		textAlign: "center",
-		color: "#999",
+		color: "#545454",
 		marginBottom: "30px"
 	},
 	indicator: {

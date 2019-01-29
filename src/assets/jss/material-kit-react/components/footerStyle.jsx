@@ -31,7 +31,10 @@ const footerStyle = {
   a: {
     color: dangerColor,
     textDecoration: "none",
-    backgroundColor: "transparent"
+		backgroundColor: "transparent",
+		"&:focus, &:hover, &:visited, &:link, &:active": {
+			color: dangerColor
+		}
   },
   footerWhiteFont: {
     "&,&:hover,&:focus": {

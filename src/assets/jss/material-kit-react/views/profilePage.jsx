@@ -20,7 +20,7 @@ const profilePageStyle = {
   description: {
     margin: "1.071rem auto 0",
     maxWidth: "600px",
-    color: "#999",
+    color: "#545454",
     textAlign: "center !important"
   },
   name: {
@@ -55,7 +55,7 @@ const profilePageStyle = {
     height: "100%",
     lineHeight: "41px",
     fontSize: "20px",
-    color: "#999"
+    color: "#545454"
   },
   navWrapper: {
     margin: "20px auto 50px auto",
