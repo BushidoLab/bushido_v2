@@ -28,6 +28,7 @@
 			href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
 			rel="stylesheet"
 		/>
+		
 		<!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -38,8 +39,18 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
 		<title>BUSHIDO LAB</title>
+		<style>
+			#bg {
+				background: black;
+				transition: background-color 1000ms linear;
+				}
+
+
+
+				
+		</style>
 	</head>
-	<body>
+	<body id="bg">
 		<noscript> Bushido needs Javascript </noscript>
 		<div id="root"></div>
 		<!--
@@ -73,4 +84,17 @@
 		}
 		titlebar(0);
 	</script> -->
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script>
+	$( document ).ready(function() {
+		console.log( "ready!" );
+		// console.log($(body))
+		var target = document.getElementById("bg");
+		console.log(target);
+		setTimeout(function(){ $(target).css('background','white'); },2000);
+	});
+	</script>
 </html>
