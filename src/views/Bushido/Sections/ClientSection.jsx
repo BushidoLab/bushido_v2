@@ -51,8 +51,8 @@ class ClientSection extends React.Component {
 		// classes.imgFluid
 		return (
 			<div>
-				<div className={classes.section}>
-					<h2 className={classes.title}>Organizations we've worked with</h2>
+				<div className={classes.section} id="Clients">
+					<h2 className={classes.title} >Organizations we've worked with</h2>
 					<div>
 						<GridContainer>
 							<GridItem xs={6} sm={4} md={3}>
@@ -312,7 +312,7 @@ class ClientSection extends React.Component {
 					</div>
 				</div>
 				<div>
-					<div className={classes.section}>
+					<div className={classes.section} id="Coverage">
 						<h2 className={classes.title}>
 							Earned coverage for us and our clients
 						</h2>

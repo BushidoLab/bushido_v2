@@ -45,7 +45,10 @@ class Bushido extends React.Component {
 					<div className={classes.container}>
 						<GridContainer>
 							<GridItem xs={12} sm={12} md={8}>
-								<h1 className={classes.title}>Blockchain <br/>Development. Simplified.</h1>
+								<h1 className={classes.title}>
+									Blockchain <br />
+									Development. Simplified.
+								</h1>
 								<br />
 								<Button
 									color="danger"
@@ -71,10 +74,19 @@ class Bushido extends React.Component {
 				</div> */}
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div className={classes.container}>
-						<div id="Services"><ProductSection /></div>
+						<div id="Services">
+							<ProductSection />
+						</div>
 						{/* <PortfolioSection /> */}
-						<ProcessesAndToolsSection />
-						<PortfolioSectionTabs />
+						<div id="Portfolio">
+							<PortfolioSectionTabs />
+						</div>
+						<div id="Processes">
+							<ProcessesAndToolsSection />
+						</div>
+						{/* <div> */}
+						<PricingSectionTabs />
+						{/* </div> */}
 						<ClientSection />
 						<PricingSectionTabs />
 						{/* <TeamSection /> */}
