@@ -122,12 +122,11 @@ class Header extends React.Component {
 							<MenuIcon />
 						</IconButton>
 						<Typography color="inherit" noWrap>
-							<a>
+							<a href="/">
 								<img
 									src={bushido}
 									className={classes.bushidoSVG}
 									alt="bushido_logo"
-									href="/"
 								/>
 							</a>
 						</Typography>
@@ -169,7 +168,8 @@ class Header extends React.Component {
 							"Processes & Tools",
 							"Pricing",
 							"Clients",
-							"Coverage"
+							"Coverage",
+							"Contact Us"
 						].map((text, index) => (
 							<ScrollIntoView alignToTop={true} selector={`#${text.replace(/ .*/,'')}`}>
 								<ListItem button key={text}>

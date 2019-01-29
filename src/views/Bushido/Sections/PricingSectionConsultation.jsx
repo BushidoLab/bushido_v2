@@ -23,6 +23,8 @@ import Divider from "@material-ui/core/Divider";
 // import CardMedia from "@material-ui/core/CardMedia";
 import InfoAreaPricing from "components/InfoAreaPricing/InfoAreaPricing.jsx";
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
+import ScrollIntoView from 'react-scroll-into-view';
+
 
 class PricingSectionProduct extends React.Component {
 	render() {
@@ -49,9 +51,11 @@ class PricingSectionProduct extends React.Component {
 									</CardContent>
 									<Divider />
 									<CardFooter className={classes.cardFooter}>
-										<Button color="danger" size="lg">
-											Get started
-										</Button>
+										<ScrollIntoView alignToTop={true} selector={`#Contact`}>
+											<Button color="danger" size="lg">
+												Get started
+											</Button>
+										</ScrollIntoView>
 									</CardFooter>
 								</Card>
 							</GridItem>
@@ -72,9 +76,11 @@ class PricingSectionProduct extends React.Component {
 									</CardContent>
 									<Divider />
 									<CardFooter className={classes.cardFooter}>
-										<Button color="danger" size="lg">
-											Get started
-										</Button>
+										<ScrollIntoView alignToTop={true} selector={`#Contact`}>
+											<Button color="danger" size="lg">
+												Get started
+											</Button>
+										</ScrollIntoView>
 									</CardFooter>
 								</Card>
 							</GridItem>

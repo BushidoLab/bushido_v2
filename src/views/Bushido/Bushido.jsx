@@ -15,7 +15,7 @@ import Button from "components/CustomButtons/Button.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
-import WorkSection from "./Sections/WorkSection.jsx";	
+import WorkSection from "./Sections/WorkSection.jsx";
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.jsx";
 // import TeamSection from "./Sections/TeamSection.jsx";
@@ -23,6 +23,8 @@ import ProcessesAndToolsSection from "./Sections/ProcessesAndToolsSection.jsx";
 import ClientSection from "./Sections/ClientSection.jsx";
 import PortfolioSectionTabs from "./Sections/PortfolioSectionTabs.jsx";
 import PricingSectionTabs from "./Sections/PricingSectionTabs.jsx";
+import ScrollIntoView from 'react-scroll-into-view';
+
 
 class Bushido extends React.Component {
 	render() {
@@ -50,16 +52,21 @@ class Bushido extends React.Component {
 									Development. Simplified.
 								</h1>
 								<br />
-								<Button
-									color="danger"
-									size="lg"
-									href="/contact"
-									target="_blank"
-									rel="noopener noreferrer"
+								<ScrollIntoView
+									alignToTop={true}
+									selector={`#Contact`}
 								>
-									{/* <i className="fas fa-play" /> */}
-									Get a Quote
-								</Button>
+									<Button
+										color="danger"
+										size="lg"
+										// href="/contact"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										{/* <i className="fas fa-play" /> */}
+										Get a Quote
+									</Button>
+								</ScrollIntoView>
 							</GridItem>
 						</GridContainer>
 					</div>
@@ -88,6 +95,7 @@ class Bushido extends React.Component {
 						<PricingSectionTabs />
 						{/* </div> */}
 						<ClientSection />
+						<WorkSection />
 					</div>
 				</div>
 				<Footer />
