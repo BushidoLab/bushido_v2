@@ -25,7 +25,7 @@ const drawerWidth = 240;
 
 const styles = theme => ({
 	root: {
-		display: "flex",
+		// display: "flex",
 	},
 	appBar: {
 		transition: theme.transitions.create(["margin", "width"], {
@@ -82,7 +82,7 @@ const styles = theme => ({
 	},
 	bushidoSVG: {
 		height: theme.typography.pxToRem(22)
-	}
+	},
 });
 
 class Header extends React.Component {
@@ -119,7 +119,7 @@ class Header extends React.Component {
 							onClick={this.handleDrawerOpen}
 							className={classNames(classes.menuButton, open && classes.hide)}
 						>
-							<MenuIcon />
+						<MenuIcon />
 						</IconButton>
 						<Typography color="inherit" noWrap>
 							<a>
@@ -131,7 +131,7 @@ class Header extends React.Component {
 								/>
 							</a>
 						</Typography>
-						{/* <Typography classes='alignRight'>
+						{/* <Typography classes={classNames(classes.alignRight)}>
 							<Button
 								color="primary"
 								size="lg"
@@ -141,6 +141,10 @@ class Header extends React.Component {
 								Get a Quote
 							</Button>
 						</Typography> */}
+						{/* <IconButton className={classes.stickyRight} color="inherit" aria-label="Open drawer">
+							<MenuIcon />
+						</IconButton> */}
+						
 					</Toolbar>
 				</AppBar>
 				<Drawer
