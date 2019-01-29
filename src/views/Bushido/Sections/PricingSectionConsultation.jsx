@@ -23,6 +23,7 @@ import Divider from "@material-ui/core/Divider";
 // import CardMedia from "@material-ui/core/CardMedia";
 import InfoAreaPricing from "components/InfoAreaPricing/InfoAreaPricing.jsx";
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
+import ScrollIntoView from "react-scroll-into-view";
 
 class PricingSectionProduct extends React.Component {
 	render() {
@@ -31,10 +32,10 @@ class PricingSectionProduct extends React.Component {
 			<div className={classes.section}>
 				<div className={classes.container}>
 					<div id="nav-tabs">
-						<GridContainer>
+						<GridContainer xs={12} sm={12} md={12}>
 							<GridItem xs={12} sm={12} md={6} className={classes.cardPadding}>
 								<Card>
-									<CardContent className={classes.contentHeight}>
+									<CardContent className={classes.contentHeightConsultation}>
 										<InfoAreaPricing
 											title="Executive Training"
 											price="4,000"
@@ -49,15 +50,17 @@ class PricingSectionProduct extends React.Component {
 									</CardContent>
 									<Divider />
 									<CardFooter className={classes.cardFooter}>
-										<Button color="danger" size="lg">
-											Get started
-										</Button>
+										<ScrollIntoView alignToTop={true} selector={`#Contact`}>
+											<Button color="danger" size="lg">
+												Get started
+											</Button>
+										</ScrollIntoView>
 									</CardFooter>
 								</Card>
 							</GridItem>
 							<GridItem xs={12} sm={12} md={6} className={classes.cardPadding}>
 								<Card>
-									<CardContent className={classes.contentHeight}>
+									<CardContent className={classes.contentHeightConsultation}>
 										<InfoAreaPricing
 											title="Technical Planning"
 											price="10,000"
@@ -72,9 +75,11 @@ class PricingSectionProduct extends React.Component {
 									</CardContent>
 									<Divider />
 									<CardFooter className={classes.cardFooter}>
-										<Button color="danger" size="lg">
-											Get started
-										</Button>
+										<ScrollIntoView alignToTop={true} selector={`#Contact`}>
+											<Button color="danger" size="lg">
+												Get started
+											</Button>
+										</ScrollIntoView>
 									</CardFooter>
 								</Card>
 							</GridItem>

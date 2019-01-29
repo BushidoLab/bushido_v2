@@ -16,60 +16,56 @@ import workStyle from "assets/jss/material-kit-react/views/landingPageSections/w
 // var mailgun = require('mailgun.js');
 // var mg = mailgun.client({username: 'api', key: process.env.MAILGUN_API_KEY || 'key-yourkeyhere'});
 
-
-
 class WorkSection extends React.Component {
-    state = {
-		name: '',
-		email:'',
-		message:''
-    }
+	state = {
+		name: "",
+		email: "",
+		message: ""
+	};
 
-    // This works only changing hard coded state
-    handleChange(e, name){
-        this.setState({[name]: e.target.value});
+	// This works only changing hard coded state
+	handleChange(e, name) {
+		this.setState({ [name]: e.target.value });
 		// console.log(event.target.name)
 		// console.log(this.state)
 	}
-	
+
 	// Handles sending email in contact form
-	handleSubmit = (e) => {
-	e.preventDefault();
-	const { name, email, message } = this.state;
+	handleSubmit = e => {
+		e.preventDefault();
+		const { name, email, message } = this.state;
 
-	const templateParams = {
-		name,
-		email,
-		message,
-		date: new Date(Date.now())
-	}
+		const templateParams = {
+			name,
+			email,
+			message,
+			date: new Date(Date.now())
+		};
 
-	var email_params = {
-		"to_email": templateParams.email,
-		"reply_to": "noreply@bushidolab.com",
-		"from_name": "chris@bushidolab.com",
-		"to_name": templateParams.name,
-		"message_html": templateParams.message
-	 }
-	 
-	 
-	
-	emailjs.init('user_PKTMzIKJYSrAELa74QM9U');
-	var service_id = "mailgun";
-	var template_id = "template_F9hUy3M7";
+		var email_params = {
+			to_email: templateParams.email,
+			reply_to: "noreply@bushidolab.com",
+			from_name: "chris@bushidolab.com",
+			to_name: templateParams.name,
+			message_html: templateParams.message
+		};
 
-    // send method requires service id, the email's template id and whatever variables needed to write in the body of the email
-    emailjs.send(service_id, template_id, email_params)
-      .then(res => {
-        alert('Email sent successfully');
-      }, err => {
-        console.error('Failed to send contact email', err);
-	  });
-	  
-	console.log(templateParams)
+		emailjs.init("user_PKTMzIKJYSrAELa74QM9U");
+		var service_id = "mailgun";
+		var template_id = "template_F9hUy3M7";
 
+		// send method requires service id, the email's template id and whatever variables needed to write in the body of the email
+		emailjs.send(service_id, template_id, email_params).then(
+			res => {
+				alert("Email sent successfully");
+			},
+			err => {
+				console.error("Failed to send contact email", err);
+			}
+		);
 
-	}
+		console.log(templateParams);
+	};
 
 	render() {
 		const { classes, ...rest } = this.props;
@@ -77,7 +73,7 @@ class WorkSection extends React.Component {
 			<div className={classes.section}>
 				<GridContainer justify="center">
 					<GridItem cs={12} sm={12} md={8}>
-						<h2 className={classes.title}>Let us help you!</h2>
+						<h2 className={classes.title} id="Contact">Let us help you!</h2>
 						<h4 className={classes.description}>
 							Divide details about your product or agency work into parts. Write
 							a few lines about each one and contact us about any further
@@ -90,17 +86,18 @@ class WorkSection extends React.Component {
 									<CustomInput
 										labelText="Your Name"
 										id="name"
-                                        value={this.state.name}
-                                        name="name"
+										value={this.state.name}
+										name="name"
 										formControlProps={{
-											fullWidth: true
+											fullWidth: true,
+											color: 'green'
 										}}
-                                        inputProps={{
+										inputProps={{
 											type: "text",
-                                            // onChange: (event) => this.handleChange(this.value)
-                                            // value: this.state.name,
-                                            onChange: (event) => this.handleChange(event, "name")
-                                        }}                                        
+											// onChange: (event) => this.handleChange(this.value)
+											// value: this.state.name,
+											onChange: event => this.handleChange(event, "name")
+										}}
 									/>
 								</GridItem>
 								<GridItem xs={12} sm={12} md={6}>
@@ -112,10 +109,10 @@ class WorkSection extends React.Component {
 										}}
 										inputProps={{
 											type: "text",
-                                            // onChange: (event) => this.handleChange(this.value)
-                                            // value: this.state.name,
-                                            onChange: (event) => this.handleChange(event, "email")
-                                        }}                
+											// onChange: (event) => this.handleChange(this.value)
+											// value: this.state.name,
+											onChange: event => this.handleChange(event, "email")
+										}}
 									/>
 								</GridItem>
 								<CustomInput
@@ -128,7 +125,7 @@ class WorkSection extends React.Component {
 									inputProps={{
 										multiline: true,
 										rows: 5,
-										onChange: (event) => this.handleChange(event, "message")
+										onChange: event => this.handleChange(event, "message")
 									}}
 								/>
 								<GridContainer justify="center">
@@ -138,7 +135,9 @@ class WorkSection extends React.Component {
 										md={4}
 										className={classes.textCenter}
 									>
-										<Button color="danger" onClick={this.handleSubmit}>Send Message</Button>
+										<Button color="danger" onClick={this.handleSubmit}>
+											Send Message
+										</Button>
 									</GridItem>
 								</GridContainer>
 							</GridContainer>

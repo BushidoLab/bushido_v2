@@ -17,32 +17,25 @@ const productStyle = {
 		marginBottom: "30px"
 	},
 	cardPadding: {
-		paddingBottom: '35px',
+		paddingBottom: "35px"
 	},
 	cardDimensions: {
 		// maxWidth: '345px',
-		width: '100%',
-		minHeight: '390px'
+		width: "100%",
+		minHeight: "390px"
 	},
 	cardFooter: {
-		width: '100%',
-		height: '30%',
-		justifyContent: 'center',
-		alignItems: 'center'
+		width: "100%",
+		height: "30%",
+		justifyContent: "center",
+		alignItems: "center"
 	},
 	contentHeight: {
-		"@media (min-width: 576px)": {
-		},
-		"@media (min-width: 768px)": {
-		},
-		"@media (min-width: 992px)": {
-			// height: '32vw'
-		},
-		"@media (min-width: 1200px)": {
-			// height: '28vw'
-		}
+			height: "32em"
+	},
+	contentHeightConsultation: {
+			height: "28em"
 	}
-
 };
 
 export default productStyle;

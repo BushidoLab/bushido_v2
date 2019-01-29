@@ -34,11 +34,8 @@ class Bushido extends React.Component {
 				<br />
 				<br />
 				<div className={classes.container} justify="center">
-					{/* <GridContainer> */}
-					{/* <GridItem xs={12} sm={12} md={12}> */}
+
 					<WorkSection />
-					{/* </GridItem> */}
-					{/* </GridContainer> */}
 				</div>
 
 				<Footer />

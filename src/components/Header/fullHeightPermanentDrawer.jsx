@@ -16,7 +16,14 @@ import MailIcon from '@material-ui/icons/Mail';
 import Grid from '@material-ui/core/Grid';
 import bushido from "assets/img/bushido/bushidolab.svg";
 import Tooltip from '@material-ui/core/Tooltip';
-
+import WorkIcon from "@material-ui/icons/Work"; // for portfolio
+import BuildIcon from "@material-ui/icons/Build"; // for processes and tools
+import ListIcon from "@material-ui/icons/List"; // for services
+import PriceIcon from "@material-ui/icons/AttachMoney"; // for pricing
+import ClientIcon from "@material-ui/icons/People"; // for clients
+import CoverageIcon from "@material-ui/icons/QuestionAnswer"; // for coverage
+import ContactIcon from "@material-ui/icons/LocalPhone"; // for contact
+import ScrollIntoView from "react-scroll-into-view";
 
 const drawerWidth = '15%';
 
@@ -108,14 +115,42 @@ function Header(props) {
         >
             <div className={classes.toolbar} />
 
-            {['Inbox', 'Starred', 'Send email', 'Drafts', 'Drafts', 'Drafts'].map((text, index) => (
+            {[
+              "Services",
+							"Portfolio",
+							"Processes & Tools",
+							"Pricing",
+							"Clients",
+							"Coverage",
+							"Contact Us"
+              ].map((text, index) => (
             <Grid item>
-                <Tooltip title="Add" placement="right">
-                    <ListItem className={classes.listButton} alignItems="flex-start" button key={text}>
-                    <ListItemIcon className={classes.listButton}>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                    </ListItem> 
-
+            <ScrollIntoView
+								alignToTop={true}
+								selector={`#${text.replace(/ .*/, "")}`}
+							>
+                <Tooltip title={text} placement="right">
+								<ListItem button key={text} className={classes.listButton}>
+									<ListItemIcon>
+										{index === 0 ? (
+											<ListIcon />
+										) : index === 1 ? (
+											<WorkIcon />
+										) : index === 2 ? (
+											<BuildIcon />
+										) : index === 3 ? (
+											<PriceIcon />
+										) : index === 4 ? (
+											<ClientIcon />
+										) : index === 5 ? (
+											<CoverageIcon />
+										) : index === 6 ? (
+											<ContactIcon />
+										) : null}
+									</ListItemIcon>
+								</ListItem>
                 </Tooltip>
+            </ScrollIntoView>
             </Grid>
             ))}
 
