@@ -24,7 +24,7 @@ import ClientIcon from "@material-ui/icons/People"; // for clients
 import CoverageIcon from "@material-ui/icons/QuestionAnswer"; // for coverage
 import ContactIcon from "@material-ui/icons/LocalPhone"; // for contact
 import bushido from "assets/img/bushido/bushidolab.svg";
-// import Button from "@material-ui/core/Button";
+import Button from "@material-ui/core/Button";
 import ScrollIntoView from "react-scroll-into-view";
 const drawerWidth = 240;
 
@@ -50,7 +50,11 @@ const styles = theme => ({
 	},
 	menuButton: {
 		marginLeft: 12,
-		marginRight: 20
+		marginRight: 20,
+		color: "#EE272B",
+		"&:hover": {
+			color: "white"
+		}
 	},
 	hide: {
 		display: "none"
@@ -60,7 +64,8 @@ const styles = theme => ({
 		flexShrink: 0
 	},
 	drawerPaper: {
-		width: drawerWidth
+		width: drawerWidth,
+		backgroundColor: "black"
 	},
 	drawerHeader: {
 		display: "flex",
@@ -91,12 +96,43 @@ const styles = theme => ({
 	socialIcons: {
 		position: "relative",
 		fontSize: "20px !important",
-		marginRight: "20px"
+		marginRight: "20px",
+		color: "#EE272B",
+		"&:hover": {
+			color: "white"
+		}
 	},
 	socialText: {
-		color: "rgba(0, 0, 0, 0.87)",
-		"&:focus, &:hover, &:visited, &:link, &:active": {
-			color: "rgba(0, 0, 0, 0.87)"
+		color: "white",
+		"&:hover": {
+			color: "#EE272B"
+		}
+	},
+	quoteButton: {
+		position: "absolute",
+		right: "2em",
+		top: "0.8em",
+		backgroundColor: "#EE272B",
+		color: 'white',
+    '&:hover': {
+			backgroundColor: "white",
+			color:'black'
+    },
+		"@media (min-width: 576px)": {
+			right: "2em",
+			top: "1em"
+		},
+		"@media (min-width: 768px)": {
+			right: "2em",
+			top: "1em"
+		},
+		"@media (min-width: 992px)": {
+			right: "2em",
+			top: "1em"
+		},
+		"@media (min-width: 1200px)": {
+			right: "2em",
+			top: "1em"
 		}
 	}
 });
@@ -146,16 +182,23 @@ class Header extends React.Component {
 								/>
 							</a>
 						</Typography>
-						{/* <Typography classes='alignRight'>
+						<Typography>
+						<ScrollIntoView
+								alignToTop={true}
+								selector={`#Contact`}
+							>
 							<Button
-								color="primary"
+								color="#"
+								variant="contained"
 								size="lg"
 								target="_blank"
 								rel="noopener noreferrer"
+								className={classes.quoteButton}
 							>
 								Get a Quote
 							</Button>
-						</Typography> */}
+							</ScrollIntoView>
+						</Typography>
 					</Toolbar>
 				</AppBar>
 				<Drawer
@@ -168,7 +211,10 @@ class Header extends React.Component {
 					}}
 				>
 					<div className={classes.drawerHeader}>
-						<IconButton onClick={this.handleDrawerClose}>
+						<IconButton
+							onClick={this.handleDrawerClose}
+							className={classes.socialIcons}
+						>
 							{theme.direction === "ltr" ? (
 								<ChevronLeftIcon />
 							) : (
@@ -194,22 +240,24 @@ class Header extends React.Component {
 								<ListItem button key={text}>
 									<ListItemIcon>
 										{index === 0 ? (
-											<ListIcon />
+											<ListIcon className={classes.socialIcons} />
 										) : index === 1 ? (
-											<WorkIcon />
+											<WorkIcon className={classes.socialIcons} />
 										) : index === 2 ? (
-											<BuildIcon />
+											<BuildIcon className={classes.socialIcons} />
 										) : index === 3 ? (
-											<PriceIcon />
+											<PriceIcon className={classes.socialIcons} />
 										) : index === 4 ? (
-											<ClientIcon />
+											<ClientIcon className={classes.socialIcons} />
 										) : index === 5 ? (
-											<CoverageIcon />
+											<CoverageIcon className={classes.socialIcons} />
 										) : index === 6 ? (
-											<ContactIcon />
+											<ContactIcon className={classes.socialIcons} />
 										) : null}
 									</ListItemIcon>
-									<ListItemText primary={text} />
+									<ListItemText>
+										<span className={classes.socialText}>{text}</span>
+									</ListItemText>
 								</ListItem>
 							</ScrollIntoView>
 						))}
