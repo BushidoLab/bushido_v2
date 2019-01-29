@@ -20,6 +20,7 @@ import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
 import bushido from "assets/img/bushido/bushidolab.svg";
 import Button from "@material-ui/core/Button";
+import ScrollIntoView from 'react-scroll-into-view';
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -170,12 +171,14 @@ class Header extends React.Component {
 							"Clients",
 							"Contact"
 						].map((text, index) => (
-							<ListItem button key={text}>
-								<ListItemIcon>
-									{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-								</ListItemIcon>
-								<ListItemText primary={text} />
-							</ListItem>
+							<ScrollIntoView alignToTop={true} selector={`#${text}`}>
+								<ListItem button key={text}>
+									<ListItemIcon>
+										{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+									</ListItemIcon>
+									<ListItemText primary={text} />
+								</ListItem>
+							</ScrollIntoView>
 						))}
 					</List>
 					<Divider />
