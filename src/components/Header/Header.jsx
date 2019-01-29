@@ -193,19 +193,19 @@ class Header extends React.Component {
 							>
 								<ListItem button key={text}>
 									<ListItemIcon>
-										{index == 0 ? (
+										{index === 0 ? (
 											<ListIcon />
-										) : index == 1 ? (
+										) : index === 1 ? (
 											<WorkIcon />
-										) : index == 2 ? (
+										) : index === 2 ? (
 											<BuildIcon />
-										) : index == 3 ? (
+										) : index === 3 ? (
 											<PriceIcon />
-										) : index == 4 ? (
+										) : index === 4 ? (
 											<ClientIcon />
-										) : index == 5 ? (
+										) : index === 5 ? (
 											<CoverageIcon />
-										) : index == 6 ? (
+										) : index === 6 ? (
 											<ContactIcon />
 										) : null}
 									</ListItemIcon>
@@ -226,18 +226,18 @@ class Header extends React.Component {
 						].map((text, index) => (
 							<ListItem button key={text}>
 								<ListItemIcon>
-									{/* {index % 2 === 0 ? <i className={classes.socialIcons + " fab fa-github"} /> : <BuildIcon />} */}
-									{index == 0 ? (
+									{/* {index % 2 ==== 0 ? <i className={classes.socialIcons + " fab fa-github"} /> : <BuildIcon />} */}
+									{index === 0 ? (
 										<i className={classes.socialIcons + " fas fa-pencil-alt"} />
-									) : index == 1 ? (
+									) : index === 1 ? (
 										<i className={classes.socialIcons + " fab fa-github"} />
-									) : index == 2 ? (
+									) : index === 2 ? (
 										<i className={classes.socialIcons + " fab fa-twitter"} />
-									) : index == 3 ? (
+									) : index === 3 ? (
 										<i className={classes.socialIcons + " fab fa-instagram"} />
-									) : index == 4 ? (
+									) : index === 4 ? (
 										<i className={classes.socialIcons + " fab fa-medium-m"} />
-									) : index == 5 ? (
+									) : index === 5 ? (
 										<i className={classes.socialIcons + " fab fa-linkedin"} />
 									) : null}
 								</ListItemIcon>
@@ -245,17 +245,17 @@ class Header extends React.Component {
 									<a
 										className={classes.socialText}
 										href={
-											index == 0
+											index === 0
 												? "/"
-												: index == 1
+												: index === 1
 												? "https://github.com/orgs/BushidoLab"
-												: index == 2
+												: index === 2
 												? "https://twitter.com/bushidolab"
-												: index == 3
+												: index === 3
 												? "https://www.instagram.com/bushidolab/"
-												: index == 4
+												: index === 4
 												? "https://medium.com/@sam_80474"
-												: index == 5
+												: index === 5
 												? "https://www.linkedin.com/company/the-bushido-lab/about/"
 												: "/"
 										}
