@@ -134,6 +134,9 @@ const styles = theme => ({
 			right: "2em",
 			top: "1em"
 		}
+	},
+	dividerColor:{
+		backgroundColor: "#EE272B"
 	}
 });
 
@@ -222,7 +225,7 @@ class Header extends React.Component {
 							)}
 						</IconButton>
 					</div>
-					<Divider />
+					<Divider className={classes.dividerColor}/>
 					<List>
 						{[
 							"Services",
@@ -262,7 +265,7 @@ class Header extends React.Component {
 							</ScrollIntoView>
 						))}
 					</List>
-					<Divider />
+					<Divider className={classes.dividerColor}/>
 					<List>
 						{[
 							"Blog",
