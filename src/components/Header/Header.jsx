@@ -165,13 +165,13 @@ class Header extends React.Component {
 					<List>
 						{[
 							"Services",
-							"Cases",
+							"Portfolio",
 							"Processes & Tools",
 							"Pricing",
 							"Clients",
-							"Contact"
+							"Coverage"
 						].map((text, index) => (
-							<ScrollIntoView alignToTop={true} selector={`#${text}`}>
+							<ScrollIntoView alignToTop={true} selector={`#${text.replace(/ .*/,'')}`}>
 								<ListItem button key={text}>
 									<ListItemIcon>
 										{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
