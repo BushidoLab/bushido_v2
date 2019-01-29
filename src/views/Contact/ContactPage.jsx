@@ -1,29 +1,18 @@
 import React from "react";
 // nodejs library that concatenates classes
-import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-
-import Typing, { Backspace, Delay, Reset, Speed } from "react-typing-animation";
 
 // @material-ui/icons
 
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import Parallax from "components/Parallax/Parallax.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
 // Sections for this page
 import WorkSection from "./Sections/WorkSection.jsx";
-import bushido from "assets/img/bushido/bushidolab.svg";
-
-const dashboardRoutes = ["/bushido"];
 
 class Bushido extends React.Component {
 	render() {

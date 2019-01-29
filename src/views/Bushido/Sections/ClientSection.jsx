@@ -14,7 +14,7 @@ import Card from "components/Card/Card.jsx";
 
 import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx";
 
-import client_anon from "assets/img/clients/anon_logo.png";
+
 import client_ibm from "assets/img/clients/ibm_logo.png";
 import client_oracle from "assets/img/clients/oracle_logo.png";
 import client_miacoc from "assets/img/clients/MIAMIcoc_logo.png";

@@ -1,5 +1,4 @@
 import { container, title } from "assets/jss/material-kit-react.jsx";
-import Typography from "@material-ui/core/Typography";
 
 const landingPageStyle = {
   container: {

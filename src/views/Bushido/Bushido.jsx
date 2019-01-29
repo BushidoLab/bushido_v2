@@ -4,8 +4,6 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 
-import Typing, { Backspace, Delay, Reset, Speed } from "react-typing-animation";
-
 // @material-ui/icons
 
 // core components
@@ -14,7 +12,6 @@ import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
@@ -22,15 +19,10 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.jsx";
 // import TeamSection from "./Sections/TeamSection.jsx";
-import WorkSection from "./Sections/WorkSection.jsx";
 import ProcessesAndToolsSection from "./Sections/ProcessesAndToolsSection.jsx";
-import PricingSection from "./Sections/PricingSectionProduct.jsx";
 import ClientSection from "./Sections/ClientSection.jsx";
 import PortfolioSectionTabs from "./Sections/PortfolioSectionTabs.jsx";
 import PricingSectionTabs from "./Sections/PricingSectionTabs.jsx";
-import bushido from "assets/img/bushido/bushidolab.svg";
-
-const dashboardRoutes = ["/bushido"];
 
 class Bushido extends React.Component {
 	render() {
@@ -58,7 +50,7 @@ class Bushido extends React.Component {
 								<Button
 									color="danger"
 									size="lg"
-									// href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+									href="/contact"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
