@@ -13,8 +13,8 @@ import Button from "components/CustomButtons/Button.jsx";
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
 
 // IMPORT MAILGUN VARS
-var mailgun = require('mailgun.js');
-var mg = mailgun.client({username: 'api', key: process.env.MAILGUN_API_KEY || 'key-yourkeyhere'});
+// var mailgun = require('mailgun.js');
+// var mg = mailgun.client({username: 'api', key: process.env.MAILGUN_API_KEY || 'key-yourkeyhere'});
 
 
 
@@ -49,7 +49,7 @@ class WorkSection extends React.Component {
 		"reply_to": "noreply@bushidolab.com",
 		"from_name": "chris@bushidolab.com",
 		"to_name": templateParams.name,
-		"message_html": "Thanks for reaching out, we'll contact you soon!"
+		"message_html": templateParams.message
 	 }
 	 
 	 
