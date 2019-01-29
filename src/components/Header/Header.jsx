@@ -37,7 +37,7 @@ const styles = theme => ({
 			easing: theme.transitions.easing.sharp,
 			duration: theme.transitions.duration.leavingScreen
 		}),
-		background: "black",
+		background: "#171717",
 		color: "#EE272B"
 	},
 	appBarShift: {
@@ -65,7 +65,7 @@ const styles = theme => ({
 	},
 	drawerPaper: {
 		width: drawerWidth,
-		backgroundColor: "black"
+		backgroundColor: "#171717"
 	},
 	drawerHeader: {
 		display: "flex",
