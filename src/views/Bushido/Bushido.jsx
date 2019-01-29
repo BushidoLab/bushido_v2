@@ -35,8 +35,13 @@ class Bushido extends React.Component {
 		super(props);
 		// we use this to make the card to appear after the page has been rendered
 		this.state = {
-		  pageLoading: true
+		  pageLoading: true,
+		  readyToFadeOut: false
 		};
+	}
+
+	updateFadeState = () => {
+		this.setState({readyToFadeOut:true})
 	}
 	
 	componentDidMount = () => {
@@ -44,7 +49,7 @@ class Bushido extends React.Component {
 		setTimeout(() => {
 			console.log("Setting State", this.state);
 			this.setState({pageLoading: false});
-		}, 1000)
+		}, 500)
 	}
 
 	render() {
@@ -53,7 +58,7 @@ class Bushido extends React.Component {
 		const { classes, ...rest } = this.props;
 		
 		if (this.state.pageLoading) {
-			return(<CircularIndeterminate></CircularIndeterminate>)
+			return(<CircularIndeterminate classes={classes} rest={rest} updateFadeState={this.updateFadeState}></CircularIndeterminate>)
 		} else {
 			return(<LandingPage classes={classes} rest={rest} />)
 		}
@@ -69,7 +74,7 @@ class LandingPage extends React.Component {
 	render() {
 		const { classes, ...rest } = this.props;
 		return (
-			<Fade in timeout={1000}>
+			<Fade in timeout={2000}>
 			<div className = {classes.fadeIn}>
 			<Header
 				color="transparent"
