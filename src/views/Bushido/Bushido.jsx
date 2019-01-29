@@ -88,9 +88,6 @@ class Bushido extends React.Component {
 						<PricingSectionTabs />
 						{/* </div> */}
 						<ClientSection />
-						<PricingSectionTabs />
-						{/* <TeamSection /> */}
-						<WorkSection />
 					</div>
 				</div>
 				<Footer />

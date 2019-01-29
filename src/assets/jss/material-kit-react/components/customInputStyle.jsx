@@ -17,7 +17,7 @@ const customInputStyle = {
       borderWidth: "1px !important"
     },
     "&:after": {
-      borderColor: primaryColor
+      borderColor: dangerColor
     }
   },
   underlineError: {
@@ -27,7 +27,7 @@ const customInputStyle = {
   },
   underlineSuccess: {
     "&:after": {
-      borderColor: successColor
+      borderColor: dangerColor
     }
   },
   whiteUnderline: {
