@@ -25,7 +25,8 @@ const styles = theme => ({
 		justify: "center",
 		alignItems: "center",
 		direction: "column",
-		marginTop: "30%"
+		marginTop: "30%",
+		paddingLeft: "50%"
 	}
 });
 
@@ -40,17 +41,9 @@ class CircularIndeterminate extends React.Component {
 						alignItems="center"
 						direction="column"
 					>
-						<GridItem
-							alignItems="center"
-							justify="center"
-							direction="column"
-							xs={1}
-							sm={1}
-							md={1}
-							className={classes.centered}
-						>
+						<GridItem className={classes.centered}>
 							<CircularProgress
-								alignItems="center"
+								alignitems="center"
 								justify="center"
 								direction="column"
 								className={classes.root}

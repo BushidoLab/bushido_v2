@@ -7,7 +7,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import List from "@material-ui/core/List";
-import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -113,11 +112,13 @@ const styles = theme => ({
 		right: "2em",
 		top: "0.8em",
 		backgroundColor: "#EE272B",
-		color: 'white',
-    '&:hover': {
+		color: "white",
+		fontSize: "12px",
+		padding: "12px 30px",
+		"&:hover": {
 			backgroundColor: "white",
-			color:'black'
-    },
+			color: "black"
+		},
 		"@media (min-width: 576px)": {
 			right: "2em",
 			top: "1em"
@@ -135,7 +136,7 @@ const styles = theme => ({
 			top: "1em"
 		}
 	},
-	dividerColor:{
+	dividerColor: {
 		backgroundColor: "#EE272B"
 	}
 });
@@ -176,7 +177,8 @@ class Header extends React.Component {
 						>
 							<MenuIcon />
 						</IconButton>
-						<Typography color="inherit" noWrap>
+						<div>
+							{" "}
 							<a href="/">
 								<img
 									src={bushido}
@@ -184,24 +186,20 @@ class Header extends React.Component {
 									alt="bushido_logo"
 								/>
 							</a>
-						</Typography>
-						<Typography>
-						<ScrollIntoView
-								alignToTop={true}
-								selector={`#Contact`}
-							>
-							<Button
-								color="#"
-								variant="contained"
-								size="lg"
-								target="_blank"
-								rel="noopener noreferrer"
-								className={classes.quoteButton}
-							>
-								Get a Quote
-							</Button>
+						</div>
+						<div>
+							<ScrollIntoView alignToTop={true} selector={`#Contact`}>
+								<Button
+									variant="contained"
+									size="medium"
+									target="_blank"
+									rel="noopener noreferrer"
+									className={classes.quoteButton}
+								>
+									Get a Quote
+								</Button>
 							</ScrollIntoView>
-						</Typography>
+						</div>
 					</Toolbar>
 				</AppBar>
 				<Drawer
@@ -225,7 +223,7 @@ class Header extends React.Component {
 							)}
 						</IconButton>
 					</div>
-					<Divider className={classes.dividerColor}/>
+					<Divider className={classes.dividerColor} />
 					<List>
 						{[
 							"Services",
@@ -239,6 +237,7 @@ class Header extends React.Component {
 							<ScrollIntoView
 								alignToTop={true}
 								selector={`#${text.replace(/ .*/, "")}`}
+								key={index}
 							>
 								<ListItem button key={text}>
 									<ListItemIcon>
@@ -265,7 +264,7 @@ class Header extends React.Component {
 							</ScrollIntoView>
 						))}
 					</List>
-					<Divider className={classes.dividerColor}/>
+					<Divider className={classes.dividerColor} />
 					<List>
 						{[
 							"Blog",

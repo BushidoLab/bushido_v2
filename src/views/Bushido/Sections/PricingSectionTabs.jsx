@@ -68,20 +68,20 @@ class PricingSectionTabs extends React.Component {
 					<h2 className={classes.title}>Pricing Plans</h2>
 					<h5 className={classes.description}>Pricing is as follows:</h5>
 					<AppBar
-						position="center"
+						position="relative"
 						style={{ background: "transparent", boxShadow: "none" }}
 					>
 						<Tabs
 							value={this.state.value}
 							onChange={this.handleChange}
-							textColor="#000"
+							style={{color: "black"}}
 							TabIndicatorProps={{
 								style: {
-									backgroundColor: "#EE272B"
+									backgroundColor: "#EE272B",
 								}
 							}}
 							variant="fullWidth"
-							centered="true"
+							centered={true}
 						>
 							<Tab label="Development" />
 							<Tab label="Consultation" />
