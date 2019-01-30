@@ -3,8 +3,6 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-import PropTypes from "prop-types";
-import CircularProgress from "@material-ui/core/CircularProgress";
 
 // @material-ui/icons
 
