@@ -4,8 +4,6 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 
-// @material-ui/icons
-
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
@@ -44,7 +42,6 @@ class Bushido extends React.Component {
 
 	componentDidMount = () => {
 		setTimeout(() => {
-			console.log("Setting State", this.state);
 			this.setState({ pageLoading: false });
 		}, 500);
 	};
