@@ -1,30 +1,25 @@
 import React from "react";
-// react component for creating beautiful carousel
-// import classNames from "classnames";
 import Carousel from "react-slick";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// @material-ui/icons
-// import LocationOn from "@material-ui/icons/LocationOn";
-// core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
 import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
+import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
+// screenshots
 import image1 from "assets/img/portfolio/anonfork.png";
 import image2 from "assets/img/portfolio/explorer.png";
 import image3 from "assets/img/portfolio/explorer_blocks.png";
 import image4 from "assets/img/portfolio/anon_proposals.png";
 import image5 from "assets/img/portfolio/anon_copay.png";
-
-import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
+// svg logos
 import cplus from "assets/img/SVG/cplus.svg";
 import linux from "assets/img/SVG/linux-plain.svg";
 import nodejs from "assets/img/SVG/nodejs-plain.svg";
 import github from "assets/img/SVG/github-original.svg";
 import gradle from "assets/img/SVG/gradle-plain.svg";
 import java from "assets/img/SVG/java-plain-wordmark.svg";
-// import { Button } from "@material-ui/core";
 
 class PortfolioSectionANON extends React.Component {
 	render() {
@@ -40,7 +35,6 @@ class PortfolioSectionANON extends React.Component {
 		return (
 			<div className={classes.section}>
 				<div className={classes.container}>
-					{/* <h2 className={classes.titleMain}>Some of our works</h2> */}
 					<GridContainer>
 						<GridItem xs={12} sm={12} md={6} className={classes.marginAuto}>
 							<Card carousel>
@@ -97,7 +91,9 @@ class PortfolioSectionANON extends React.Component {
 								Co-fork between Bitcoin and Z-Classic with masternode
 								implementations.
 							</h5>
-							<a href="https://www.anonfork.io/"><i className={classes.socialIcons + " fas fa-home"} /></a>
+							<a href="https://www.anonfork.io/">
+								<i className={classes.socialIcons + " fas fa-home"} />
+							</a>
 							<a href="https://github.com/anonymousbitcoin/anon">
 								<i className={classes.socialIcons + " fab fa-github"} />
 							</a>
@@ -133,46 +129,22 @@ class PortfolioSectionANON extends React.Component {
 							<h3 className={classes.title}>Tech Utilized: </h3>
 							<GridContainer>
 								<GridItem xs={4} sm={4} md={2}>
-									<InfoAreaImage
-										// title="0x Protocol"
-										imgSrc={cplus}
-										portfolio
-									/>
+									<InfoAreaImage imgSrc={cplus} portfolio />
 								</GridItem>
 								<GridItem xs={4} sm={4} md={2}>
-									<InfoAreaImage
-										// title="AWS"
-										imgSrc={java}
-										portfolio
-									/>
+									<InfoAreaImage imgSrc={java} portfolio />
 								</GridItem>
 								<GridItem xs={4} sm={4} md={2}>
-									<InfoAreaImage
-										// title="GraphQL"
-										imgSrc={linux}
-										portfolio
-									/>
+									<InfoAreaImage imgSrc={linux} portfolio />
 								</GridItem>
 								<GridItem xs={4} sm={4} md={2}>
-									<InfoAreaImage
-										// title="HTML5"
-										imgSrc={nodejs}
-										portfolio
-									/>
+									<InfoAreaImage imgSrc={nodejs} portfolio />
 								</GridItem>
 								<GridItem xs={4} sm={4} md={2}>
-									<InfoAreaImage
-										// title="Javascript"
-										imgSrc={github}
-										portfolio
-									/>
+									<InfoAreaImage imgSrc={github} portfolio />
 								</GridItem>
 								<GridItem xs={4} sm={4} md={2}>
-									<InfoAreaImage
-										// title="Lightning"
-										imgSrc={gradle}
-										portfolio
-									/>
+									<InfoAreaImage imgSrc={gradle} portfolio />
 								</GridItem>
 							</GridContainer>
 						</GridItem>

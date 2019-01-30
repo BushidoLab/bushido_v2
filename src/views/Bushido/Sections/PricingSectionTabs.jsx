@@ -27,7 +27,6 @@ const styles = theme => ({
 	root: {
 		backgroundColor: theme.palette.background.paper,
 		padding: "70px 0"
-		// width: 500
 	},
 	title: {
 		...title,
@@ -64,38 +63,38 @@ class PricingSectionTabs extends React.Component {
 		const { classes, theme } = this.props;
 
 		return (
-				<div className={classes.root} id="Pricing">
-					<h2 className={classes.title}>Pricing Plans</h2>
-					<h5 className={classes.description}>Pricing is as follows:</h5>
-					<AppBar
-						position="relative"
-						style={{ background: "transparent", boxShadow: "none" }}
+			<div className={classes.root} id="Pricing">
+				<h2 className={classes.title}>Pricing Plans</h2>
+				<h5 className={classes.description}>Pricing is as follows:</h5>
+				<AppBar
+					position="relative"
+					style={{ background: "transparent", boxShadow: "none" }}
+				>
+					<Tabs
+						value={this.state.value}
+						onChange={this.handleChange}
+						style={{ color: "black" }}
+						TabIndicatorProps={{
+							style: {
+								backgroundColor: "#EE272B"
+							}
+						}}
+						variant="fullWidth"
+						centered={true}
 					>
-						<Tabs
-							value={this.state.value}
-							onChange={this.handleChange}
-							style={{color: "black"}}
-							TabIndicatorProps={{
-								style: {
-									backgroundColor: "#EE272B",
-								}
-							}}
-							variant="fullWidth"
-							centered={true}
-						>
-							<Tab label="Development" />
-							<Tab label="Consultation" />
-						</Tabs>
-					</AppBar>
-					<SwipeableViews
-						axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-						index={this.state.value}
-						onChangeIndex={this.handleChangeIndex}
-					>
-						<PricingSectionProduct />
-						<PricingSectionConsultation />
-					</SwipeableViews>
-				</div>
+						<Tab label="Development" />
+						<Tab label="Consultation" />
+					</Tabs>
+				</AppBar>
+				<SwipeableViews
+					axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+					index={this.state.value}
+					onChangeIndex={this.handleChangeIndex}
+				>
+					<PricingSectionProduct />
+					<PricingSectionConsultation />
+				</SwipeableViews>
+			</div>
 		);
 	}
 }

@@ -1,30 +1,22 @@
 import React from "react";
-// react component for creating beautiful carousel
-// import classNames from "classnames";
 import Carousel from "react-slick";
-// @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// @material-ui/icons
-// import LocationOn from "@material-ui/icons/LocationOn";
-// core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
 import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
+import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
+// screenshots
 import image1 from "assets/img/portfolio/tune1.png";
 import image2 from "assets/img/portfolio/tune2.png";
 import image3 from "assets/img/portfolio/tune3.png";
-
-import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
+// svg's
 import solidity from "assets/img/SVG/Solidity_logo.svg";
 import ethereum from "assets/img/SVG/ethereum.svg";
 import nodejs from "assets/img/SVG/nodejs-plain.svg";
 import github from "assets/img/SVG/github-original.svg";
 import metamask from "assets/img/SVG/metamask.svg";
 import javascript from "assets/img/SVG/javascript-plain.svg";
-
-// graphql appolo react hyperledgerfabric oracle, java
-// import { Button } from "@material-ui/core";
 
 class PortfolioSectionTUNE extends React.Component {
 	render() {
@@ -40,7 +32,6 @@ class PortfolioSectionTUNE extends React.Component {
 		return (
 			<div className={classes.section}>
 				<div className={classes.container}>
-					{/* <h2 className={classes.titleMain}>Some of our works</h2> */}
 					<GridContainer>
 						<GridItem xs={12} sm={12} md={6} className={classes.marginAuto}>
 							<Card carousel>
@@ -51,9 +42,6 @@ class PortfolioSectionTUNE extends React.Component {
 											alt="First slide"
 											className="slick-image"
 										/>
-										{/* <div className="slick-caption">
-											<h4>Home Page anonfork.io</h4>
-										</div> */}
 									</div>
 									<div>
 										<img
@@ -61,9 +49,6 @@ class PortfolioSectionTUNE extends React.Component {
 											alt="Second slide"
 											className="slick-image"
 										/>
-										{/* <div className="slick-caption">
-											<h4>ANON Block Explorer</h4>
-										</div> */}
 									</div>
 									<div>
 										<img
@@ -71,9 +56,6 @@ class PortfolioSectionTUNE extends React.Component {
 											alt="Third slide"
 											className="slick-image"
 										/>
-										{/* <div className="slick-caption">
-											<h4>ANON Block Explorer</h4>
-										</div> */}
 									</div>
 								</Carousel>
 							</Card>
@@ -83,11 +65,21 @@ class PortfolioSectionTUNE extends React.Component {
 							<h5 className={classes.description}>
 								Music Collaboration Democratized and Incentivized
 							</h5>
-							<a href="https://www.tunetoken.io/"><i className={classes.socialIcons + " fas fa-home"} /></a>
-							<a href="https://twitter.com/TuneBlockchain" ><i className={classes.socialIcons + " fab fa-twitter"} /></a>
-							<a href="https://t.me/RecordgramICO"><i className={classes.socialIcons + " fab fa-telegram"} /></a>
-							<a href="https://medium.com/tunetoken"><i className={classes.socialIcons + " fab fa-medium"} /></a>
-							<a href="https://www.reddit.com/r/TuneToken/"><i className={classes.socialIcons + " fab fa-reddit"} /></a>
+							<a href="https://www.tunetoken.io/">
+								<i className={classes.socialIcons + " fas fa-home"} />
+							</a>
+							<a href="https://twitter.com/TuneBlockchain">
+								<i className={classes.socialIcons + " fab fa-twitter"} />
+							</a>
+							<a href="https://t.me/RecordgramICO">
+								<i className={classes.socialIcons + " fab fa-telegram"} />
+							</a>
+							<a href="https://medium.com/tunetoken">
+								<i className={classes.socialIcons + " fab fa-medium"} />
+							</a>
+							<a href="https://www.reddit.com/r/TuneToken/">
+								<i className={classes.socialIcons + " fab fa-reddit"} />
+							</a>
 							<h5 className={classes.description}>
 								Tune Company is a software development and management company
 								primarily focused on creating blockchain based technology, smart
@@ -98,46 +90,22 @@ class PortfolioSectionTUNE extends React.Component {
 							<h3 className={classes.title}>Tech Utilized: </h3>
 							<GridContainer>
 								<GridItem xs={4} sm={4} md={2}>
-									<InfoAreaImage
-										// title="0x Protocol"
-										imgSrc={solidity}
-										portfolio
-									/>
+									<InfoAreaImage imgSrc={solidity} portfolio />
 								</GridItem>
 								<GridItem xs={4} sm={4} md={2}>
-									<InfoAreaImage
-										// title="AWS"
-										imgSrc={ethereum}
-										portfolio
-									/>
+									<InfoAreaImage imgSrc={ethereum} portfolio />
 								</GridItem>
 								<GridItem xs={4} sm={4} md={2}>
-									<InfoAreaImage
-										// title="GraphQL"
-										imgSrc={javascript}
-										portfolio
-									/>
+									<InfoAreaImage imgSrc={javascript} portfolio />
 								</GridItem>
 								<GridItem xs={4} sm={4} md={2}>
-									<InfoAreaImage
-										// title="HTML5"
-										imgSrc={nodejs}
-										portfolio
-									/>
+									<InfoAreaImage imgSrc={nodejs} portfolio />
 								</GridItem>
 								<GridItem xs={4} sm={4} md={2}>
-									<InfoAreaImage
-										// title="Javascript"
-										imgSrc={github}
-										portfolio
-									/>
+									<InfoAreaImage imgSrc={github} portfolio />
 								</GridItem>
 								<GridItem xs={4} sm={4} md={2}>
-									<InfoAreaImage
-										// title="Lightning"
-										imgSrc={metamask}
-										portfolio
-									/>
+									<InfoAreaImage imgSrc={metamask} portfolio />
 								</GridItem>
 							</GridContainer>
 						</GridItem>

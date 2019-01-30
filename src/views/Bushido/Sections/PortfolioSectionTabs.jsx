@@ -7,6 +7,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import { title } from "assets/jss/material-kit-react.jsx";
+// sections
 import PortfolioSectionANON from "./PortfolioSectionANON.jsx";
 import PortfolioSectionTUNE from "./PortfolioSectionTUNE.jsx";
 import PortfolioSectionLVLBLOX from "./PortfolioSectionLVLBLOX.jsx";
@@ -28,7 +29,6 @@ const styles = theme => ({
 	root: {
 		backgroundColor: theme.palette.background.paper,
 		padding: "70px 0"
-		// width: 500
 	},
 	title: {
 		...title,
@@ -72,7 +72,7 @@ class PortfolioSectionTabs extends React.Component {
 					<Tabs
 						value={this.state.value}
 						onChange={this.handleChange}
-						style={{color: "black"}}
+						style={{ color: "black" }}
 						TabIndicatorProps={{
 							style: {
 								backgroundColor: "#EE272B"
