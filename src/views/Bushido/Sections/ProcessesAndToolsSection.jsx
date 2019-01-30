@@ -1,15 +1,9 @@
 import React from "react";
-// @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-
-// @material-ui/icons
-// import Chat from "@material-ui/icons/Chat";
-// import VerifiedUser from "@material-ui/icons/VerifiedUser";
-// import Fingerprint from "@material-ui/icons/Fingerprint";
-// core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
+// svg's
 import aws from "assets/img/SVG/aws.svg";
 import cplus from "assets/img/SVG/cplus.svg";
 import mongo from "assets/img/SVG/mongodb-plain.svg";
@@ -52,7 +46,6 @@ class ProcessesAndToolsSection extends React.Component {
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage title="Bitcoin" imgSrc={bitcoin} process />
 						</GridItem>
-
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage
 								title="Hyperledger Fabric"
@@ -70,7 +63,6 @@ class ProcessesAndToolsSection extends React.Component {
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage title="Ethereum" imgSrc={ethereum} process />
 						</GridItem>
-
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage title="Cardano" imgSrc={cardano} process />
 						</GridItem>
@@ -80,14 +72,12 @@ class ProcessesAndToolsSection extends React.Component {
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage title="Stratis" imgSrc={stratis} process />
 						</GridItem>
-
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage title="R3" imgSrc={r3} process />
 						</GridItem>
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage title="Solidity" imgSrc={solidity} process />
 						</GridItem>
-
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage title="Javascript" imgSrc={javascript} process />
 						</GridItem>
@@ -106,7 +96,6 @@ class ProcessesAndToolsSection extends React.Component {
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage title="C++" imgSrc={cplus} process />
 						</GridItem>
-
 						<GridItem xs={4} sm={3} md={2}>
 							<InfoAreaImage title="Amazon Web Services" imgSrc={aws} process />
 						</GridItem>

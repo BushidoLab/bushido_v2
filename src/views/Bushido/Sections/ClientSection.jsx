@@ -3,18 +3,12 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-
-// @material-ui/icons
-
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-// import Button from "components/CustomButtons/Button.jsx";
 import Card from "components/Card/Card.jsx";
-
 import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx";
-
-
+// png icons
 import client_ibm from "assets/img/clients/ibm_logo.png";
 import client_oracle from "assets/img/clients/oracle_logo.png";
 import client_miacoc from "assets/img/clients/MIAMIcoc_logo.png";
@@ -40,19 +34,14 @@ import client_01 from "assets/img/clients/learn_01.png";
 import client_caldwell from "assets/img/clients/caldwell.png";
 import client_lab from "assets/img/clients/lab_mia.png";
 
-
-
 class ClientSection extends React.Component {
 	render() {
 		const { classes } = this.props;
 		const imageClasses = classNames(classes.imgCardCentered);
-		// classes.imgRaised,
-		// classes.imgRoundedCircle,
-		// classes.imgFluid
 		return (
 			<div>
 				<div className={classes.section} id="Clients">
-					<h2 className={classes.title} >Organizations we've worked with</h2>
+					<h2 className={classes.title}>Organizations we've worked with</h2>
 					<div>
 						<GridContainer>
 							<GridItem xs={6} sm={4} md={3}>
@@ -81,9 +70,7 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										MIT Enterprise Forum
 										<br />
-										<small className={classes.smallTitle}>
-											University
-										</small>
+										<small className={classes.smallTitle}>University</small>
 									</h4>
 								</Card>
 							</GridItem>
@@ -122,11 +109,7 @@ class ClientSection extends React.Component {
 							<GridItem xs={6} sm={4} md={3}>
 								<Card plain>
 									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-										<img
-											src={client_ben}
-											alt="..."
-											className={imageClasses}
-										/>
+										<img src={client_ben} alt="..." className={imageClasses} />
 									</GridItem>
 									<h4 className={classes.cardTitle}>
 										BEN
@@ -140,11 +123,7 @@ class ClientSection extends React.Component {
 							<GridItem xs={6} sm={4} md={3}>
 								<Card plain>
 									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-										<img
-											src={client_um}
-											alt="..."
-											className={imageClasses}
-										/>
+										<img src={client_um} alt="..." className={imageClasses} />
 									</GridItem>
 									<h4 className={classes.cardTitle}>
 										University of Miami
@@ -167,9 +146,7 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										Smart Dubai
 										<br />
-										<small className={classes.smallTitle}>
-											Blockchain 
-										</small>
+										<small className={classes.smallTitle}>Blockchain</small>
 									</h4>
 								</Card>
 							</GridItem>
@@ -236,11 +213,7 @@ class ClientSection extends React.Component {
 							<GridItem xs={6} sm={4} md={3}>
 								<Card plain>
 									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-										<img
-											src={client_01}
-											alt="..."
-											className={imageClasses}
-										/>
+										<img src={client_01} alt="..." className={imageClasses} />
 									</GridItem>
 									<h4 className={classes.cardTitle}>
 										Learn01
@@ -261,7 +234,9 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										Caldwell IP
 										<br />
-										<small className={classes.smallTitle}>Intelectual Property</small>
+										<small className={classes.smallTitle}>
+											Intelectual Property
+										</small>
 									</h4>
 								</Card>
 							</GridItem>
@@ -281,7 +256,6 @@ class ClientSection extends React.Component {
 									</h4>
 								</Card>
 							</GridItem>
-						
 							<GridItem xs={6} sm={4} md={3}>
 								<Card plain>
 									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
@@ -294,21 +268,7 @@ class ClientSection extends React.Component {
 									</h4>
 								</Card>
 							</GridItem>
-							{/* <GridItem xs={6} sm={4} md={4}>
-								<Card plain>
-									<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-										<img src={client_anon} alt="..." className={imageClasses} />
-									</GridItem>
-									<h4 className={classes.cardTitle}>
-										Anonymous Bitcoin
-										<br />
-										<small className={classes.smallTitle}>
-											Crypto Currency
-										</small>
-									</h4>
-								</Card>
-							</GridItem> */}
-							</GridContainer>
+						</GridContainer>
 					</div>
 				</div>
 				<div>
@@ -318,7 +278,7 @@ class ClientSection extends React.Component {
 						</h2>
 						<div>
 							<GridContainer>
-							<GridItem xs={6} sm={4} md={4}>
+								<GridItem xs={6} sm={4} md={4}>
 									<Card plain>
 										<GridItem
 											xs={12}
