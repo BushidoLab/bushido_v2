@@ -32,7 +32,7 @@ class PricingSectionProduct extends React.Component {
 			<div className={classes.section}>
 				<div className={classes.container}>
 					<div id="nav-tabs">
-						<GridContainer xs={12} sm={12} md={12}>
+						<GridContainer>
 							<GridItem xs={12} sm={12} md={6} className={classes.cardPadding}>
 								<Card>
 									<CardContent className={classes.contentHeightConsultation}>

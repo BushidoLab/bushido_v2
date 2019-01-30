@@ -23,7 +23,7 @@ import ProcessesAndToolsSection from "./Sections/ProcessesAndToolsSection.jsx";
 import ClientSection from "./Sections/ClientSection.jsx";
 import PortfolioSectionTabs from "./Sections/PortfolioSectionTabs.jsx";
 import PricingSectionTabs from "./Sections/PricingSectionTabs.jsx";
-import ScrollIntoView from 'react-scroll-into-view';
+import ScrollIntoView from "react-scroll-into-view";
 
 import CircularIndeterminate from "../Components/LazyLoader.jsx";
 import { Fade } from "@material-ui/core";
@@ -53,13 +53,7 @@ class Bushido extends React.Component {
 		const { classes, ...rest } = this.props;
 
 		if (this.state.pageLoading) {
-			return (
-				<CircularIndeterminate
-					classes={classes}
-					rest={rest}
-					updateFadeState={this.updateFadeState}
-				/>
-			);
+			return <CircularIndeterminate updateFadeState={this.updateFadeState} />;
 		} else {
 			return <LandingPage classes={classes} rest={rest} />;
 		}
@@ -84,10 +78,11 @@ class LandingPage extends React.Component {
 									<br />
 									<ScrollIntoView alignToTop={true} selector={`#Contact`}>
 										<Button
-											color="danger"
+											variant="contained"
 											size="lg"
 											target="_blank"
 											rel="noopener noreferrer"
+											className={classes.quoteButton}
 										>
 											Get a Quote
 										</Button>

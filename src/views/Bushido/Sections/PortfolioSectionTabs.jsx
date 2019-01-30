@@ -66,20 +66,20 @@ class PortfolioSectionTabs extends React.Component {
 				<h2 className={classes.title}>Portfolio</h2>
 				<h5 className={classes.description}>Just a few of our projects</h5>
 				<AppBar
-					position="center"
+					position="relative"
 					style={{ background: "transparent", boxShadow: "none" }}
 				>
 					<Tabs
 						value={this.state.value}
 						onChange={this.handleChange}
-						textColor="#000"
+						style={{color: "black"}}
 						TabIndicatorProps={{
 							style: {
 								backgroundColor: "#EE272B"
 							}
 						}}
 						variant="fullWidth"
-						centered="true"
+						centered={true}
 					>
 						<Tab label="ANON" />
 						<Tab label="Tune" />
