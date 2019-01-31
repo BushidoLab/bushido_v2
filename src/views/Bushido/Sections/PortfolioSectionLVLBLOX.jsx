@@ -8,9 +8,9 @@ import Card from "components/Card/Card.jsx";
 import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
 import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
 // screenshots
-import image1 from "assets/img/portfolio/vera_deploy.webp";
-import image2 from "assets/img/portfolio/vera_reconcile.webp";
-import image3 from "assets/img/portfolio/vera_entitlement.webp";
+import image1 from "assets/img/portfolio/vera_deploy.png";
+import image2 from "assets/img/portfolio/vera_reconcile.png";
+import image3 from "assets/img/portfolio/vera_entitlement.png";
 // svg's
 import golang from "assets/img/SVG/go-plain.svg";
 import appolo from "assets/img/SVG/appolo.svg";
