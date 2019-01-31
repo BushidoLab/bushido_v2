@@ -49,6 +49,7 @@ class CircularIndeterminate extends React.Component {
 								<img
 									style={{ position: "absolute", width: "200px" }}
 									src={bushido}
+									alt="Bushido circle logo"
 								/>
 								<div style={{ position: "absolute" }}>
 									<CircularProgress
@@ -70,6 +71,7 @@ class CircularIndeterminate extends React.Component {
 								<img
 									style={{ position: "absolute", width: "200px" }}
 									src={bushido_logo}
+									alt="Bushido text logo"
 								/>
 							</div>
 						</Grid>
