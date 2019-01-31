@@ -43,7 +43,7 @@ class Bushido extends React.Component {
 	componentDidMount = () => {
 		setTimeout(() => {
 			this.setState({ pageLoading: false });
-		}, 500);
+		}, 2000);
 	};
 
 	render() {
@@ -61,10 +61,10 @@ class LandingPage extends React.Component {
 	render() {
 		const { classes, ...rest } = this.props;
 		return (
-			<Fade in timeout={2000}>
+			<Fade in timeout={1000}>
 				<div className={classes.fadeIn}>
 					<Header color="transparent" fixed {...rest} />
-					<Parallax filter image={require("assets/img/land.webp")}>
+					<Parallax filter image={require("assets/img/land.png")}>
 						<div className={classes.container}>
 							<GridContainer>
 								<GridItem xs={12} sm={12} md={8}>

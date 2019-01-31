@@ -3,9 +3,11 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
+import Grid from "components/Grid/GridItem.jsx";
 
-import logoSVG from "logo.svg";
+import bushido from "assets/img/bushido/circle_logo.png";
+import bushido_logo from "assets/img/bushido/bushido2.png";
+// import logoSVG from "logo.svg";
 import { Fade } from "@material-ui/core";
 
 const styles = theme => ({
@@ -16,17 +18,10 @@ const styles = theme => ({
 		backgroundColor: "black"
 	},
 	root: {
-		color: "red",
-		svg: logoSVG,
-		marginTop: "50%"
+		color: "white"
 	},
-	centered: {
-		height: "100vh",
-		justify: "center",
-		alignItems: "center",
-		direction: "column",
-		marginTop: "30%",
-		paddingLeft: "50%"
+	loadPadding:{
+		paddingTop: "20%"
 	}
 });
 
@@ -34,21 +29,52 @@ class CircularIndeterminate extends React.Component {
 	render() {
 		const { classes } = this.props;
 		return (
-			<Fade in timeout={500}>
+			<Fade in timeout={10}>
 				<div className={classes.blackBackground}>
-					<GridContainer
-						justify="center"
-						alignItems="center"
-						direction="column"
-					>
-						<GridItem className={classes.centered}>
-							<CircularProgress
-								alignitems="center"
-								justify="center"
-								direction="column"
-								className={classes.root}
-							/>
-						</GridItem>
+					<GridContainer>
+						<Grid
+							container
+							direction="column"
+							justify="center"
+							alignItems="center"
+							className={classes.loadPadding}
+						>
+							<div
+								style={{
+									position: "relative",
+									width: "200px",
+									height: "200px"
+								}}
+							>
+								<img
+									style={{ position: "absolute", width: "200px" }}
+									src={bushido}
+									alt="Bushido circle logo"
+								/>
+								<div style={{ position: "absolute" }}>
+									<CircularProgress
+										percentage={20}
+										textForPercentage={null}
+										className={classes.root}
+										size={200}
+									/>
+								</div>
+							</div>
+							<div
+								style={{
+									position: "relative",
+									width: "200px",
+									height: "500px",
+									top: "20px"
+								}}
+							>
+								<img
+									style={{ position: "absolute", width: "200px" }}
+									src={bushido_logo}
+									alt="Bushido text logo"
+								/>
+							</div>
+						</Grid>
 					</GridContainer>
 				</div>
 			</Fade>
