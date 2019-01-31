@@ -1,17 +1,19 @@
 {
-  "name": "material-kit-react",
-  "homepage": "https://github.com/creativetimofficial/material-kit-react",
+  "name": "bushido-lab-landing",
+  "homepage": "https://bushidolab.com",
   "authors": [
-    "creative-tim"
+    "kevin-van-der-poll"
   ],
-  "description": "A Badass Material-UI Kit based on Material Design",
+  "description": "A Badass Bushido Landing page, based on Material Design",
   "main": "dist/index.js",
   "keywords": [
     "material",
     "design",
     "material-ui",
     "google",
-    "twitter"
+		"twitter",
+		"bushido",
+		"blockchain"
   ],
   "license": "Creative TIM License",
   "ignore": [
