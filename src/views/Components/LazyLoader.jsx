@@ -33,7 +33,7 @@ class CircularIndeterminate extends React.Component {
 	render() {
 		const { classes } = this.props;
 		return (
-			<Fade in timeout={500}>
+			<Fade in timeout={10}>
 				<div className={classes.blackBackground}>
 					<GridContainer
 						justify="center"
