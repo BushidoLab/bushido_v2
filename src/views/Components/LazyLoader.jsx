@@ -5,7 +5,9 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 
-import logoSVG from "logo.svg";
+import bushido from "assets/img/bushido/circle_logo.png";
+import bushido_logo from "assets/img/bushido/bushido2.png";
+// import logoSVG from "logo.svg";
 import { Fade } from "@material-ui/core";
 
 const styles = theme => ({
@@ -16,18 +18,15 @@ const styles = theme => ({
 		backgroundColor: "black"
 	},
 	root: {
-		color: "red",
-		svg: logoSVG,
-		marginTop: "50%"
+		color: "white",
+		// svg: logoSVG,
+		// marginTop: "45%"
 	},
 	centered: {
-		height: "100vh",
 		justify: "center",
-		alignItems: "center",
-		direction: "column",
-		marginTop: "30%",
-		paddingLeft: "50%"
-	}
+		paddingLeft: "45%",
+		paddingTop: "20%"
+	},
 });
 
 class CircularIndeterminate extends React.Component {
@@ -42,12 +41,39 @@ class CircularIndeterminate extends React.Component {
 						direction="column"
 					>
 						<GridItem className={classes.centered}>
-							<CircularProgress
-								alignitems="center"
-								justify="center"
-								direction="column"
-								className={classes.root}
-							/>
+							<div
+								style={{
+									position: "relative",
+									width: "200px",
+									height: "200px",
+								}}
+							>
+								<img
+									style={{ position: "absolute", width: "200px" }}
+									src={bushido}
+								/>
+								<div style={{ position: "absolute" }}>
+									<CircularProgress
+										percentage={20}
+										textForPercentage={null}
+										className={classes.root}
+										size={200}
+									/>
+								</div>
+							</div>
+							<div
+								style={{
+									position: "relative",
+									width: "200px",
+									height: "500px",
+									top: "20px"
+								}}
+							>
+							<img
+									style={{ position: "absolute", width: "200px"}}
+									src={bushido_logo}
+								/>
+							</div>
 						</GridItem>
 					</GridContainer>
 				</div>

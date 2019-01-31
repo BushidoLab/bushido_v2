@@ -42,7 +42,7 @@ class Bushido extends React.Component {
 
 	componentDidMount = () => {
 		setTimeout(() => {
-			this.setState({ pageLoading: false });
+			this.setState({ pageLoading: true });
 		}, 500);
 	};
 
