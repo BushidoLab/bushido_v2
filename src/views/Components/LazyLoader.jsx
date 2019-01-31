@@ -5,7 +5,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import Grid from "components/Grid/GridItem.jsx";
 
-import bushido from "assets/img/bushido/circle_logo.png";
+import bushido from "assets/img/bushido/circle_logo_.png";
 import bushido_logo from "assets/img/bushido/bushido2.png";
 // import logoSVG from "logo.svg";
 import { Fade } from "@material-ui/core";
