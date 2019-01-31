@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
+import Grid from "components/Grid/GridItem.jsx";
 
 import bushido from "assets/img/bushido/circle_logo.png";
 import bushido_logo from "assets/img/bushido/bushido2.png";
@@ -18,15 +18,11 @@ const styles = theme => ({
 		backgroundColor: "black"
 	},
 	root: {
-		color: "white",
-		// svg: logoSVG,
-		// marginTop: "45%"
+		color: "white"
 	},
-	centered: {
-		justify: "center",
-		paddingLeft: "45%",
+	loadPadding:{
 		paddingTop: "20%"
-	},
+	}
 });
 
 class CircularIndeterminate extends React.Component {
@@ -35,17 +31,19 @@ class CircularIndeterminate extends React.Component {
 		return (
 			<Fade in timeout={10}>
 				<div className={classes.blackBackground}>
-					<GridContainer
-						justify="center"
-						alignItems="center"
-						direction="column"
-					>
-						<GridItem className={classes.centered}>
+					<GridContainer>
+						<Grid
+							container
+							direction="column"
+							justify="center"
+							alignItems="center"
+							className={classes.loadPadding}
+						>
 							<div
 								style={{
 									position: "relative",
 									width: "200px",
-									height: "200px",
+									height: "200px"
 								}}
 							>
 								<img
@@ -69,12 +67,12 @@ class CircularIndeterminate extends React.Component {
 									top: "20px"
 								}}
 							>
-							<img
-									style={{ position: "absolute", width: "200px"}}
+								<img
+									style={{ position: "absolute", width: "200px" }}
 									src={bushido_logo}
 								/>
 							</div>
-						</GridItem>
+						</Grid>
 					</GridContainer>
 				</div>
 			</Fade>
