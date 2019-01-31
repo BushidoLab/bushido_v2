@@ -64,7 +64,7 @@ class LandingPage extends React.Component {
 			<Fade in timeout={2000}>
 				<div className={classes.fadeIn}>
 					<Header color="transparent" fixed {...rest} />
-					<Parallax filter image={require("assets/img/land.jpg")}>
+					<Parallax filter image={require("assets/img/land.webp")}>
 						<div className={classes.container}>
 							<GridContainer>
 								<GridItem xs={12} sm={12} md={8}>

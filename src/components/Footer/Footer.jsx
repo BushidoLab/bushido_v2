@@ -29,6 +29,7 @@ function Footer({ ...props }) {
                 className={classes.block}
 								target="_blank"
 								color="danger"
+								aria-label="Link Home"
               >
                 Bushido Lab
               </a>
@@ -37,7 +38,8 @@ function Footer({ ...props }) {
               <a
                 href="/"
                 className={classes.block}
-                target="_blank"
+								target="_blank"
+								aria-label="About"
               >
                 About us
               </a>

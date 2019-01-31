@@ -7,9 +7,9 @@ import Card from "components/Card/Card.jsx";
 import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
 import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
 // screenshots
-import image1 from "assets/img/portfolio/tune1.png";
-import image2 from "assets/img/portfolio/tune2.png";
-import image3 from "assets/img/portfolio/tune3.png";
+import image1 from "assets/img/portfolio/tune1.webp";
+import image2 from "assets/img/portfolio/tune2.webp";
+import image3 from "assets/img/portfolio/tune3.webp";
 // svg's
 import solidity from "assets/img/SVG/Solidity_logo.svg";
 import ethereum from "assets/img/SVG/ethereum.svg";

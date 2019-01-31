@@ -179,7 +179,7 @@ class Header extends React.Component {
 						</IconButton>
 						<div>
 							{" "}
-							<a href="/">
+							<a href="/" aria-label="Home Button">
 								<img
 									src={bushido}
 									className={classes.bushidoSVG}

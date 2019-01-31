@@ -8,11 +8,11 @@ import Card from "components/Card/Card.jsx";
 import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
 import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
 // screenshots
-import image1 from "assets/img/portfolio/anonfork.png";
-import image2 from "assets/img/portfolio/explorer.png";
-import image3 from "assets/img/portfolio/explorer_blocks.png";
-import image4 from "assets/img/portfolio/anon_proposals.png";
-import image5 from "assets/img/portfolio/anon_copay.png";
+import image1 from "assets/img/portfolio/anonfork.webp";
+import image2 from "assets/img/portfolio/explorer.webp";
+import image3 from "assets/img/portfolio/explorer_blocks.webp";
+import image4 from "assets/img/portfolio/anon_proposals.webp";
+import image5 from "assets/img/portfolio/anon_copay.webp";
 // svg logos
 import cplus from "assets/img/SVG/cplus.svg";
 import linux from "assets/img/SVG/linux-plain.svg";
