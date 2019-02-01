@@ -25,7 +25,7 @@ class ProductSection extends React.Component {
 								<CardContent>
 									<InfoAreaImage
 										title="Enterprise Grade Blockchain"
-										description="Development of private blockchains for business and consortiums. Service areas include but are not limited to: value-chain, right management and auditing."
+										description="Development of private blockchains for business and consortium's. Service areas include but are not limited to: value-chain, right management and auditing."
 										imgSrc={blocks}
 										product
 									/>
@@ -61,7 +61,7 @@ class ProductSection extends React.Component {
 								<CardContent>
 									<InfoAreaImage
 										title="Custom Cryptocurrencies"
-										description="Public cryptocurrency blockchain development. Technologies include Bitcoin, Ethereum, Dash, Zcash and Monero. Services include: forks, merge forks, privacy coins, masternodes and second layer concensus."
+										description="Public cryptocurrency blockchain development. Technologies include Bitcoin, Ethereum, Dash, Zcash and Monero. Services include: forks, merge forks, privacy coins, masternodes and second layer consensus."
 										imgSrc={custom_crypto}
 										product
 									/>

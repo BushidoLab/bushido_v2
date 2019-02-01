@@ -63,7 +63,7 @@ class PortfolioSectionTUNE extends React.Component {
 						<GridItem xs={12} sm={12} md={6} className={classes.marginAuto}>
 							<h2 className={classes.title}>TUNE TOKEN</h2>
 							<h5 className={classes.description}>
-								Music Collaboration Democratized and Incentivized
+								Music Collaboration Democratized and Incentivized.
 							</h5>
 							<a href="https://www.tunetoken.io/">
 								<i className={classes.socialIcons + " fas fa-home"} />
@@ -85,7 +85,7 @@ class PortfolioSectionTUNE extends React.Component {
 								primarily focused on creating blockchain based technology, smart
 								contract design and digital tokenized applications. Tune’s
 								primary mission is to solve digital songwriter rights and
-								royalty transparency issues for the music industry
+								royalty transparency issues for the music industry.
 							</h5>
 							<h3 className={classes.title}>Tech Utilized: </h3>
 							<GridContainer>

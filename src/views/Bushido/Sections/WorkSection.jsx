@@ -66,10 +66,7 @@ class WorkSection extends React.Component {
 							Let us help you!
 						</h2>
 						<h4 className={classes.description}>
-							Divide details about your product or agency work into parts. Write
-							a few lines about each one and contact us about any further
-							collaboration. We will responde get back to you in a couple of
-							hours.
+						Provide details about your project or blockchain needs and a member of our team will answer you shortly.
 						</h4>
 						<form onSubmit={this.handleSubmit}>
 							<GridContainer>

@@ -56,9 +56,9 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										Java Oracle
 										<br />
-										<small className={classes.smallTitle}>
+										{/* <small className={classes.smallTitle}>
 											Product Licencing
-										</small>
+										</small> */}
 									</h4>
 								</Card>
 							</GridItem>
@@ -70,7 +70,7 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										MIT Enterprise Forum
 										<br />
-										<small className={classes.smallTitle}>University</small>
+										{/* <small className={classes.smallTitle}>University</small> */}
 									</h4>
 								</Card>
 							</GridItem>
@@ -82,9 +82,9 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										IBM
 										<br />
-										<small className={classes.smallTitle}>
+										{/* <small className={classes.smallTitle}>
 											Hardware Chipsets
-										</small>
+										</small> */}
 									</h4>
 								</Card>
 							</GridItem>
@@ -100,9 +100,9 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										Miami Beach Chamber of Commerce
 										<br />
-										<small className={classes.smallTitle}>
+										{/* <small className={classes.smallTitle}>
 											Chamber of secrets
-										</small>
+										</small> */}
 									</h4>
 								</Card>
 							</GridItem>
@@ -114,9 +114,9 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										BEN
 										<br />
-										<small className={classes.smallTitle}>
+										{/* <small className={classes.smallTitle}>
 											Blockchain Education Network
-										</small>
+										</small> */}
 									</h4>
 								</Card>
 							</GridItem>
@@ -128,9 +128,9 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										University of Miami
 										<br />
-										<small className={classes.smallTitle}>
+										{/* <small className={classes.smallTitle}>
 											Blockchain Education
-										</small>
+										</small> */}
 									</h4>
 								</Card>
 							</GridItem>
@@ -146,7 +146,7 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										Smart Dubai
 										<br />
-										<small className={classes.smallTitle}>Blockchain</small>
+										{/* <small className={classes.smallTitle}>Blockchain</small> */}
 									</h4>
 								</Card>
 							</GridItem>
@@ -158,9 +158,9 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										Tune Token
 										<br />
-										<small className={classes.smallTitle}>
+										{/* <small className={classes.smallTitle}>
 											Creative rights token
-										</small>
+										</small> */}
 									</h4>
 								</Card>
 							</GridItem>
@@ -172,9 +172,9 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										Miami Dade College
 										<br />
-										<small className={classes.smallTitle}>
+										{/* <small className={classes.smallTitle}>
 											Blockchain Curriculum
-										</small>
+										</small> */}
 									</h4>
 								</Card>
 							</GridItem>
@@ -190,7 +190,7 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										Level Blocks
 										<br />
-										<small className={classes.smallTitle}>Ideas ideas</small>
+										{/* <small className={classes.smallTitle}>Ideas ideas</small> */}
 									</h4>
 								</Card>
 							</GridItem>
@@ -206,7 +206,7 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										Miami Beacon Council
 										<br />
-										<small className={classes.smallTitle}>Ideas ideas</small>
+										{/* <small className={classes.smallTitle}>Ideas ideas</small> */}
 									</h4>
 								</Card>
 							</GridItem>
@@ -218,7 +218,7 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										Learn01
 										<br />
-										<small className={classes.smallTitle}>Curriculum</small>
+										{/* <small className={classes.smallTitle}>Curriculum</small> */}
 									</h4>
 								</Card>
 							</GridItem>
@@ -252,7 +252,7 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										Cre8or
 										<br />
-										<small className={classes.smallTitle}>Not sure</small>
+										{/* <small className={classes.smallTitle}>Not sure</small> */}
 									</h4>
 								</Card>
 							</GridItem>
@@ -264,7 +264,7 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										Miami Dade College Idea Center
 										<br />
-										<small className={classes.smallTitle}>Ideas ideas</small>
+										{/* <small className={classes.smallTitle}>Ideas ideas</small> */}
 									</h4>
 								</Card>
 							</GridItem>
@@ -295,9 +295,9 @@ class ClientSection extends React.Component {
 										<h4 className={classes.cardTitle}>
 											Miami Herald
 											<br />
-											<small className={classes.smallTitle}>
+											{/* <small className={classes.smallTitle}>
 												Local News Paper
-											</small>
+											</small> */}
 										</h4>
 									</Card>
 								</GridItem>
@@ -318,9 +318,9 @@ class ClientSection extends React.Component {
 										<h4 className={classes.cardTitle}>
 											Bitcoinist
 											<br />
-											<small className={classes.smallTitle}>
+											{/* <small className={classes.smallTitle}>
 												Bitcoin Magazine
-											</small>
+											</small> */}
 										</h4>
 									</Card>
 								</GridItem>
@@ -341,7 +341,7 @@ class ClientSection extends React.Component {
 										<h4 className={classes.cardTitle}>
 											CNBC
 											<br />
-											<small className={classes.smallTitle}>News Media</small>
+											{/* <small className={classes.smallTitle}>News Media</small> */}
 										</h4>
 									</Card>
 								</GridItem>
@@ -362,7 +362,7 @@ class ClientSection extends React.Component {
 										<h4 className={classes.cardTitle}>
 											Coindesk
 											<br />
-											<small className={classes.smallTitle}>Online blog</small>
+											{/* <small className={classes.smallTitle}>Online blog</small> */}
 										</h4>
 									</Card>
 								</GridItem>
@@ -383,7 +383,7 @@ class ClientSection extends React.Component {
 										<h4 className={classes.cardTitle}>
 											HACKED
 											<br />
-											<small className={classes.smallTitle}>Crypto Blog</small>
+											{/* <small className={classes.smallTitle}>Crypto Blog</small> */}
 										</h4>
 									</Card>
 								</GridItem>
@@ -404,7 +404,7 @@ class ClientSection extends React.Component {
 										<h4 className={classes.cardTitle}>
 											Tech Crunch
 											<br />
-											<small className={classes.smallTitle}>Online news</small>
+											{/* <small className={classes.smallTitle}>Online news</small> */}
 										</h4>
 									</Card>
 								</GridItem>
@@ -425,7 +425,7 @@ class ClientSection extends React.Component {
 										<h4 className={classes.cardTitle}>
 											Coin Telegraph
 											<br />
-											<small className={classes.smallTitle}>Online news</small>
+											{/* <small className={classes.smallTitle}>Online news</small> */}
 										</h4>
 									</Card>
 								</GridItem>
@@ -446,9 +446,9 @@ class ClientSection extends React.Component {
 										<h4 className={classes.cardTitle}>
 											A Bit Cryptic
 											<br />
-											<small className={classes.smallTitle}>
+											{/* <small className={classes.smallTitle}>
 												Crypto Podcast
-											</small>
+											</small> */}
 										</h4>
 									</Card>
 								</GridItem>
@@ -469,9 +469,9 @@ class ClientSection extends React.Component {
 										<h4 className={classes.cardTitle}>
 											The Lab Miami
 											<br />
-											<small className={classes.smallTitle}>
+											{/* <small className={classes.smallTitle}>
 												Coworking Space
-											</small>
+											</small> */}
 										</h4>
 									</Card>
 								</GridItem>

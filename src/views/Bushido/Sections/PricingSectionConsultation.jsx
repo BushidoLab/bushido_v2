@@ -52,10 +52,10 @@ class PricingSectionProduct extends React.Component {
 										<InfoAreaPricing
 											title="Technical Planning"
 											price="10,000"
-											descriptionP1="Includes full technical roadmap."
-											descriptionP2="Includes technical stack specifics"
+											descriptionP1="Includes full technical road map."
+											descriptionP2="Includes technical stack specifics."
 											descriptionP3="Includes application and platform architecture."
-											descriptionP4="Full Agile / Sprint schedule for every product delivery"
+											descriptionP4="Full Agile / Sprint schedule for every product delivery."
 											icon={Enterprise}
 											iconColor="danger"
 											vertical

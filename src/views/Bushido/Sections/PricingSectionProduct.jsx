@@ -28,11 +28,11 @@ class PricingSectionProduct extends React.Component {
 											title="Start Up"
 											price="20,000"
 											descriptionP1="Includes full stack implementation with deployment to a hosting platform."
-											descriptionP2="Maintenance for upto 1-year included."
+											descriptionP2="Maintenance for up to 1-year included."
 											descriptionP3="Length: 2 - 6 months."
 											descriptionP4="Minimum Viable Product."
 											descriptionP5="Collaboration and communication with in-house tech (if any)."
-											descriptionP6="Landing Page. SEO ready (on-site optimisation). Deployed on our personal servers."
+											descriptionP6="Landing Page. SEO ready (on-site optimization). Deployed on our personal servers."
 											icon={Startup}
 											iconColor="danger"
 											vertical
@@ -57,7 +57,7 @@ class PricingSectionProduct extends React.Component {
 											descriptionP1="Includes full stack enterprise infrastructure architecture."
 											descriptionP2="Developers and project management that work on your project exclusively."
 											descriptionP3="Collaboration and communication with in-house tech."
-											descriptionP4="Full agile sprint schedule"
+											descriptionP4="Full agile sprint schedule."
 											descriptionP5="Length: 6 months+"
 											icon={Enterprise}
 											iconColor="danger"
