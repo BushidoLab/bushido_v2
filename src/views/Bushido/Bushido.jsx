@@ -102,7 +102,6 @@ class LandingPage extends React.Component {
 							</div>
 							<PricingSectionTabs />
 							<ClientSection />
-							<PricingSectionTabs />
 							<WorkSection />
 						</div>
 					</div>
