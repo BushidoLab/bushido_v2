@@ -234,9 +234,9 @@ class ClientSection extends React.Component {
 									<h4 className={classes.cardTitle}>
 										Caldwell IP
 										<br />
-										<small className={classes.smallTitle}>
+										{/* <small className={classes.smallTitle}>
 											Intelectual Property
-										</small>
+										</small> */}
 									</h4>
 								</Card>
 							</GridItem>
