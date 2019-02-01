@@ -22,7 +22,7 @@ function Footer({ ...props }) {
     <footer className={footerClasses}>
       <div className={classes.container}>
         <div className={classes.left}>
-          <List className={classes.list}>
+          {/* <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
                 href="/"
@@ -62,7 +62,7 @@ function Footer({ ...props }) {
                 Licenses
               </a>
             </ListItem>
-          </List>
+          </List> */}
         </div>
         <div className={classes.right}>
           &copy; {1900 + new Date().getYear()} , crafted by{" "}

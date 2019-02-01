@@ -266,55 +266,47 @@ class Header extends React.Component {
 					</List>
 					<Divider className={classes.dividerColor} />
 					<List>
-						{[
-							"Blog",
-							"Github",
-							"Twitter",
-							"Instagram",
-							"Medium",
-							"LinkedIn"
-						].map((text, index) => (
-							<ListItem button key={text}>
-								<ListItemIcon>
-									{/* {index % 2 ==== 0 ? <i className={classes.socialIcons + " fab fa-github"} /> : <BuildIcon />} */}
-									{index === 0 ? (
-										<i className={classes.socialIcons + " fas fa-pencil-alt"} />
-									) : index === 1 ? (
-										<i className={classes.socialIcons + " fab fa-github"} />
-									) : index === 2 ? (
-										<i className={classes.socialIcons + " fab fa-twitter"} />
-									) : index === 3 ? (
-										<i className={classes.socialIcons + " fab fa-instagram"} />
-									) : index === 4 ? (
-										<i className={classes.socialIcons + " fab fa-medium-m"} />
-									) : index === 5 ? (
-										<i className={classes.socialIcons + " fab fa-linkedin"} />
-									) : null}
-								</ListItemIcon>
-								<ListItemText>
-									<a
-										className={classes.socialText}
-										href={
-											index === 0
-												? "/"
-												: index === 1
-												? "https://github.com/orgs/BushidoLab"
-												: index === 2
-												? "https://twitter.com/bushidolab"
-												: index === 3
-												? "https://www.instagram.com/bushidolab/"
-												: index === 4
-												? "https://medium.com/@sam_80474"
-												: index === 5
-												? "https://www.linkedin.com/company/the-bushido-lab/about/"
-												: "/"
-										}
-									>
-										{text}
-									</a>
-								</ListItemText>
-							</ListItem>
-						))}
+						{["Github", "Twitter", "Instagram", "Medium", "LinkedIn"].map(
+							(text, index) => (
+								<ListItem button key={text}>
+									<ListItemIcon>
+										{index === 0 ? (
+											<i className={classes.socialIcons + " fab fa-github"} />
+										) : index === 1 ? (
+											<i className={classes.socialIcons + " fab fa-twitter"} />
+										) : index === 2 ? (
+											<i
+												className={classes.socialIcons + " fab fa-instagram"}
+											/>
+										) : index === 3 ? (
+											<i className={classes.socialIcons + " fab fa-medium-m"} />
+										) : index === 4 ? (
+											<i className={classes.socialIcons + " fab fa-linkedin"} />
+										) : null}
+									</ListItemIcon>
+									<ListItemText>
+										<a
+											className={classes.socialText}
+											href={
+												index === 0
+													? "https://github.com/orgs/BushidoLab"
+													: index === 1
+													? "https://twitter.com/bushidolab"
+													: index === 2
+													? "https://www.instagram.com/bushidolab/"
+													: index === 3
+													? "https://medium.com/@sam_80474"
+													: index === 4
+													? "https://www.linkedin.com/company/the-bushido-lab/about/"
+													: "/"
+											}
+										>
+											{text}
+										</a>
+									</ListItemText>
+								</ListItem>
+							)
+						)}
 					</List>
 				</Drawer>
 			</div>
