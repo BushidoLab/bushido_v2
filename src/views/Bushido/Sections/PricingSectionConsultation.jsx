@@ -2,7 +2,7 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Startup from "@material-ui/icons/FlightTakeoff";
 import Enterprise from "@material-ui/icons/LocationCity";
-import GridContainer from "components/Grid/GridContainer.jsx";
+import Grid from "@material-ui/core/Grid";
 import GridItem from "components/Grid/GridItem.jsx";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
@@ -20,7 +20,7 @@ class PricingSectionProduct extends React.Component {
 			<div className={classes.section}>
 				<div className={classes.container}>
 					<div id="nav-tabs">
-						<GridContainer>
+						<Grid container gutter={0}>
 							<GridItem xs={12} sm={12} md={6} className={classes.cardPadding}>
 								<Card>
 									<CardContent className={classes.contentHeightConsultation}>
@@ -71,7 +71,7 @@ class PricingSectionProduct extends React.Component {
 									</CardFooter>
 								</Card>
 							</GridItem>
-						</GridContainer>
+						</Grid>
 					</div>
 				</div>
 			</div>

@@ -52,8 +52,7 @@ class CircularIndeterminate extends React.Component {
 								/>
 								<div style={{ position: "absolute" }}>
 									<CircularProgress
-										percentage={20}
-										textForPercentage={null}
+										percentage={5}
 										className={classes.root}
 										size={200}
 									/>
