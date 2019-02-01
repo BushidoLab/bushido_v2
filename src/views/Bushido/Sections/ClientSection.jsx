@@ -250,7 +250,7 @@ class ClientSection extends React.Component {
 										/>
 									</GridItem>
 									<h4 className={classes.cardTitle}>
-										Cre8tor
+										Cre8tor.App
 										<br />
 										{/* <small className={classes.smallTitle}>Not sure</small> */}
 									</h4>
