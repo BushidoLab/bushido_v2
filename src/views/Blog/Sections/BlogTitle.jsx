@@ -25,7 +25,7 @@ class BlogTitle extends React.Component {
 			<div className={classes.section}>
 				<GridItem xs={12} sm={12} md={12}>
 					<h1 className={classes.blogTitle}>{htmlTitle}</h1>
-					<div className={classes.authorDescription}> {postAuthor == "1" ? "By SAM ABBASSI" : "Loading"}</div>
+					<div className={classes.authorDescription}> {postAuthor === "1" ? "By SAM ABBASSI" : "Loading"}</div>
 				</GridItem>
 			</div>
 		);

@@ -13,8 +13,6 @@ import Footer from "components/Footer/Footer.jsx";
 import BlogParallax from "components/Parallax/BlogParallax.jsx";
 // import Grid from "components/Grid/Grid.jsx";
 import Grid from "@material-ui/core/Grid";
-import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
