@@ -15,6 +15,10 @@ const workStyle = {
   description: {
     color: "#545454",
     textAlign: "center"
+	},
+	blogContent: {
+    color: "#545454",
+    textAlign: "justify"
   },
   textCenter: {
 		width: "100%",
@@ -29,7 +33,16 @@ const workStyle = {
 	authorDescription: {
     color: "#ffffff",
     textAlign: "center"
-  },
+	},
+	blogTitle: {
+		display: "inline-block",
+		position: "relative",
+		marginTop: "30px",
+		marginBottom: "30px",
+		minHeight: "32px",
+		color: "#3A414B",
+		textDecoration: "none",
+	},
 };
 
 export default workStyle;

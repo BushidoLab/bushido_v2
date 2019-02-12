@@ -32,7 +32,7 @@ class Bushido extends React.Component {
 		console.log(this.state.data);
 		axios
 			.get(
-				"http://localhost:2368/ghost/api/v0.1/posts/?client_id=ghost-admin&client_secret=e2dc5e7cf8e2&limit=1",
+				"http://localhost:2368/ghost/api/v0.1/posts/?client_id=ghost-admin&client_secret=e2dc5e7cf8e2&limit=2",
 				{
 					headers: {
 						"Content-Type": "application/x-www-form-urlencoded",

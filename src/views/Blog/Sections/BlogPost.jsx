@@ -16,21 +16,21 @@ import workStyle from "assets/jss/material-kit-react/views/landingPageSections/w
 class BlogPost extends React.Component {
 	render() {
 		const { classes } = this.props;
-		const htmlTitle = this.props.json.data.posts[0]
-			? this.props.json.data.posts[0].title
+		const htmlTitle = this.props.json.data.posts[1]
+			? this.props.json.data.posts[1].title
 			: this.props.json.data.loading;
 
-		const htmlBody = this.props.json.data.posts[0]
-			? this.props.json.data.posts[0].html
+		const htmlBody = this.props.json.data.posts[1]
+			? this.props.json.data.posts[1].html
 			: this.props.json.data.loading;
 
 		return (
 			<div className={classes.section}>
 				<GridContainer justify="center">
-					<GridItem cs={12} sm={12} md={8}>
-						<h2 className={classes.title}>{htmlTitle}</h2>
+					<GridItem cs={12} sm={12} md={10}>
+						<h1 className={classes.blogTitle}>{htmlTitle}</h1>
 						<ReactMarkdown
-							className={classes.description}
+							className={classes.blogContent}
 							escapeHtml={false}
 							source={htmlBody}
 						/>
