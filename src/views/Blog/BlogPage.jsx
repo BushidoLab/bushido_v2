@@ -20,6 +20,7 @@ import CircularIndeterminate from "../Components/LazyLoader.jsx";
 // Sections for this page
 import BlogPost from "./Sections/BlogPost.jsx";
 import BlogTitle from "./Sections/BlogTitle.jsx";
+import BlogList from "./Sections/BlogList.jsx";
 
 class Bushido extends React.Component {
 	constructor(props) {
@@ -39,7 +40,7 @@ class Bushido extends React.Component {
 		console.log(this.state.data);
 		axios
 			.get(
-				"http://localhost:2368/ghost/api/v0.1/posts/?client_id=ghost-admin&client_secret=e2dc5e7cf8e2&limit=2",
+				"http://localhost:2368/ghost/api/v0.1/posts/?client_id=ghost-admin&client_secret=e2dc5e7cf8e2",
 				{
 					headers: {
 						"Content-Type": "application/x-www-form-urlencoded",
@@ -75,7 +76,6 @@ class Bushido extends React.Component {
 					<Header color="transparent" fixed {...rest} />
 					<br />
 					<br />
-					{/* <Parallax image={require("assets/img/land.png")}></Parallax> */}
 					<BlogParallax json={this.state}>
 						<div className={classes.container} justify="center">
 							<Grid
@@ -86,15 +86,16 @@ class Bushido extends React.Component {
 								justify="center"
 								// style={{ minHeight: "100vh" }}
 							>
-								<BlogTitle json={this.state} />
+								{/* <BlogTitle json={this.state} /> */}
 							</Grid>
 						</div>
 					</BlogParallax>
 
 					<div className={classNames(classes.main, classes.mainRaised)}>
 						<div className={classes.container}>
-							<div id="Services">
-								<BlogPost json={this.state} />
+							<div>
+								{/* <BlogPost json={this.state} /> */}
+								<BlogList json={this.state}/>
 							</div>
 						</div>
 					</div>
