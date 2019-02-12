@@ -95,10 +95,17 @@ class Bushido extends React.Component {
 						<div className={classes.container}>
 							<div>
 								{/* <BlogPost json={this.state} /> */}
-								<BlogList json={this.state} postIndex={0}/>
-								<BlogList json={this.state} postIndex={1}/>
-								<BlogList json={this.state} postIndex={2}/>
-								<BlogList json={this.state} postIndex={3}/>
+								<Grid container spacing={16}>
+									<Grid item xs={12} sm={12} md={4}>
+										<BlogList json={this.state} postIndex={0} />
+									</Grid>
+									<Grid item xs={12} sm={12} md={4}>
+										<BlogList json={this.state} postIndex={1} />
+									</Grid>
+									<Grid item xs={12} sm={12} md={4}>
+										<BlogList json={this.state} postIndex={2} />
+									</Grid>
+								</Grid>
 							</div>
 						</div>
 					</div>
