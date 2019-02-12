@@ -1,7 +1,9 @@
 import Bushido from "views/Bushido/Bushido.jsx";
+import BlogPage from "views/Blog/BlogPage.jsx";
 
 var indexRoutes = [
-	{ path: "/", name: "Bushido", component: Bushido },
+	{ path: "/blog", name: "Blog", component: BlogPage },
+	{ path: "/", name: "Bushido", component: Bushido }
 ];
 
 export default indexRoutes;

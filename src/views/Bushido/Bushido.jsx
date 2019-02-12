@@ -49,11 +49,11 @@ class Bushido extends React.Component {
 	render() {
 		const { classes, ...rest } = this.props;
 
-		if (this.state.pageLoading) {
-			return <CircularIndeterminate updateFadeState={this.updateFadeState} />;
-		} else {
+		// if (this.state.pageLoading) {
+			// return <CircularIndeterminate updateFadeState={this.updateFadeState} />;
+		// } else {
 			return <LandingPage classes={classes} rest={rest} />;
-		}
+		// }
 	}
 }
 
