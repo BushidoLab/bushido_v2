@@ -95,7 +95,10 @@ class Bushido extends React.Component {
 						<div className={classes.container}>
 							<div>
 								{/* <BlogPost json={this.state} /> */}
-								<BlogList json={this.state}/>
+								<BlogList json={this.state} postIndex={0}/>
+								<BlogList json={this.state} postIndex={1}/>
+								<BlogList json={this.state} postIndex={2}/>
+								<BlogList json={this.state} postIndex={3}/>
 							</div>
 						</div>
 					</div>

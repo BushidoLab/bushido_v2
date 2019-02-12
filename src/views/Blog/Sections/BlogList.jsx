@@ -20,26 +20,30 @@ import workStyle from "assets/jss/material-kit-react/views/landingPageSections/w
 class BlogList extends React.Component {
 	render() {
 		const { classes } = this.props;
-		// const { postIndex } = this.props;
-		const htmlTitle = this.props.json.data.posts[1]
-			? this.props.json.data.posts[1].title
+		const { postIndex } = this.props;
+		const htmlTitle = this.props.json.data.posts[postIndex]
+			? this.props.json.data.posts[postIndex].title
 			: this.props.json.data.loading;
 
-		const htmlDescription = this.props.json.data.posts[1]
-			? this.props.json.data.posts[1].custom_excerpt
+		const htmlDescription = this.props.json.data.posts[postIndex]
+			? this.props.json.data.posts[postIndex].custom_excerpt
 			: this.props.json.data.loading;
 
-		const imgUrl = this.props.json.data.posts[0]
-			? "http://localhost:2368" + this.props.json.data.posts[0].feature_image
-			: this.props.json.data.loading;
+			
+		// var imgUrl = this.props.json.data.posts[postIndex]
+		// 	? "http://localhost:2368" + this.props.json.data.posts[postIndex].feature_image
+		// 	: this.props.json.data.loading;
+
+		const imgUrl = postIndex === 0 ? "http://localhost:2368" + this.props.json.data.posts[postIndex].feature_image : this.props.json.data.posts[postIndex].feature_image
 
 		return (
 			<Card className={classes.card}>
 				<CardActionArea>
 					<CardMedia className={classes.media} image={imgUrl} />
 					<CardContent>
-						<h3 className={classes.cardTitle}>{htmlTitle}</h3>
+						<h3 className={classes.cardTitle}>{htmlTitle} ({postIndex})</h3>
 						<Typography component="p">{htmlDescription}</Typography>
+
 					</CardContent>
 				</CardActionArea>
 				<CardActions>
