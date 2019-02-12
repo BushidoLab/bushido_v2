@@ -57,12 +57,10 @@ class Bushido extends React.Component {
 						html: res.data.posts[0].html
 					});
 					console.log("res: ", res);
-					console.log("should be here?:", this.state.data.posts[0].html);
-					console.log("do we have html?", this.state.html);
 				}, 1000);
 				setTimeout(() => {
 					this.setState({ pageLoading: false });
-				}, 1000);;
+				}, 1000);
 			})
 			.then(console.log(this.state.data));
 	}
