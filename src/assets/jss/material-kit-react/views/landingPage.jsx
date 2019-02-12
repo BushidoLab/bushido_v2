@@ -42,7 +42,16 @@ const landingPageStyle = {
 			backgroundColor: "white",
 			color: "black"
 		}
-	}
+	},
+	blogTitle: {
+		...title,
+		display: "inline-block",
+		position: "relative",
+		marginTop: "30px",
+		minHeight: "32px",
+		color: "#FFFFFF",
+		textDecoration: "none",
+	},
 };
 
 export default landingPageStyle;

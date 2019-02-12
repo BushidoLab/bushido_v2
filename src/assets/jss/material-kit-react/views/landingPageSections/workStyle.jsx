@@ -25,7 +25,11 @@ const workStyle = {
   textArea: {
     marginRight: "15px",
     marginLeft: "15px"
-  }
+	},
+	authorDescription: {
+    color: "#ffffff",
+    textAlign: "center"
+  },
 };
 
 export default workStyle;
