@@ -266,7 +266,7 @@ class Header extends React.Component {
 					</List>
 					<Divider className={classes.dividerColor} />
 					<List>
-						{["Github", "Twitter", "Instagram", "Medium", "LinkedIn"].map(
+						{["Github", "Twitter", "Instagram", "Medium", "LinkedIn", "Our Blog"].map(
 							(text, index) => (
 								<ListItem button key={text}>
 									<ListItemIcon>
@@ -282,6 +282,8 @@ class Header extends React.Component {
 											<i className={classes.socialIcons + " fab fa-medium-m"} />
 										) : index === 4 ? (
 											<i className={classes.socialIcons + " fab fa-linkedin"} />
+										) : index === 5 ? (
+											<i className={classes.socialIcons + " fas fa-pencil-alt"} />
 										) : null}
 									</ListItemIcon>
 									<ListItemText>
@@ -298,6 +300,8 @@ class Header extends React.Component {
 													? "https://medium.com/@sam_80474"
 													: index === 4
 													? "https://www.linkedin.com/company/the-bushido-lab/about/"
+													: index === 5
+													? "/blog"
 													: "/"
 											}
 										>
