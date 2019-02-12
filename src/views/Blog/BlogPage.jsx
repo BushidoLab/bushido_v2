@@ -15,6 +15,7 @@ import BlogParallax from "components/Parallax/BlogParallax.jsx";
 import Grid from "@material-ui/core/Grid";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
+import CircularIndeterminate from "../Components/LazyLoader.jsx";
 
 // Sections for this page
 import BlogPost from "./Sections/BlogPost.jsx";
@@ -24,9 +25,15 @@ class Bushido extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+			pageLoading: true,
+			readyToFadeOut: false,
 			data: { loading: "Loading.....", posts: { id: null, html: "Loading" } }
 		};
 	}
+
+	updateFadeState = () => {
+		this.setState({ readyToFadeOut: true });
+	};
 
 	componentDidMount() {
 		console.log(this.state.data);
@@ -52,44 +59,52 @@ class Bushido extends React.Component {
 					console.log("res: ", res);
 					console.log("should be here?:", this.state.data.posts[0].html);
 					console.log("do we have html?", this.state.html);
-				}, 2000);
+				}, 1000);
+				setTimeout(() => {
+					this.setState({ pageLoading: false });
+				}, 1000);;
 			})
 			.then(console.log(this.state.data));
 	}
 	render() {
 		const { classes, ...rest } = this.props;
-		return (
-			<div>
-				<Header color="transparent" fixed {...rest} />
-				<br />
-				<br />
-				{/* <Parallax image={require("assets/img/land.png")}></Parallax> */}
-				<BlogParallax json={this.state}>
-					<div className={classes.container} justify="center">
-						<Grid
-							container
-							spacing={0}
-							direction="column"
-							alignItems="center"
-							justify="center"
-							// style={{ minHeight: "100vh" }}
-						>
-							<BlogTitle json={this.state}/>
-						</Grid>
-					</div>
-				</BlogParallax>
 
-				<div className={classNames(classes.main, classes.mainRaised)}>
-					<div className={classes.container}>
-						<div id="Services">
-							<BlogPost json={this.state} />
+		if (this.state.pageLoading) {
+			return <CircularIndeterminate updateFadeState={this.updateFadeState} />;
+		} else {
+			return (
+				<div>
+					<Header color="transparent" fixed {...rest} />
+					<br />
+					<br />
+					{/* <Parallax image={require("assets/img/land.png")}></Parallax> */}
+					<BlogParallax json={this.state}>
+						<div className={classes.container} justify="center">
+							<Grid
+								container
+								spacing={0}
+								direction="column"
+								alignItems="center"
+								justify="center"
+								// style={{ minHeight: "100vh" }}
+							>
+								<BlogTitle json={this.state} />
+							</Grid>
+						</div>
+					</BlogParallax>
+
+					<div className={classNames(classes.main, classes.mainRaised)}>
+						<div className={classes.container}>
+							<div id="Services">
+								<BlogPost json={this.state} />
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<Footer />
-			</div>
-		);
+					<Footer />
+				</div>
+			);
+		}
 	}
 }
 
