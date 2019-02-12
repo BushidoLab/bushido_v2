@@ -4,14 +4,13 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import classNames from "classnames";
 import axios from "axios";
-import ReactMarkdown from "react-markdown/with-html";
 
 // @material-ui/icons
 
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
-import Parallax from "components/Parallax/Parallax.jsx";
+import BlogParallax from "components/Parallax/BlogParallax.jsx";
 // import Grid from "components/Grid/Grid.jsx";
 import Grid from "@material-ui/core/Grid";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -66,7 +65,8 @@ class Bushido extends React.Component {
 				<Header color="transparent" fixed {...rest} />
 				<br />
 				<br />
-				<Parallax filter image={require("assets/img/land.png")}>
+				{/* <Parallax image={require("assets/img/land.png")}></Parallax> */}
+				<BlogParallax json={this.state}>
 					<div className={classes.container} justify="center">
 						<Grid
 							container
@@ -79,7 +79,7 @@ class Bushido extends React.Component {
 							<BlogTitle json={this.state}/>
 						</Grid>
 					</div>
-				</Parallax>
+				</BlogParallax>
 
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div className={classes.container}>
