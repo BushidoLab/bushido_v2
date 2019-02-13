@@ -37,7 +37,7 @@ class Bushido extends React.Component {
 	};
 
 	componentDidMount() {
-		console.log(this.state.data);
+		console.log("BLOGPAGE STATE:", this.state.data);
 		axios
 			.get(
 				"http://localhost:2368/ghost/api/v0.1/posts/?client_id=ghost-admin&client_secret=e2dc5e7cf8e2",
@@ -53,17 +53,14 @@ class Bushido extends React.Component {
 			.then(res => {
 				setTimeout(() => {
 					this.setState({
-						data: res.data,
-						posts: res.data.posts,
-						html: res.data.posts[0].html
+						data: res.data.posts
 					});
-					console.log("res: ", res);
+					console.log("RES.DATA: ", res.data.posts);
 				}, 1000);
 				setTimeout(() => {
 					this.setState({ pageLoading: false });
 				}, 1000);
-			})
-			.then(console.log(this.state.data));
+			});
 	}
 	render() {
 		const { classes, ...rest } = this.props;
@@ -71,6 +68,7 @@ class Bushido extends React.Component {
 		if (this.state.pageLoading) {
 			return <CircularIndeterminate updateFadeState={this.updateFadeState} />;
 		} else {
+			console.log("state BLOGPAGE:", this.state);
 			return (
 				<div>
 					<Header color="transparent" fixed {...rest} />

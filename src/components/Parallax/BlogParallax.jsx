@@ -35,9 +35,10 @@ class Parallax extends React.Component {
 		});
 	}
 	render() {
-		const imgUrl = this.props.json.data.posts[0]
-		? this.props.json.data.posts[0].feature_image
-		: this.props.json.data.loading;
+		const imgUrl = this.props.json.feature_image
+		? "http://localhost:2368" + this.props.json.feature_image
+		: this.props.json.loading;
+		
 		const {
 			classes,
 			filter,
@@ -57,7 +58,7 @@ class Parallax extends React.Component {
 				className={parallaxClasses}
 				style={{
 					...style,
-					backgroundImage: "url(http://localhost:2368" + imgUrl + ")",
+					backgroundImage: "url(" + imgUrl + ")",
 					...this.state
 				}}
 				ref="parallax"

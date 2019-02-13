@@ -16,39 +16,54 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
-
+import { Link } from "react-router-dom";
 class BlogList extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			posts: this.props.json.data
+		};
+	}
 	render() {
 		const { classes } = this.props;
 		const { postIndex } = this.props;
-		const htmlTitle = this.props.json.data.posts[postIndex]
-			? this.props.json.data.posts[postIndex].title
+		const allPosts = this.state.posts;
+
+		const htmlTitle = allPosts[postIndex]
+			? allPosts[postIndex].title
 			: this.props.json.data.loading;
 
-		const htmlDescription = this.props.json.data.posts[postIndex]
-			? this.props.json.data.posts[postIndex].custom_excerpt
+		const htmlDescription = allPosts[postIndex]
+			? allPosts[postIndex].custom_excerpt
 			: this.props.json.data.loading;
 
-			
-		// var imgUrl = this.props.json.data.posts[postIndex]
-		// 	? "http://localhost:2368" + this.props.json.data.posts[postIndex].feature_image
-		// 	: this.props.json.data.loading;
+		const slug = allPosts[postIndex]
+			? "/blogpost/" + allPosts[postIndex].slug
+			: this.props.json.data.loading;
 
-		const imgUrl = postIndex === 0 ? "http://localhost:2368" + this.props.json.data.posts[postIndex].feature_image : this.props.json.data.posts[postIndex].feature_image
+		const imgUrl =
+			postIndex === 0
+				? "http://localhost:2368" + allPosts[postIndex].feature_image
+				: allPosts[postIndex].feature_image;
 
+		console.log("PROPS BLOGLIST: ", this.props);
+		console.log("state BLOGLIST: ", this.state);
 		return (
 			<Card className={classes.card}>
 				<CardActionArea>
 					<CardMedia className={classes.media} image={imgUrl} />
 					<CardContent>
-						<h3 className={classes.cardTitle}>{htmlTitle} ({postIndex})</h3>
+						<h3 className={classes.cardTitle}>
+							{htmlTitle} ({postIndex})
+						</h3>
 						<Typography component="p">{htmlDescription}</Typography>
-
 					</CardContent>
 				</CardActionArea>
 				<CardActions>
 					<Button size="small" color="primary">
-						Share
+						<Link to={{ pathname: slug, postIndex: postIndex, state: allPosts[postIndex]}}>
+							{slug}
+						</Link>
 					</Button>
 					<Button size="small" color="primary">
 						Learn More
