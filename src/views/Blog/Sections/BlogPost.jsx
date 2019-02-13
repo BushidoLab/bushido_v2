@@ -26,9 +26,9 @@ class BlogPost extends React.Component {
 	}
 	render() {
 		const { classes, ...rest } = this.props;
-		const { postIndex } = this.props.location.postIndex;
+		const postIndex = this.props.location.postIndex;
 		console.log("this::::", this.props);
-
+		console.log('POST INDEX:', postIndex)
 		const imgUrl =
 		postIndex === 0
 			? "http://localhost:2368" + this.state.posts.feature_image
@@ -40,7 +40,7 @@ class BlogPost extends React.Component {
 				<Header color="transparent" fixed {...rest} />
 				<br />
 				<br />
-				<BlogParallax json={this.state.posts}>
+				<BlogParallax json={this.state.posts} imgUrl={imgUrl}>
 				<div className={classes.container} justify="center">
 					<Grid
 						container
