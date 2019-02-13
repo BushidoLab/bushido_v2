@@ -43,6 +43,17 @@ const workStyle = {
 		color: "#3A414B",
 		textDecoration: "none",
 	},
+	card: {
+    maxWidth: "345px",
+  },
+  media: {
+    height: "140px",
+	},
+	cardTitle: {
+		color: "#3A414B",
+	}
+
+
 };
 
 export default workStyle;
