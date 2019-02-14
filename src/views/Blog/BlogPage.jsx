@@ -18,13 +18,10 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 import CircularIndeterminate from "../Components/LazyLoader.jsx";
 
 // Sections for this page
-import BlogPost from "./Sections/BlogPost.jsx";
-import BlogTitle from "./Sections/BlogTitle.jsx";
 import BlogList from "./Sections/BlogList.jsx";
 
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-
 
 class Bushido extends React.Component {
 	constructor(props) {
@@ -41,7 +38,6 @@ class Bushido extends React.Component {
 	};
 
 	componentDidMount() {
-		// console.log("BLOGPAGE STATE:", this.state.data);
 		axios
 			.get(
 				"http://localhost:2368/ghost/api/v0.1/posts/?client_id=ghost-admin&client_secret=e2dc5e7cf8e2",
@@ -59,7 +55,6 @@ class Bushido extends React.Component {
 					this.setState({
 						data: res.data.posts
 					});
-					// console.log("RES.DATA: ", res.data.posts);
 				}, 1000);
 				setTimeout(() => {
 					this.setState({ pageLoading: false });
@@ -72,19 +67,16 @@ class Bushido extends React.Component {
 		if (this.state.pageLoading) {
 			return <CircularIndeterminate updateFadeState={this.updateFadeState} />;
 		} else {
-			// console.log("state BLOGPAGE:", this.state);
 			return (
 				<div>
 					<Header color="transparent" fixed {...rest} />
 					<br />
 					<br />
 					<Parallax filter image={require("assets/img/land.png")}>
-					<div className={classes.container} justify="center">
+						<div className={classes.container} justify="center">
 							<GridContainer>
 								<GridItem xs={12} sm={12} md={8}>
-									<h1 className={classes.title}>
-										Bushido Blogs
-									</h1>
+									<h1 className={classes.title}>Bushido Blogs</h1>
 								</GridItem>
 							</GridContainer>
 						</div>
@@ -93,7 +85,6 @@ class Bushido extends React.Component {
 					<div className={classNames(classes.main, classes.mainRaised)}>
 						<div className={classes.container}>
 							<div>
-								{/* <BlogPost json={this.state} /> */}
 								<Grid container spacing={16}>
 									<Grid item xs={12} sm={12} md={4}>
 										<BlogList json={this.state} postIndex={0} />
@@ -103,6 +94,18 @@ class Bushido extends React.Component {
 									</Grid>
 									<Grid item xs={12} sm={12} md={4}>
 										<BlogList json={this.state} postIndex={2} />
+									</Grid>
+									<Grid item xs={12} sm={12} md={4}>
+										<BlogList json={this.state} postIndex={3} />
+									</Grid>
+									<Grid item xs={12} sm={12} md={4}>
+										<BlogList json={this.state} postIndex={4} />
+									</Grid>
+									<Grid item xs={12} sm={12} md={4}>
+										<BlogList json={this.state} postIndex={5} />
+									</Grid>
+									<Grid item xs={12} sm={12} md={4}>
+										<BlogList json={this.state} postIndex={6} />
 									</Grid>
 								</Grid>
 							</div>

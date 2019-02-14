@@ -1,13 +1,10 @@
 import React from "react";
 // @material-ui/core components
-import ReactMarkdown from "react-markdown/with-html";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
 
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
@@ -46,28 +43,24 @@ class BlogList extends React.Component {
 				? "http://localhost:2368" + allPosts[postIndex].feature_image
 				: allPosts[postIndex].feature_image;
 
-		// console.log("PROPS BLOGLIST: ", this.props);
-		// console.log("state BLOGLIST: ", this.state);
 		return (
 			<Card className={classes.card}>
 				<CardActionArea>
 					<CardMedia className={classes.media} image={imgUrl} />
 					<CardContent>
 						<h3 className={classes.cardTitle}>
-							{htmlTitle} ({postIndex})
+							{htmlTitle}
 						</h3>
 						<Typography component="p">{htmlDescription}</Typography>
 					</CardContent>
 				</CardActionArea>
 				<CardActions>
-					<Button size="small" color="primary">
-						<Link to={{ pathname: slug, postIndex: postIndex, state: allPosts[postIndex]}}>
-							{slug}
+					<Button size="large" color="primary">
+						<Link to={{ pathname: slug, state: allPosts[postIndex]}}>
+							READ NOW!
 						</Link>
 					</Button>
-					<Button size="small" color="primary">
-						Learn More
-					</Button>
+
 				</CardActions>
 			</Card>
 		);
