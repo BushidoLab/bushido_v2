@@ -43,6 +43,10 @@ const landingPageStyle = {
 			color: "black"
 		}
 	},
+	blogContent: {
+    color: "#545454",
+    textAlign: "justify"
+  },
 };
 
 export default landingPageStyle;

@@ -46,8 +46,8 @@ class BlogList extends React.Component {
 				? "http://localhost:2368" + allPosts[postIndex].feature_image
 				: allPosts[postIndex].feature_image;
 
-		console.log("PROPS BLOGLIST: ", this.props);
-		console.log("state BLOGLIST: ", this.state);
+		// console.log("PROPS BLOGLIST: ", this.props);
+		// console.log("state BLOGLIST: ", this.state);
 		return (
 			<Card className={classes.card}>
 				<CardActionArea>

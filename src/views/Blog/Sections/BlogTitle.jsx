@@ -13,11 +13,13 @@ import workStyle from "assets/jss/material-kit-react/views/landingPageSections/w
 
 class BlogTitle extends React.Component {
 	render() {
-		const { classes } = this.props;
-		console.log('THIS:', this)
-		const htmlTitle = this.props.json.title
+		const { classes, json } = this.props;
+		console.log('THIS:', this.props)
+		const htmlTitle = this.props.json != null ? this.props.json : console.log('error!')
 
-		const postAuthor = this.props.json.author
+		const postAuthor = this.props.json != null ? this.props.json : console.log('error!')
+
+
 		return (
 			<div className={classes.section}>
 				<GridItem xs={12} sm={12} md={12}>
