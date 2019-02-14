@@ -23,6 +23,7 @@ import BlogList from "./Sections/BlogList.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 
+
 class Bushido extends React.Component {
 	constructor(props) {
 		super(props);
@@ -73,10 +74,12 @@ class Bushido extends React.Component {
 					<br />
 					<br />
 					<Parallax filter image={require("assets/img/land.png")}>
-						<div className={classes.container} justify="center">
+					<div className={classes.container} justify="center">
 							<GridContainer>
 								<GridItem xs={12} sm={12} md={8}>
-									<h1 className={classes.title}>Bushido Blogs</h1>
+									<h1 className={classes.title}>
+										Bushido Blogs
+									</h1>
 								</GridItem>
 							</GridContainer>
 						</div>
@@ -86,26 +89,23 @@ class Bushido extends React.Component {
 						<div className={classes.container}>
 							<div>
 								<Grid container spacing={16}>
-									<Grid item xs={12} sm={12} md={4}>
+									<Grid item xs={12} sm={6} md={4}>
 										<BlogList json={this.state} postIndex={0} />
 									</Grid>
-									<Grid item xs={12} sm={12} md={4}>
+									<Grid item xs={12} sm={6} md={4}>
 										<BlogList json={this.state} postIndex={1} />
 									</Grid>
-									<Grid item xs={12} sm={12} md={4}>
+									<Grid item xs={12} sm={6} md={4}>
 										<BlogList json={this.state} postIndex={2} />
 									</Grid>
-									<Grid item xs={12} sm={12} md={4}>
+									<Grid item xs={12} sm={6} md={4}>
 										<BlogList json={this.state} postIndex={3} />
 									</Grid>
-									<Grid item xs={12} sm={12} md={4}>
+									<Grid item xs={12} sm={6} md={4}>
 										<BlogList json={this.state} postIndex={4} />
 									</Grid>
-									<Grid item xs={12} sm={12} md={4}>
+									<Grid item xs={12} sm={6} md={4}>
 										<BlogList json={this.state} postIndex={5} />
-									</Grid>
-									<Grid item xs={12} sm={12} md={4}>
-										<BlogList json={this.state} postIndex={6} />
 									</Grid>
 								</Grid>
 							</div>

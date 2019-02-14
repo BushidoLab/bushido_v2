@@ -38,10 +38,7 @@ class BlogList extends React.Component {
 			? "/blogpost/" + allPosts[postIndex].slug
 			: this.props.json.data.loading;
 
-		const imgUrl =
-			postIndex === 0
-				? "http://localhost:2368" + allPosts[postIndex].feature_image
-				: allPosts[postIndex].feature_image;
+		const imgUrl = "http://localhost:2368" + allPosts[postIndex].feature_image
 
 		return (
 			<Card className={classes.card}>
