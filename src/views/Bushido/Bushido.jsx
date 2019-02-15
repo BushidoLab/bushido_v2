@@ -25,7 +25,8 @@ import ScrollIntoView from "react-scroll-into-view";
 
 import CircularIndeterminate from "../Components/LazyLoader.jsx";
 import { Fade } from "@material-ui/core";
-
+const TEST = process.env.REACT_APP_AUTH_TEST
+require('dotenv').config()
 class Bushido extends React.Component {
 	constructor(props) {
 		super(props);
@@ -71,6 +72,7 @@ class LandingPage extends React.Component {
 									<h1 className={classes.title}>
 										Blockchain <br />
 										Development. Simplified.
+										~{test}~
 									</h1>
 									<br />
 									<ScrollIntoView alignToTop={true} selector={`#Contact`}>
