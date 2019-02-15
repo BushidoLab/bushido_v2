@@ -25,7 +25,7 @@ import ScrollIntoView from "react-scroll-into-view";
 
 import CircularIndeterminate from "../Components/LazyLoader.jsx";
 import { Fade } from "@material-ui/core";
-const TEST = process.env.REACT_APP_AUTH_TEST
+const TEST = process.env.REACT_APP_TEST
 require('dotenv').config()
 class Bushido extends React.Component {
 	constructor(props) {
