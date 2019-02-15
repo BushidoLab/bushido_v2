@@ -72,7 +72,7 @@ class LandingPage extends React.Component {
 									<h1 className={classes.title}>
 										Blockchain <br />
 										Development. Simplified.
-										~{test}~
+										~{TEST}~
 									</h1>
 									<br />
 									<ScrollIntoView alignToTop={true} selector={`#Contact`}>
