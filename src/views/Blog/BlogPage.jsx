@@ -23,6 +23,8 @@ import BlogList from "./Sections/BlogList.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 
+const TOKEN = process.env.REACT_APP_AUTH_TOKEN
+require('dotenv').config()
 
 class Bushido extends React.Component {
 	constructor(props) {
@@ -41,12 +43,12 @@ class Bushido extends React.Component {
 	componentDidMount() {
 		axios
 			.get(
-				"http://localhost:2368/ghost/api/v0.1/posts/?client_id=ghost-admin&client_secret=e2dc5e7cf8e2",
+				"http://localhost:2368/ghost/api/v0.1/posts/?fields=slug,title,custom_excerpt,feature_image",
 				{
 					headers: {
 						"Content-Type": "application/x-www-form-urlencoded",
 						Authorization:
-							"Bearer AYnGjHA86Np8p0sOfHl7qcXj0452zq5UP8aH8SGY66QNPPezx5OE1kq4nknP7hEjjOW2frHqVlvAeyARR0Q04U9XOggD2ZpPpcIJA5rDStil3SEk48BcPVlrVzBqi5YcUanzd0bSypiSauDB2GqzB7OLLVONsiRqLVAf7qQVNIL2BPuDMBNT4aZidivikqj",
+							"Bearer " + TOKEN,
 						"cache-control": "no-cache"
 					}
 				}
@@ -56,11 +58,13 @@ class Bushido extends React.Component {
 					this.setState({
 						data: res.data.posts
 					});
+					console.log('res', res)
 				}, 1000);
 				setTimeout(() => {
 					this.setState({ pageLoading: false });
 				}, 1000);
 			});
+			
 	}
 	render() {
 		const { classes, ...rest } = this.props;
