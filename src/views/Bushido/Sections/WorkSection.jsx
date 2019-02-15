@@ -52,8 +52,6 @@ class WorkSection extends React.Component {
 				console.error("Failed to send contact email", err);
 			}
 		);
-
-		console.log(templateParams);
 	};
 
 	render() {

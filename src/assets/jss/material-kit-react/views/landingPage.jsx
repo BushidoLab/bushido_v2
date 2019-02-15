@@ -37,11 +37,24 @@ const landingPageStyle = {
 	quoteButton: {
 		backgroundColor: "#EE272B",
 		color: "white",
-		fontWeight: '500',
+		fontWeight: "500",
 		"&:hover": {
 			backgroundColor: "white",
 			color: "black"
 		}
+	},
+	blogContent: {
+		color: "#545454",
+		textAlign: "justify"
+	},
+	blogTitle: {
+		display: "inline-block",
+		position: "relative",
+		marginTop: "30px",
+		marginBottom: "30px",
+		minHeight: "32px",
+		color: "#3A414B",
+		textDecoration: "none"
 	}
 };
 
