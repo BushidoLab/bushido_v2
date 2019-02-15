@@ -5,7 +5,7 @@ import { Router, Route, Switch } from "react-router-dom";
 
 import indexRoutes from "routes/index.jsx";
 
-import "assets/scss/material-kit-react.css?v=1.4.3";
+import "assets/scss/material-kit-react.css?v=3.1.1";
 
 var hist = createBrowserHistory();
 
