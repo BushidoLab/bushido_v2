@@ -43,7 +43,7 @@ class Bushido extends React.Component {
 	componentDidMount() {
 		axios
 			.get(
-				"http://localhost:2368/ghost/api/v0.1/posts/?fields=slug,title,custom_excerpt,feature_image",
+				"http://blog.bushidolab.com/ghost/api/v0.1/posts/?fields=slug,title,custom_excerpt,feature_image",
 				{
 					headers: {
 						"Content-Type": "application/x-www-form-urlencoded",

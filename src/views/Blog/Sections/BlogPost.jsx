@@ -27,7 +27,7 @@ class BlogPost extends React.Component {
 
 	async getData() {
 		const res = await axios.get(
-			"http://localhost:2368/ghost/api/v0.1/posts?filter=slug:[" +
+			"http://blog.bushidolab.com/ghost/api/v0.1/posts?filter=slug:[" +
 				this.props.match.params.slug +
 				"]",
 			{
