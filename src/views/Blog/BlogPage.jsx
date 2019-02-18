@@ -49,9 +49,13 @@ class Bushido extends React.Component {
 						"Content-Type": "application/x-www-form-urlencoded",
 						Authorization: "Bearer " + TOKEN,
 						"cache-control": "no-cache",
+						"Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
 						"Access-Control-Allow-Origin": "*"
 					}
 				}
+
+				("Access-Control-Allow-Origin", "*");
+res.header(
 			)
 			.then(res => {
 				setTimeout(() => {

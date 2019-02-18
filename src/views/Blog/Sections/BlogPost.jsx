@@ -17,8 +17,8 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 import BlogParallax from "components/Parallax/BlogParallax.jsx";
 import BlogTitle from "./BlogTitle.jsx";
 import axios from "axios";
-const TOKEN = process.env.REACT_APP_AUTH_TOKEN
-require('dotenv').config()
+const TOKEN = process.env.REACT_APP_AUTH_TOKEN;
+require("dotenv").config();
 
 class BlogPost extends React.Component {
 	state = {
@@ -33,16 +33,16 @@ class BlogPost extends React.Component {
 			{
 				headers: {
 					"Content-Type": "application/x-www-form-urlencoded",
-					Authorization:
-					"Bearer " + TOKEN,
+					Authorization: "Bearer " + TOKEN,
 					"cache-control": "no-cache",
+					"Access-Control-Allow-Headers":
+						"Origin, X-Requested-With, Content-Type, Accept",
 					"Access-Control-Allow-Origin": "*"
 				}
 			}
 		);
 		return res.data.posts;
 	}
-	
 
 	componentDidMount() {
 		if (!this.state.postObject) {
