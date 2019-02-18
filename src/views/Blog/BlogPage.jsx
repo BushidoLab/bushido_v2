@@ -23,8 +23,8 @@ import BlogList from "./Sections/BlogList.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 
-const TOKEN = process.env.REACT_APP_AUTH_TOKEN
-require('dotenv').config()
+const TOKEN = process.env.REACT_APP_AUTH_TOKEN;
+require("dotenv").config();
 
 class Bushido extends React.Component {
 	constructor(props) {
@@ -47,9 +47,9 @@ class Bushido extends React.Component {
 				{
 					headers: {
 						"Content-Type": "application/x-www-form-urlencoded",
-						Authorization:
-							"Bearer " + TOKEN,
-						"cache-control": "no-cache"
+						Authorization: "Bearer " + TOKEN,
+						"cache-control": "no-cache",
+						"Access-Control-Allow-Origin": "*"
 					}
 				}
 			)
@@ -58,13 +58,12 @@ class Bushido extends React.Component {
 					this.setState({
 						data: res.data.posts
 					});
-					console.log('res', res)
+					console.log("res", res);
 				}, 1000);
 				setTimeout(() => {
 					this.setState({ pageLoading: false });
 				}, 1000);
 			});
-			
 	}
 	render() {
 		const { classes, ...rest } = this.props;
@@ -78,12 +77,10 @@ class Bushido extends React.Component {
 					<br />
 					<br />
 					<Parallax filter image={require("assets/img/land.png")}>
-					<div className={classes.container} justify="center">
+						<div className={classes.container} justify="center">
 							<GridContainer>
 								<GridItem xs={12} sm={12} md={8}>
-									<h1 className={classes.title}>
-										Bushido Blogs
-									</h1>
+									<h1 className={classes.title}>Bushido Blogs</h1>
 								</GridItem>
 							</GridContainer>
 						</div>

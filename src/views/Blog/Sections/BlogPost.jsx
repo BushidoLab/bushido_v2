@@ -27,7 +27,7 @@ class BlogPost extends React.Component {
 
 	async getData() {
 		const res = await axios.get(
-			"https://blog.bushidolab.com/ghost/api/v0.1/posts?filter=slug:[" +
+			"https://blog.bushidolab.com/ghost/api/v0.1/posts/?filter=slug:[" +
 				this.props.match.params.slug +
 				"]",
 			{
@@ -35,7 +35,8 @@ class BlogPost extends React.Component {
 					"Content-Type": "application/x-www-form-urlencoded",
 					Authorization:
 					"Bearer " + TOKEN,
-					"cache-control": "no-cache"
+					"cache-control": "no-cache",
+					"Access-Control-Allow-Origin": "*"
 				}
 			}
 		);
