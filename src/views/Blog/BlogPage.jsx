@@ -52,11 +52,7 @@ class Bushido extends React.Component {
 						"Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
 						"Access-Control-Allow-Origin": "*"
 					}
-				}
-
-				("Access-Control-Allow-Origin", "*");
-res.header(
-			)
+				})
 			.then(res => {
 				setTimeout(() => {
 					this.setState({
