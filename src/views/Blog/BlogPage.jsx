@@ -46,7 +46,7 @@ class Bushido extends React.Component {
 				"https://blog.bushidolab.com/ghost/api/v0.1/posts/?fields=slug,title,custom_excerpt,feature_image",
 				{
 					headers: {
-						"Content-Type": "application/x-www-form-urlencoded",
+						"Content-Type": "application/x-www-form-urlencoded, text/html",
 						Authorization: "Bearer " + TOKEN,
 						"cache-control": "no-cache",
 						"Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
