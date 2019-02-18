@@ -32,7 +32,6 @@ class BlogPost extends React.Component {
 				"]",
 			{
 				headers: {
-					"access-control-allow-origin" : "*",
 					"Content-Type": "application/x-www-form-urlencoded",
 					Authorization: "Bearer " + TOKEN,
 					"cache-control": "no-cache",
