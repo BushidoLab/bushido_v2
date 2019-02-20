@@ -43,7 +43,7 @@ class Bushido extends React.Component {
 	componentDidMount() {
 		axios
 			.get(
-				"https://blog.bushidolab.com/ghost/api/v0.1/posts/?fields=slug,title,custom_excerpt,feature_image",
+				"https://bushido-ghost-blog.herokuapp.com/ghost/api/v0.1/posts/?fields=slug,title,custom_excerpt,feature_image",
 				{
 					headers: {
 						Authorization: "Bearer " + TOKEN,
