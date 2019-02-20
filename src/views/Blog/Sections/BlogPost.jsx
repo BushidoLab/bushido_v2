@@ -35,10 +35,10 @@ class BlogPost extends React.Component {
 					Authorization: "Bearer " + TOKEN,
 					"Content-Type": "application/x-www-form-urlencoded",
 					"cache-control": "no-cache",
-					"Access-Control-Allow-Origin": "*",
-					"Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, OPTIONS",
-					"Access-Control-Allow-Headers":
-						"Content-Type, X-Auth-Token, Origin, Authorization"
+					'Access-Control-Allow-Origin': '*',
+					'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+					'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
+					'Access-Control-Allow-Credentials': true
 				}
 			}
 		);
