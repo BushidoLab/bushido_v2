@@ -6,9 +6,9 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
-import { title } from "assets/jss/material-kit-react.jsx";
-import PricingSectionProduct from "./PricingSectionProduct.jsx";
-import PricingSectionConsultation from "./PricingSectionConsultation.jsx";
+import { title } from "bushido_v2/src/assets/jss/material-kit-react.jsx";
+import PricingSectionProduct from "bushido_v2/src/Bushido/SectionsPricingSectionProduct.jsx";
+import PricingSectionConsultation from "bushido_v2/src/Bushido/SectionsPricingSectionConsultation.jsx";
 
 function TabContainer({ children, dir }) {
 	return (

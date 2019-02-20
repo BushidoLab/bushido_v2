@@ -1,18 +1,18 @@
 import React from "react";
 import classNames from "classnames";
 import withStyles from "@material-ui/core/styles/withStyles";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
+import GridContainer from "bushido_v2/src/components/Grid/GridContainer.jsx";
+import GridItem from "bushido_v2/src/components/Grid/GridItem.jsx";
+import Button from "bushido_v2/src/components/CustomButtons/Button.jsx";
+import Card from "bushido_v2/src/components/Card/Card.jsx";
+import CardBody from "bushido_v2/src/components/Card/CardBody.jsx";
+import CardFooter from "bushido_v2/src/components/Card/CardFooter.jsx";
 
-import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx";
+import teamStyle from "bushido_v2/src/assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx";
 
-import team1 from "assets/img/faces/avatar.jpg";
-import team2 from "assets/img/faces/christian.jpg";
-import team3 from "assets/img/faces/kendall.jpg";
+import team1 from "bushido_v2/src/assets/img/faces/avatar.jpg";
+import team2 from "bushido_v2/src/assets/img/faces/christian.jpg";
+import team3 from "bushido_v2/src/assets/img/faces/kendall.jpg";
 
 class TeamSection extends React.Component {
 	render() {

@@ -4,35 +4,35 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Card from "components/Card/Card.jsx";
+import GridContainer from "bushido_v2/src/components/Grid/GridContainer.jsx";
+import GridItem from "bushido_v2/src/components/Grid/GridItem.jsx";
+import Card from "bushido_v2/src/components/Card/Card.jsx";
 import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx";
 // png icons
-import client_ibm from "assets/img/clients/ibm_logo.png";
-import client_oracle from "assets/img/clients/oracle_logo.png";
-import client_miacoc from "assets/img/clients/MIAMIcoc_logo.png";
-import client_mdc from "assets/img/clients/MDC_logo.png";
-import client_ic from "assets/img/clients/ic_logo.png";
-import client_beacon from "assets/img/clients/beacon_logo.png";
-import client_lvlblox from "assets/img/clients/lvlblox_logo.png";
-import client_tune from "assets/img/clients/tune_logo.png";
-import client_creator from "assets/img/clients/creator_logo.png";
-import client_abitcryptic from "assets/img/clients/abitcryptic_logo.png";
-import client_mia_herald from "assets/img/clients/mia_herald.png";
-import client_bitcoinist from "assets/img/clients/Bitcoinist_logo.png";
-import client_cnbc from "assets/img/clients/cnbc_logo.png";
-import client_coindesk from "assets/img/clients/coindesk_logo.png";
-import client_hacked from "assets/img/clients/hacked_logo.png";
-import client_techcrunch from "assets/img/clients/techcrunch_logo.png";
-import client_cointele from "assets/img/clients/coint_logo.png";
-import client_ben from "assets/img/clients/ben_logo.png";
-import client_mit from "assets/img/clients/mit_logo.png";
-import client_um from "assets/img/clients/u_logo.png";
-import client_dubai from "assets/img/clients/smart_dubai.png";
-import client_01 from "assets/img/clients/learn_01.png";
-import client_caldwell from "assets/img/clients/caldwell.png";
-import client_lab from "assets/img/clients/lab_mia.png";
+import client_ibm from "bushido_v2/src/assets/img/clients/ibm_logo.png";
+import client_oracle from "bushido_v2/src/assets/img/clients/oracle_logo.png";
+import client_miacoc from "bushido_v2/src/assets/img/clients/MIAMIcoc_logo.png";
+import client_mdc from "bushido_v2/src/assets/img/clients/MDC_logo.png";
+import client_ic from "bushido_v2/src/assets/img/clients/ic_logo.png";
+import client_beacon from "bushido_v2/src/assets/img/clients/beacon_logo.png";
+import client_lvlblox from "bushido_v2/src/assets/img/clients/lvlblox_logo.png";
+import client_tune from "bushido_v2/src/assets/img/clients/tune_logo.png";
+import client_creator from "bushido_v2/src/assets/img/clients/creator_logo.png";
+import client_abitcryptic from "bushido_v2/src/assets/img/clients/abitcryptic_logo.png";
+import client_mia_herald from "bushido_v2/src/assets/img/clients/mia_herald.png";
+import client_bitcoinist from "bushido_v2/src/assets/img/clients/Bitcoinist_logo.png";
+import client_cnbc from "bushido_v2/src/assets/img/clients/cnbc_logo.png";
+import client_coindesk from "bushido_v2/src/assets/img/clients/coindesk_logo.png";
+import client_hacked from "bushido_v2/src/assets/img/clients/hacked_logo.png";
+import client_techcrunch from "bushido_v2/src/assets/img/clients/techcrunch_logo.png";
+import client_cointele from "bushido_v2/src/assets/img/clients/coint_logo.png";
+import client_ben from "bushido_v2/src/assets/img/clients/ben_logo.png";
+import client_mit from "bushido_v2/src/assets/img/clients/mit_logo.png";
+import client_um from "bushido_v2/src/assets/img/clients/u_logo.png";
+import client_dubai from "bushido_v2/src/assets/img/clients/smart_dubai.png";
+import client_01 from "bushido_v2/src/assets/img/clients/learn_01.png";
+import client_caldwell from "bushido_v2/src/assets/img/clients/caldwell.png";
+import client_lab from "bushido_v2/src/assets/img/clients/lab_mia.png";
 
 class ClientSection extends React.Component {
 	render() {

@@ -2,22 +2,22 @@ import React from "react";
 import Carousel from "react-slick";
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Card from "components/Card/Card.jsx";
-import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
-import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
+import GridContainer from "bushido_v2/src/components/Grid/GridContainer.jsx";
+import GridItem from "bushido_v2/src/components/Grid/GridItem.jsx";
+import Card from "bushido_v2/src/components/Card/Card.jsx";
+import carouselStyle from "bushido_v2/src/assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
+import InfoAreaImage from "bushido_v2/src/components/InfoAreaImage/InfoAreaImage.jsx";
 // screenshots
-import image1 from "assets/img/portfolio/vera_deploy.png";
-import image2 from "assets/img/portfolio/vera_reconcile.png";
-import image3 from "assets/img/portfolio/vera_entitlement.png";
+import image1 from "bushido_v2/src/assets/img/portfolio/vera_deploy.png";
+import image2 from "bushido_v2/src/assets/img/portfolio/vera_reconcile.png";
+import image3 from "bushido_v2/src/assets/img/portfolio/vera_entitlement.png";
 // svg's
-import golang from "assets/img/SVG/go-plain.svg";
-import appolo from "assets/img/SVG/appolo.svg";
-import graphql from "assets/img/SVG/GraphQL.svg";
-import github from "assets/img/SVG/github-original.svg";
-import fabric from "assets/img/SVG/hyperledger_fabric.svg";
-import java from "assets/img/SVG/java-plain-wordmark.svg";
+import golang from "bushido_v2/src/assets/img/SVG/go-plain.svg";
+import appolo from "bushido_v2/src/assets/img/SVG/appolo.svg";
+import graphql from "bushido_v2/src/assets/img/SVG/GraphQL.svg";
+import github from "bushido_v2/src/assets/img/SVG/github-original.svg";
+import fabric from "bushido_v2/src/assets/img/SVG/hyperledger_fabric.svg";
+import java from "bushido_v2/src/assets/img/SVG/java-plain-wordmark.svg";
 
 class PortfolioSectionLVLBLOX extends React.Component {
 	render() {

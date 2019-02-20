@@ -5,12 +5,12 @@ import GridItem from "components/Grid/GridItem.jsx";
 import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
-import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
+import productStyle from "bushido_v2/src/assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 // png's
-import blocks from "assets/img/bushido/blocks.png";
-import custom_crypto from "assets/img/bushido/custom_crypto.png";
-import dapps from "assets/img/bushido/dapps.png";
-import tokens from "assets/img/bushido/tokens.png";
+import blocks from "bushido_v2/src/assets/img/bushido/blocks.png";
+import custom_crypto from "bushido_v2/src/assets/img/bushido/custom_crypto.png";
+import dapps from "bushido_v2/src/assets/img/bushido/dapps.png";
+import tokens from "bushido_v2/src/assets/img/bushido/tokens.png";
 
 class ProductSection extends React.Component {
 	render() {

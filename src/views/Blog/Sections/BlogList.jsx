@@ -12,7 +12,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
+import workStyle from "bushido_v2/src/assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
 import { Link } from "react-router-dom";
 class BlogList extends React.Component {
 	constructor(props) {

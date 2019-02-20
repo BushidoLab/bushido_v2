@@ -1,11 +1,11 @@
 import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import * as emailjs from "emailjs-com";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import CustomInput from "components/CustomInput/CustomInput.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
+import GridContainer from "bushido_v2/src/components/Grid/GridContainer.jsx";
+import GridItem from "bushido_v2/src/components/Grid/GridItem.jsx";
+import CustomInput from "bushido_v2/src/components/CustomInput/CustomInput.jsx";
+import Button from "bushido_v2/src/components/CustomButtons/Button.jsx";
+import workStyle from "bushido_v2/src/assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
 
 class WorkSection extends React.Component {
 	state = {

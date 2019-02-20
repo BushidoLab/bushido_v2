@@ -1,32 +1,32 @@
 import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
+import GridContainer from "bushido_v2/src/components/Grid/GridContainer.jsx";
+import GridItem from "bushido_v2/src/components/Grid/GridItem.jsx";
+import InfoAreaImage from "bushido_v2/src/components/InfoAreaImage/InfoAreaImage.jsx";
 // svg's
-import aws from "assets/img/SVG/aws.svg";
-import cplus from "assets/img/SVG/cplus.svg";
-import mongo from "assets/img/SVG/mongodb-plain.svg";
-import cardano from "assets/img/SVG/cardano_logo.svg";
-import docker from "assets/img/SVG/docker.svg";
-import express from "assets/img/SVG/express-original.svg";
-import github from "assets/img/SVG/github-original.svg";
-import go from "assets/img/SVG/go-plain.svg";
-import burrow from "assets/img/SVG/hyperledger_burrow.svg";
-import bitcoin from "assets/img/SVG/bitcoin.svg";
-import javascript from "assets/img/SVG/javascript-plain.svg";
-import python from "assets/img/SVG/python-original.svg";
-import postgresql from "assets/img/SVG/postgresql-plain.svg";
-import nodejs from "assets/img/SVG/nodejs-plain.svg";
-import ethereum from "assets/img/SVG/ethereum.svg";
-import react from "assets/img/SVG/react-original.svg";
-import solidity from "assets/img/SVG/Solidity_logo.svg";
-import fabric from "assets/img/SVG/hyperledger_fabric.svg";
-import stellar from "assets/img/SVG/stellar_logo.svg";
-import r3 from "assets/img/SVG/r3_logo.svg";
-import stratis from "assets/img/SVG/stratis_logo.svg";
+import aws from "bushido_v2/src/assets/img/SVG/aws.svg";
+import cplus from "bushido_v2/src/assets/img/SVG/cplus.svg";
+import mongo from "bushido_v2/src/assets/img/SVG/mongodb-plain.svg";
+import cardano from "bushido_v2/src/assets/img/SVG/cardano_logo.svg";
+import docker from "bushido_v2/src/assets/img/SVG/docker.svg";
+import express from "bushido_v2/src/assets/img/SVG/express-original.svg";
+import github from "bushido_v2/src/assets/img/SVG/github-original.svg";
+import go from "bushido_v2/src/assets/img/SVG/go-plain.svg";
+import burrow from "bushido_v2/src/assets/img/SVG/hyperledger_burrow.svg";
+import bitcoin from "bushido_v2/src/assets/img/SVG/bitcoin.svg";
+import javascript from "bushido_v2/src/assets/img/SVG/javascript-plain.svg";
+import python from "bushido_v2/src/assets/img/SVG/python-original.svg";
+import postgresql from "bushido_v2/src/assets/img/SVG/postgresql-plain.svg";
+import nodejs from "bushido_v2/src/assets/img/SVG/nodejs-plain.svg";
+import ethereum from "bushido_v2/src/assets/img/SVG/ethereum.svg";
+import react from "bushido_v2/src/assets/img/SVG/react-original.svg";
+import solidity from "bushido_v2/src/assets/img/SVG/Solidity_logo.svg";
+import fabric from "bushido_v2/src/assets/img/SVG/hyperledger_fabric.svg";
+import stellar from "bushido_v2/src/assets/img/SVG/stellar_logo.svg";
+import r3 from "bushido_v2/src/assets/img/SVG/r3_logo.svg";
+import stratis from "bushido_v2/src/assets/img/SVG/stratis_logo.svg";
 
-import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
+import productStyle from "bushido_v2/src/assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 
 class ProcessesAndToolsSection extends React.Component {
 	render() {

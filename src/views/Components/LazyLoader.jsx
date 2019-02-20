@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import CircularProgress from "@material-ui/core/CircularProgress";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import Grid from "components/Grid/GridItem.jsx";
+import GridContainer from "bushido_v2/src/components/Grid/GridContainer.jsx";
+import Grid from "bushido_v2/src/components/Grid/GridItem.jsx";
 
-import bushido from "assets/img/bushido/circle_logo_.png";
-import bushido_logo from "assets/img/bushido/bushido2.png";
+import bushido from "bushido_v2/src/assets/img/bushido/circle_logo_.png";
+import bushido_logo from "bushido_v2/src/assets/img/bushido/bushido2.png";
 import { Fade } from "@material-ui/core";
 
 const styles = theme => ({

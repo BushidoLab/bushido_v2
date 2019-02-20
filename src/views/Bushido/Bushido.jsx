@@ -5,25 +5,25 @@ import classNames from "classnames";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // core components
-import Header from "components/Header/Header.jsx";
-import Footer from "components/Footer/Footer.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import Parallax from "components/Parallax/Parallax.jsx";
+import Header from "bushido_v2/src/components/Header/Header.jsx";
+import Footer from "bushido_v2/src/components/Footer/Footer.jsx";
+import GridContainer from "bushido_v2/src/components/Grid/GridContainer.jsx";
+import GridItem from "bushido_v2/src/components/Grid/GridItem.jsx";
+import Button from "bushido_v2/src/components/CustomButtons/Button.jsx";
+import Parallax from "bushido_v2/src/components/Parallax/Parallax.jsx";
 
-import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
-import WorkSection from "./Sections/WorkSection.jsx";
+import landingPageStyle from "bushido_v2/src/assets/jss/material-kit-react/views/landingPage.jsx";
+import WorkSection from "bushido_v2/src/Bushido/Sections/WorkSection.jsx";
 // Sections for this page
-import ProductSection from "./Sections/ProductSection.jsx";
-// import TeamSection from "./Sections/TeamSection.jsx";
-import ProcessesAndToolsSection from "./Sections/ProcessesAndToolsSection.jsx";
-import ClientSection from "./Sections/ClientSection.jsx";
-import PortfolioSectionTabs from "./Sections/PortfolioSectionTabs.jsx";
-import PricingSectionTabs from "./Sections/PricingSectionTabs.jsx";
+import ProductSection from "bushido_v2/src/Bushido/Sections/ProductSection.jsx";
+// import TeamSection from "bushido_v2/src/Bushido/Sections/TeamSection.jsx";
+import ProcessesAndToolsSection from "bushido_v2/src/Bushido/Sections/ProcessesAndToolsSection.jsx";
+import ClientSection from "bushido_v2/src/Bushido/Sections/ClientSection.jsx";
+import PortfolioSectionTabs from "bushido_v2/src/Bushido/Sections/PortfolioSectionTabs.jsx";
+import PricingSectionTabs from "bushido_v2/src/Bushido/Sections/PricingSectionTabs.jsx";
 import ScrollIntoView from "react-scroll-into-view";
 
-import CircularIndeterminate from "../Components/LazyLoader.jsx";
+import CircularIndeterminate from "bushido_v2/src/Components/LazyLoader.jsx";
 import { Fade } from "@material-ui/core";
 
 class Bushido extends React.Component {
@@ -64,7 +64,7 @@ class LandingPage extends React.Component {
 			<Fade in timeout={1000}>
 				<div className={classes.fadeIn}>
 					<Header color="transparent" fixed {...rest} />
-					<Parallax filter image={require("assets/img/land.png")}>
+					<Parallax filter image={require("bushido_v2/src/assets/img/land.png")}>
 						<div className={classes.container}>
 							<GridContainer>
 								<GridItem xs={12} sm={12} md={8}>

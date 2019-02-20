@@ -6,11 +6,11 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
-import { title } from "assets/jss/material-kit-react.jsx";
+import { title } from "bushido_v2/src/assets/jss/material-kit-react.jsx";
 // sections
-import PortfolioSectionANON from "./PortfolioSectionANON.jsx";
-import PortfolioSectionTUNE from "./PortfolioSectionTUNE.jsx";
-import PortfolioSectionLVLBLOX from "./PortfolioSectionLVLBLOX.jsx";
+import PortfolioSectionANON from "bushido_v2/src/Bushido/Sections/PortfolioSectionANON.jsx";
+import PortfolioSectionTUNE from "bushido_v2/src/Bushido/Sections/PortfolioSectionTUNE.jsx";
+import PortfolioSectionLVLBLOX from "bushido_v2/src/Bushido/Sections/PortfolioSectionLVLBLOX.jsx";
 
 function TabContainer({ children, dir }) {
 	return (

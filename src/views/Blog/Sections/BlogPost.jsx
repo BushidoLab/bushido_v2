@@ -6,16 +6,16 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
+import GridContainer from "bushido_v2/src/components/Grid/GridContainer.jsx";
+import GridItem from "bushido_v2/src/components/Grid/GridItem.jsx";
 
 import classNames from "classnames";
-import Header from "components/Header/Header.jsx";
-import Footer from "components/Footer/Footer.jsx";
+import Header from "bushido_v2/src/components/Header/Header.jsx";
+import Footer from "bushido_v2/src/components/Footer/Footer.jsx";
 import Grid from "@material-ui/core/Grid";
-import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
-import BlogParallax from "components/Parallax/BlogParallax.jsx";
-import BlogTitle from "./BlogTitle.jsx";
+import landingPageStyle from "bushido_v2/src/assets/jss/material-kit-react/views/landingPage.jsx";
+import BlogParallax from "bushido_v2/src/components/Parallax/BlogParallax.jsx";
+import BlogTitle from "bushido_v2/src/Blog/Sections/BlogTitle.jsx";
 import axios from "axios";
 const TOKEN = process.env.REACT_APP_AUTH_TOKEN;
 require("dotenv").config();

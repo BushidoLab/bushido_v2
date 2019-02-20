@@ -2,24 +2,24 @@ import React from "react";
 import Carousel from "react-slick";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Card from "components/Card/Card.jsx";
-import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
+import GridContainer from "bushido_v2/src/components/Grid/GridContainer.jsx";
+import GridItem from "bushido_v2/src/components/Grid/GridItem.jsx";
+import Card from "bushido_v2/src/components/Card/Card.jsx";
+import carouselStyle from "bushido_v2/src/assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
 import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
 // screenshots
-import image1 from "assets/img/portfolio/anonfork.png";
-import image2 from "assets/img/portfolio/explorer.png";
-import image3 from "assets/img/portfolio/explorer_blocks.png";
-import image4 from "assets/img/portfolio/anon_proposals.png";
-import image5 from "assets/img/portfolio/anon_copay.png";
+import image1 from "bushido_v2/src/assets/img/portfolio/anonfork.png";
+import image2 from "bushido_v2/src/assets/img/portfolio/explorer.png";
+import image3 from "bushido_v2/src/assets/img/portfolio/explorer_blocks.png";
+import image4 from "bushido_v2/src/assets/img/portfolio/anon_proposals.png";
+import image5 from "bushido_v2/src/assets/img/portfolio/anon_copay.png";
 // svg logos
-import cplus from "assets/img/SVG/cplus.svg";
-import linux from "assets/img/SVG/linux-plain.svg";
-import nodejs from "assets/img/SVG/nodejs-plain.svg";
-import github from "assets/img/SVG/github-original.svg";
-import gradle from "assets/img/SVG/gradle-plain.svg";
-import java from "assets/img/SVG/java-plain-wordmark.svg";
+import cplus from "bushido_v2/src/assets/img/SVG/cplus.svg";
+import linux from "bushido_v2/src/assets/img/SVG/linux-plain.svg";
+import nodejs from "bushido_v2/src/assets/img/SVG/nodejs-plain.svg";
+import github from "bushido_v2/src/assets/img/SVG/github-original.svg";
+import gradle from "bushido_v2/src/assets/img/SVG/gradle-plain.svg";
+import java from "bushido_v2/src/assets/img/SVG/java-plain-wordmark.svg";
 
 class PortfolioSectionANON extends React.Component {
 	render() {

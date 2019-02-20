@@ -1,22 +1,22 @@
 import React from "react";
 import Carousel from "react-slick";
 import withStyles from "@material-ui/core/styles/withStyles";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Card from "components/Card/Card.jsx";
-import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
-import InfoAreaImage from "components/InfoAreaImage/InfoAreaImage.jsx";
+import GridContainer from "bushido_v2/src/components/Grid/GridContainer.jsx";
+import GridItem from "bushido_v2/src/components/Grid/GridItem.jsx";
+import Card from "bushido_v2/src/components/Card/Card.jsx";
+import carouselStyle from "bushido_v2/src/assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
+import InfoAreaImage from "bushido_v2/src/components/InfoAreaImage/InfoAreaImage.jsx";
 // screenshots
-import image1 from "assets/img/portfolio/tune1.png";
-import image2 from "assets/img/portfolio/tune2.png";
-import image3 from "assets/img/portfolio/tune3.png";
+import image1 from "bushido_v2/src/assets/img/portfolio/tune1.png";
+import image2 from "bushido_v2/src/assets/img/portfolio/tune2.png";
+import image3 from "bushido_v2/src/assets/img/portfolio/tune3.png";
 // svg's
-import solidity from "assets/img/SVG/Solidity_logo.svg";
-import ethereum from "assets/img/SVG/ethereum.svg";
-import nodejs from "assets/img/SVG/nodejs-plain.svg";
-import github from "assets/img/SVG/github-original.svg";
-import metamask from "assets/img/SVG/metamask.svg";
-import javascript from "assets/img/SVG/javascript-plain.svg";
+import solidity from "bushido_v2/src/assets/img/SVG/Solidity_logo.svg";
+import ethereum from "bushido_v2/src/assets/img/SVG/ethereum.svg";
+import nodejs from "bushido_v2/src/assets/img/SVG/nodejs-plain.svg";
+import github from "bushido_v2/src/assets/img/SVG/github-original.svg";
+import metamask from "bushido_v2/src/assets/img/SVG/metamask.svg";
+import javascript from "bushido_v2/src/assets/img/SVG/javascript-plain.svg";
 
 class PortfolioSectionTUNE extends React.Component {
 	render() {

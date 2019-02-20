@@ -2,15 +2,15 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Startup from "@material-ui/icons/FlightTakeoff";
 import Enterprise from "@material-ui/icons/LocationCity";
-import GridItem from "components/Grid/GridItem.jsx";
+import GridItem from "bushido_v2/src/components/Grid/GridItem.jsx";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
-import CardFooter from "components/Card/CardFooter.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+import CardFooter from "bushido_v2/src/components/Card/CardFooter.jsx";
+import Button from "bushido_v2/src/components/CustomButtons/Button.jsx";
 import Divider from "@material-ui/core/Divider";
-import InfoAreaPricing from "components/InfoAreaPricing/InfoAreaPricing.jsx";
-import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
+import InfoAreaPricing from "bushido_v2/src/components/InfoAreaPricing/InfoAreaPricing.jsx";
+import productStyle from "bushido_v2/src/assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 import ScrollIntoView from "react-scroll-into-view";
 
 class PricingSectionProduct extends React.Component {
