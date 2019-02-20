@@ -27,7 +27,7 @@ class BlogPost extends React.Component {
 
 	async getData() {
 		const res = await axios.get(
-			"https://blog.bushidolab.com/ghost/api/v0.1/posts/?filter=slug:[" +
+			"posts/?filter=slug:[" +
 				this.props.match.params.slug +
 				"]",
 			{
@@ -38,7 +38,8 @@ class BlogPost extends React.Component {
 					'Access-Control-Allow-Origin': '*',
 					'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
 					'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
-					'Access-Control-Allow-Credentials': true
+					'Access-Control-Allow-Credentials': true,
+					'Cross-Domain': true
 				}
 			}
 		);
