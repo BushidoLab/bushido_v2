@@ -51,9 +51,9 @@ class Bushido extends React.Component {
 						"cache-control": "no-cache",
 						'Access-Control-Allow-Origin': '*',
 						'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
-						'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
+						'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
 						'Access-Control-Allow-Credentials': true,
-						'Cross-Domain': true
+						// 'Cross-Domain': true
 					}
 				}
 			)
