@@ -27,19 +27,18 @@ class BlogPost extends React.Component {
 
 	async getData() {
 		const res = await axios.get(
-			"posts/?filter=slug:[" +
+			"https://blog.bushidolab.com/ghost/api/v0.1/posts/?filter=slug:[" +
 				this.props.match.params.slug +
 				"]",
 			{
 				headers: {
 					Authorization: "Bearer " + TOKEN,
-					"Content-Type": "application/json",
+					"Content-Type": "application/x-www-form-urlencoded",
 					"cache-control": "no-cache",
-					'Access-Control-Allow-Origin': '*',
-					'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
-					'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
-					'Access-Control-Allow-Credentials': true,
-					// 'Cross-Domain': true
+					"Access-Control-Allow-Origin": "*",
+					"Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, OPTIONS",
+					"Access-Control-Allow-Headers":
+						"Content-Type, X-Auth-Token, Origin, Authorization"
 				}
 			}
 		);

@@ -43,17 +43,16 @@ class Bushido extends React.Component {
 	componentDidMount() {
 		axios
 			.get(
-				"/posts/?fields=slug,title,custom_excerpt,feature_image",
+				"https://blog.bushidolab.com/ghost/api/v0.1/posts/?fields=slug,title,custom_excerpt,feature_image",
 				{
 					headers: {
 						Authorization: "Bearer " + TOKEN,
-						"Content-Type": "application/json",
+						"Content-Type": "application/x-www-form-urlencoded",
 						"cache-control": "no-cache",
-						'Access-Control-Allow-Origin': '*',
-						'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
-						'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
-						'Access-Control-Allow-Credentials': true,
-						// 'Cross-Domain': true
+						"Access-Control-Allow-Origin": "*",
+						"Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, OPTIONS",
+						"Access-Control-Allow-Headers":
+							"Content-Type, X-Auth-Token, Origin, Authorization"
 					}
 				}
 			)
