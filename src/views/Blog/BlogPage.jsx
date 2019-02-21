@@ -22,7 +22,7 @@ import BlogList from "./Sections/BlogList.jsx";
 
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-const API_URL = "http://a0b2c1cc.ngrok.io/";
+const API_URL = "https://a0b2c1cc.ngrok.io/";
 // require("dotenv").config();
 
 class Bushido extends React.Component {

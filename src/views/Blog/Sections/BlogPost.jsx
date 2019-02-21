@@ -20,7 +20,7 @@ import axios from "axios";
 
 // require("dotenv").config();
 
-const API_URL = "http://a0b2c1cc.ngrok.io/blog/";
+const API_URL = "https://a0b2c1cc.ngrok.io/blog/";
 class BlogPost extends React.Component {
 	state = {
 		postObject: null
