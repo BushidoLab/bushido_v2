@@ -22,9 +22,8 @@ class BlogList extends React.Component {
 		};
 	}
 	render() {
-		console.log('this--', this)
 		const { classes } = this.props;
-		
+
 		const htmlTitle = this.props.json.title;
 
 		const htmlDescription = this.props.json.custom_excerpt

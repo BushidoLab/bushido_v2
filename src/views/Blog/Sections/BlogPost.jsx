@@ -20,14 +20,13 @@ import axios from "axios";
 
 // require("dotenv").config();
 
-const API_URL = "https://3372cad8.ngrok.io/blog/";
+const API_URL = "https://b.bushidolab.com/blog/";
 class BlogPost extends React.Component {
 	state = {
 		postObject: null
 	};
 
 	async getData() {
-		console.log(API_URL + this.props.match.params.slug);
 		const res = await axios.get(
 			API_URL +
 				this.props.match.params.slug,
@@ -63,7 +62,6 @@ class BlogPost extends React.Component {
 		const blogContent =
 			this.state.postObject != null ? this.state.postObject[0].html : " ";
 
-			console.log('mememememe',this.state.postObject)
 		return (
 			<div>
 				<Header color="transparent" fixed {...rest} />

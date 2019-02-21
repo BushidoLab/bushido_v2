@@ -22,7 +22,7 @@ import BlogList from "./Sections/BlogList.jsx";
 
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-const API_URL = "https://3372cad8.ngrok.io/";
+const API_URL = "https://b.bushidolab.com/";
 // require("dotenv").config();
 
 class Bushido extends React.Component {
@@ -52,7 +52,6 @@ class Bushido extends React.Component {
 					this.setState({
 						data: res.data
 					});
-					console.log("res", res.data);
 				}, 1000);
 				setTimeout(() => {
 					this.setState({ pageLoading: false });
@@ -62,7 +61,6 @@ class Bushido extends React.Component {
 
 	render() {
 		const { classes, ...rest } = this.props;
-		console.log("STATE", this.state.data);
 
 		if (this.state.pageLoading) {
 			return <CircularIndeterminate updateFadeState={this.updateFadeState} />;
