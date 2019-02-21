@@ -22,7 +22,7 @@ import BlogList from "./Sections/BlogList.jsx";
 
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-const API_URL = "https://a0b2c1cc.ngrok.io/";
+const API_URL = "https://3372cad8.ngrok.io/";
 // require("dotenv").config();
 
 class Bushido extends React.Component {
@@ -41,15 +41,12 @@ class Bushido extends React.Component {
 
 	componentDidMount() {
 		axios
-			.get(
-				API_URL,
-				{
-					headers: {
-						"Content-Type": "application/x-www-form-urlencoded",
-						"cache-control": "no-cache",
-					}
+			.get(API_URL, {
+				headers: {
+					"Content-Type": "application/x-www-form-urlencoded",
+					"cache-control": "no-cache"
 				}
-			)
+			})
 			.then(res => {
 				setTimeout(() => {
 					this.setState({
@@ -65,7 +62,7 @@ class Bushido extends React.Component {
 
 	render() {
 		const { classes, ...rest } = this.props;
-		console.log('STATE',this.state);
+		console.log("STATE", this.state.data);
 
 		if (this.state.pageLoading) {
 			return <CircularIndeterminate updateFadeState={this.updateFadeState} />;
@@ -89,24 +86,13 @@ class Bushido extends React.Component {
 						<div className={classes.container}>
 							<div>
 								<Grid container spacing={16}>
-									<Grid item xs={12} sm={6} md={4}>
-										<BlogList json={this.state} postIndex={0} />
-									</Grid>
-									<Grid item xs={12} sm={6} md={4}>
-										<BlogList json={this.state} postIndex={1} />
-									</Grid>
-									<Grid item xs={12} sm={6} md={4}>
-										<BlogList json={this.state} postIndex={2} />
-									</Grid>
-									<Grid item xs={12} sm={6} md={4}>
-										<BlogList json={this.state} postIndex={3} />
-									</Grid>
-									<Grid item xs={12} sm={6} md={4}>
-										<BlogList json={this.state} postIndex={4} />
-									</Grid>
-									<Grid item xs={12} sm={6} md={4}>
-										<BlogList json={this.state} postIndex={5} />
-									</Grid>
+									{this.state.data.map(function(item, i) {
+										return (
+											<Grid item xs={12} sm={6} md={4} key={i}>
+												<BlogList json={item} />
+											</Grid>
+										);
+									})}
 								</Grid>
 							</div>
 						</div>
