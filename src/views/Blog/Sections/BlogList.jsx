@@ -17,6 +17,7 @@ import { Link } from "react-router-dom";
 class BlogList extends React.Component {
 	constructor(props) {
 		super(props);
+		
 		this.state = {
 			posts: this.props.json.data
 		};
@@ -38,26 +39,23 @@ class BlogList extends React.Component {
 			? "/blogpost/" + allPosts[postIndex].slug
 			: this.props.json.data.loading;
 
-		const imgUrl = "http://localhost:2368" + allPosts[postIndex].feature_image
+		const imgUrl = "https://blog.bushidolab.com/" + allPosts[postIndex].feature_image;
 
 		return (
 			<Card className={classes.card}>
 				<CardActionArea>
 					<CardMedia className={classes.media} image={imgUrl} />
 					<CardContent>
-						<h3 className={classes.cardTitle}>
-							{htmlTitle}
-						</h3>
+						<h3 className={classes.cardTitle}>{htmlTitle}</h3>
 						<Typography component="p">{htmlDescription}</Typography>
 					</CardContent>
 				</CardActionArea>
 				<CardActions>
 					<Button size="large" color="primary">
-						<Link to={{ pathname: slug, state: allPosts[postIndex]}}>
+						<Link to={{ pathname: slug, state: allPosts[postIndex] }}>
 							READ NOW!
 						</Link>
 					</Button>
-
 				</CardActions>
 			</Card>
 		);

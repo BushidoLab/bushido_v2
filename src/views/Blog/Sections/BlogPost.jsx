@@ -17,32 +17,29 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 import BlogParallax from "components/Parallax/BlogParallax.jsx";
 import BlogTitle from "./BlogTitle.jsx";
 import axios from "axios";
-const TOKEN = process.env.REACT_APP_AUTH_TOKEN;
-require("dotenv").config();
 
+// require("dotenv").config();
+
+const API_URL = "http://a0b2c1cc.ngrok.io/blog/";
 class BlogPost extends React.Component {
 	state = {
 		postObject: null
 	};
 
 	async getData() {
+		console.log(API_URL + this.props.match.params.slug);
 		const res = await axios.get(
-			"https://blog.bushidolab.com/ghost/api/v0.1/posts/?filter=slug:[" +
-				this.props.match.params.slug +
-				"]",
+			API_URL +
+				this.props.match.params.slug,
 			{
 				headers: {
-					Authorization: "Bearer " + TOKEN,
 					"Content-Type": "application/x-www-form-urlencoded",
 					"cache-control": "no-cache",
-					"Access-Control-Allow-Origin": "*",
-					"Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, OPTIONS",
-					"Access-Control-Allow-Headers":
-						"Content-Type, X-Auth-Token, Origin, Authorization"
 				}
 			}
 		);
-		return res.data.posts;
+		console.log('res',res.data[0]);
+		return res.data;
 	}
 
 	componentDidMount() {
@@ -59,13 +56,14 @@ class BlogPost extends React.Component {
 		const { classes, ...rest } = this.props;
 		const imgUrl =
 			this.state.postObject != null
-				? "http://localhost:2368" + this.state.postObject[0].feature_image
+				? "https://blog.bushidolab.com/" + this.state.postObject[0].feature_image
 				: " ";
 		const blogTitle =
 			this.state.postObject != null ? this.state.postObject[0].title : " ";
 		const blogContent =
 			this.state.postObject != null ? this.state.postObject[0].html : " ";
 
+			console.log('mememememe',this.state.postObject)
 		return (
 			<div>
 				<Header color="transparent" fixed {...rest} />

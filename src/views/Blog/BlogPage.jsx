@@ -22,9 +22,8 @@ import BlogList from "./Sections/BlogList.jsx";
 
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-
-const TOKEN = process.env.REACT_APP_AUTH_TOKEN;
-require("dotenv").config();
+const API_URL = "http://a0b2c1cc.ngrok.io/";
+// require("dotenv").config();
 
 class Bushido extends React.Component {
 	constructor(props) {
@@ -43,33 +42,30 @@ class Bushido extends React.Component {
 	componentDidMount() {
 		axios
 			.get(
-				"https://blog.bushidolab.com/ghost/api/v0.1/posts/?fields=slug,title,custom_excerpt,feature_image",
+				API_URL,
 				{
 					headers: {
-						Authorization: "Bearer " + TOKEN,
 						"Content-Type": "application/x-www-form-urlencoded",
 						"cache-control": "no-cache",
-						"Access-Control-Allow-Origin": "*",
-						"Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, OPTIONS",
-						"Access-Control-Allow-Headers":
-							"Content-Type, X-Auth-Token, Origin, Authorization"
 					}
 				}
 			)
 			.then(res => {
 				setTimeout(() => {
 					this.setState({
-						data: res.data.posts
+						data: res.data
 					});
-					console.log("res", res);
+					console.log("res", res.data);
 				}, 1000);
 				setTimeout(() => {
 					this.setState({ pageLoading: false });
 				}, 1000);
 			});
 	}
+
 	render() {
 		const { classes, ...rest } = this.props;
+		console.log('STATE',this.state);
 
 		if (this.state.pageLoading) {
 			return <CircularIndeterminate updateFadeState={this.updateFadeState} />;
