@@ -37,7 +37,6 @@ class BlogPost extends React.Component {
 				}
 			}
 		);
-		console.log('res',res.data[0]);
 		return res.data;
 	}
 
