@@ -283,7 +283,7 @@ class Header extends React.Component {
 										) : index === 4 ? (
 											<i className={classes.socialIcons + " fab fa-linkedin"} />
 										) : index === 5 ? (
-											<i className={classes.socialIcons + " fas fa-pencil-alt"} />
+											<a href="/blog" style={{margin: '0px'}}><i className={classes.socialIcons + " fas fa-pencil-alt"} /></a>
 										) : null}
 									</ListItemIcon>
 									<ListItemText>
