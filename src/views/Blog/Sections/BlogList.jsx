@@ -33,22 +33,24 @@ class BlogList extends React.Component {
 		const imgUrl = "https://blog.bushidolab.com" + this.props.json.feature_image;
 		
 		return (
-			<Card className={classes.card}>
-				<CardActionArea>
-					<CardMedia className={classes.media} image={imgUrl} />
-					<CardContent>
-						<h3 className={classes.cardTitle}>{htmlTitle}</h3>
-						<Typography component="p">{htmlDescription}</Typography>
-					</CardContent>
-				</CardActionArea>
-				<CardActions>
-					<Button size="large" color="primary">
-						<Link to={{ pathname: slug }}>
-							READ NOW!
-						</Link>
-					</Button>
-				</CardActions>
-			</Card>
+			<Link to={{ pathname: slug }}>
+				<Card className={classes.card}>
+					<CardActionArea>
+						<CardMedia className={classes.media} image={imgUrl} />
+						<CardContent>
+							<h3 className={classes.cardTitle}>{htmlTitle}</h3>
+							<Typography component="p">{htmlDescription}</Typography>
+						</CardContent>
+					</CardActionArea>
+					<CardActions style={{ justifyContent: "center" }}>
+						<Button size="large" color="primary">
+							<Link to={{ pathname: slug }} style={{ color: "black" }}>
+								READ NOW!
+							</Link>
+						</Button>
+					</CardActions>
+				</Card>
+			</Link>
 		);
 	}
 }
